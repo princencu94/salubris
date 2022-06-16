@@ -1,0 +1,12 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.green-bg {
+    background-color: #89bf4a;
+}
+
+.green-text {
+    color: #89bf4a;
+}
