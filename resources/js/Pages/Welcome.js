@@ -27,6 +27,34 @@ const gymnacity = [
     },
   ]
 
+  const managedcare = [
+    {
+      name: 'Maternal care',
+      imageUrl:
+        'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    },
+    {
+        name: 'Preventive care',
+        imageUrl:
+          'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    },
+    {
+        name: 'Wellness Spa',
+        imageUrl:
+          'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    },
+    {
+        name: 'Mental and Behavioural Health',
+        imageUrl:
+          'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    },
+    {
+        name: 'Nutrition and wellness',
+        imageUrl:
+          'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    },
+  ]
+
 export default function Welcome(props) {
     return (
         <>
@@ -34,7 +62,7 @@ export default function Welcome(props) {
         <CarouselHero/>
         {/* 1st section  start*/}
 
-        <div className="bg-white">
+        <div className="bg-white from-stone-500">
             <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
                 <div className="space-y-12">
                 <div className="space-y-5 sm:space-y-4 max-w-3xl mx-auto md:max-w-xl lg:max-w-3xl xl:max-w-none">
@@ -55,8 +83,8 @@ export default function Welcome(props) {
                         </div>
 
                         <div className="space-y-2">
-                            <div className="text-lg leading-6 font-medium space-y-1">
-                            <h3>{person.name}</h3>
+                            <div className="text-base leading-6 space-y-1">
+                            <h3 className="text-lg font-medium">{person.name}</h3>
                             </div>
                         </div>
                         </div>
@@ -68,13 +96,47 @@ export default function Welcome(props) {
             </div>
             
             </div>
-            <a
-                href="#"
-                className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto"
-                >
-                Sign up for free
-            </a>
+    
         {/* 1st section end */}
+
+        {/* 2nd section  start*/}
+
+        <div className="green-bg">
+            <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+                <div className="space-y-12">
+                <div className="space-y-5 sm:space-y-4 max-w-3xl mx-auto md:max-w-xl lg:max-w-3xl xl:max-w-none">
+                    <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-center">Managed Healthcare</h2>
+                    <p className="text-xl text-black text-center max-w-3xl mx-auto">
+                    Join 10+ million members on the top digital fitness platform and stay toned, lose weight, get strong, reduce stress, and reach your goals.
+                    </p>
+                </div>
+                <ul
+                    role="list"
+                    className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-8"
+                >
+                    {managedcare.map((person) => (
+                    <li key={person.name}>
+                        <div className="space-y-4">
+                        <div className="aspect-w-3 aspect-h-2">
+                            <img className="object-cover shadow-lg rounded-lg" src={person.imageUrl} alt="" />
+                        </div>
+
+                        <div className="space-y-2">
+                            <div className="text-base leading-6 space-y-1">
+                            <h3 className="text-lg font-medium">{person.name}</h3>
+                            </div>
+                        </div>
+                        </div>
+                    </li>
+                    ))}
+                </ul>
+                </div>
+             
+            </div>
+            
+            </div>
+    
+        {/* 2nd section end */}
 
         {/* CTA Section start */}
         <div className="relative py-16 bg-gray-100">
@@ -98,7 +160,7 @@ export default function Welcome(props) {
 
                         <div className="relative max-w-md mx-auto py-12 px-4 space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
                         <h2 className="text-3xl font-extrabold text-black" id="join-heading">
-                            Managed Healthcare
+                            Partner with us
                         </h2>
                         <p className="text-lg text-black">
                             Whether you’re just starting your fitness journey, exploring something new, or ready for a Hard AF challenge, get motivated with curated training programs that take you for a ride and amp up amazing results.
@@ -107,7 +169,7 @@ export default function Welcome(props) {
                             className="block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-black hover:bg-gray-50 sm:inline-block sm:w-auto"
                             href="#"
                         >
-                            Explore Salubris Revolutionary
+                            How it works?
                         </a>
                         </div>
                     </div>
