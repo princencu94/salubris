@@ -7,6 +7,15 @@
     background-color: #89bf4a;
 }
 
+.orange-bg {
+    background-color:#f9a01f;
+}
+
+.gradient-bg {
+    background: rgb(137,191,74);
+    background: linear-gradient(90deg, rgba(137,191,74,1) 0%, rgba(249,160,31,1) 100%);
+}
+
 .green-text {
     color: #89bf4a;
 }

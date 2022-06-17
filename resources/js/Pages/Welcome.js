@@ -8,22 +8,22 @@ const gymnacity = [
     {
       name: 'Courses',
       imageUrl:
-        'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        'images/random1.jpg',
     },
     {
         name: 'Challenges',
         imageUrl:
-          'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+          'images/random2.jpg',
     },
     {
         name: 'Private Classes',
         imageUrl:
-          'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+          'images/random3.jpg',
     },
     {
         name: 'Bootcamps',
         imageUrl:
-          'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+          'images/random4.jpg',
     },
   ]
 
@@ -31,27 +31,27 @@ const gymnacity = [
     {
       name: 'Maternal care',
       imageUrl:
-        'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        'images/random5.jpg',
     },
     {
         name: 'Preventive care',
         imageUrl:
-          'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+          'images/random6.jpg',
     },
     {
         name: 'Wellness Spa',
         imageUrl:
-          'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+          'images/random1.jpg',
     },
     {
         name: 'Mental and Behavioural Health',
         imageUrl:
-          'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+          'images/random8.jpg',
     },
     {
         name: 'Nutrition and wellness',
         imageUrl:
-          'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+          'images/random1.jpg',
     },
   ]
 
@@ -101,7 +101,7 @@ export default function Welcome(props) {
 
         {/* 2nd section  start*/}
 
-        <div className="green-bg">
+        <div className="gradient-bg">
             <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
                 <div className="space-y-12">
                 <div className="space-y-5 sm:space-y-4 max-w-3xl mx-auto md:max-w-xl lg:max-w-3xl xl:max-w-none">
@@ -149,7 +149,7 @@ export default function Welcome(props) {
                         <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
                             <img
                             className="object-cover object-center rounded-3xl shadow-2xl"
-                            src="images/trainers-2.jpg"
+                            src="images/random3.jpg"
                             alt=""
                             />
                         </div>
