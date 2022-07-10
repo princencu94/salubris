@@ -1,5 +1,6 @@
 <?php
-
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\BlogController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -14,6 +15,8 @@ use Inertia\Inertia;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -52,8 +55,22 @@ Route::get('/blogs', function () {
     return Inertia::render('Blogs');
 });
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard/add-blog', function () {
+//     return Inertia::render('Addblog');
+// });
+ 
+// Route::get('/dashboard', function () {
+//     return Inertia::render('Dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard')->uses([DashboardController::class, 'index']);
+
+Route::group(['middleware' => ['auth']], function() {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/add-blog', [DashboardController::class, 'addblog']);
+});
+
+
+// Blog Routes
+Route::post('/addblog', [BlogController::class, 'store'])
+                ->middleware(['auth']);
 
 require __DIR__.'/auth.php';

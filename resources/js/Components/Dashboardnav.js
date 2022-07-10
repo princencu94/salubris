@@ -1,47 +1,42 @@
-import React, { useState } from 'react';
-import ApplicationLogo from '@/Components/ApplicationLogo';
-import Dropdown from '@/Components/Dropdown';
-import NavLink from '@/Components/NavLink';
-import Dashboardnav from '@/Components/Dashboardnav';
-import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
-import { Link } from '@inertiajs/inertia-react';
-
+import React from 'react';
 
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
 
+import ApplicationLogo from './ApplicationLogo';
+import { Link } from '@inertiajs/inertia-react';
+
 const user = {
 
 
-    name: 'Tom Cook',
-    email: 'tom@example.com',
-    imageUrl:
-      'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  }
-  const navigation = [
-  
-  
-    { name: 'Dashboard', href: "route('dashboard')", current: false },
-    { name: 'Trainers', href: '#', current: false },
-    { name: 'Livestreams', href: '#', current: false },
-    { name: 'Blogs', href: 'add-blog', current: false },
-    { name: 'Users', href: '#', current: false },
-  ]
-  const userNavigation = [
-  
-  
-    { name: 'Your Profile', href: '#', method: 'get'},
-    { name: 'Settings', href: '#', method: 'get'},
-    { name: 'Sign out', href: "route('logout')", method: 'post'},
-  ]
-  
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-  }
-export default function Authenticated({ auth, header, children }) {
-    
+  name: 'Tom Cook',
+  email: 'tom@example.com',
+  imageUrl:
+    'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+}
+const navigation = [
 
+
+  { name: 'Dashboard', href: "route('dashboard')", current: true },
+  { name: 'Trainers', href: '#', current: false },
+  { name: 'Livestreams', href: '#', current: false },
+  { name: 'Blogs', href: '#', current: false },
+  { name: 'Users', href: '#', current: false },
+]
+const userNavigation = [
+
+
+  { name: 'Your Profile', href: '#', method: 'get'},
+  { name: 'Settings', href: '#', method: 'get'},
+  { name: 'Sign out', href: "route('logout')", method: 'post'},
+]
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
+
+const Dashboardnav = () => {
     return (
         <div className="min-h-full">
         <Disclosure as="nav" className="bg-gray-800">
@@ -193,15 +188,20 @@ export default function Authenticated({ auth, header, children }) {
 
         <header className="bg-white shadow-sm">
           <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
-            <h1 className="text-lg leading-6 font-semibold text-gray-900">{header}</h1>
+            <h1 className="text-lg leading-6 font-semibold text-gray-900">Dashboard</h1>
           </div>
         </header>
         <main>
           <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-            {children}
+            {/* Replace with your content */}
+            <div className="px-4 py-4 sm:px-0">
+              <div className="border-4 border-dashed border-gray-200 rounded-lg h-96" />
+            </div>
+            {/* /End replace */}
           </div>
         </main>
       </div>
-        
-    );
+    )
 }
+
+export default Dashboardnav;
