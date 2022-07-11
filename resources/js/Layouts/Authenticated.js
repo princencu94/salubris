@@ -22,10 +22,10 @@ const user = {
   const navigation = [
   
   
-    { name: 'Dashboard', href: "route('dashboard')", current: false },
+    { name: 'Dashboard', href: "/dashboard", current: false },
     { name: 'Trainers', href: '#', current: false },
     { name: 'Livestreams', href: '#', current: false },
-    { name: 'Blogs', href: 'add-blog', current: false },
+    { name: 'Blogs', href: '/adminblogs', current: false },
     { name: 'Users', href: '#', current: false },
   ]
   const userNavigation = [

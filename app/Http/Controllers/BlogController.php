@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Blog;
+use Inertia\Inertia;
 
 class BlogController extends Controller
 {
@@ -14,7 +15,9 @@ class BlogController extends Controller
      */
     public function index()
     {
-        //
+        
+       
+        return Inertia::render('Admin/Showblogs', ['blogs' => Blog::all()]);
     }
 
     /**
@@ -25,6 +28,7 @@ class BlogController extends Controller
     public function create()
     {
         //
+        
     }
 
     /**
@@ -67,7 +71,7 @@ class BlogController extends Controller
      */
     public function show($id)
     {
-        //
+        return Inertia::render('Admin/Editblog', ['blog' => Blog::all()->find($id)]);
     }
 
     /**
@@ -78,7 +82,7 @@ class BlogController extends Controller
      */
     public function edit($id)
     {
-        //
+        
     }
 
     /**
@@ -90,7 +94,24 @@ class BlogController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $blog = Blog::findOrFail($id);
+
+
+        if($request->file('image_file') === null) {
+            $name = $blog->image_path;
+        } else {
+            $name = $request->file('image_file')->getClientOriginalName();
+            $request->file('image_file')->move(public_path('images'), $name);
+        }
+
+        $blog->title = $request->title;
+        $blog->description = $request->description;
+        $blog->image_path = $name;
+        $blog->category = $request->category;
+       
+        $blog->save();
+
+        return redirect()->route('adminblogs');
     }
 
     /**
@@ -101,6 +122,9 @@ class BlogController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $blog = Blog::find($id);
+        $blog->delete();
+
+        return redirect()->route('adminblogs');
     }
 }

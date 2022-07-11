@@ -70,7 +70,10 @@ Route::group(['middleware' => ['auth']], function() {
 
 
 // Blog Routes
-Route::post('/addblog', [BlogController::class, 'store'])
-                ->middleware(['auth']);
+Route::post('/addblog', [BlogController::class, 'store'])->middleware(['auth']);
+Route::get('/adminblogs', [BlogController::class, 'index'])->middleware(['auth'])->name('adminblogs');
+Route::get('/editblog/{id}', [BlogController::class, 'show'])->middleware(['auth']);
+Route::put('/editblog/{id}', [BlogController::class, 'update'])->middleware(['auth']);
+Route::delete('/deleteblog/{id}', [BlogController::class, 'destroy'])->middleware(['auth']);
 
 require __DIR__.'/auth.php';
