@@ -3694,7 +3694,7 @@ var CarouselHero = function CarouselHero() {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_bootstrap_Carousel__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
         className: "d-block w-100",
-        src: "images/hero-wellness-1.jpg",
+        src: "images/banner1.png",
         alt: "First slide"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_bootstrap_Carousel__WEBPACK_IMPORTED_MODULE_2__["default"].Caption, {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
@@ -3705,7 +3705,7 @@ var CarouselHero = function CarouselHero() {
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_bootstrap_Carousel__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
         className: "d-block w-100",
-        src: "images/random3.jpg",
+        src: "images/banner2.png",
         alt: "Second slide"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_bootstrap_Carousel__WEBPACK_IMPORTED_MODULE_2__["default"].Caption, {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
@@ -3716,7 +3716,7 @@ var CarouselHero = function CarouselHero() {
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_bootstrap_Carousel__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
         className: "d-block w-100",
-        src: "images/random1.jpg",
+        src: "images/banner3.jpg",
         alt: "Third slide"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_bootstrap_Carousel__WEBPACK_IMPORTED_MODULE_2__["default"].Caption, {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
