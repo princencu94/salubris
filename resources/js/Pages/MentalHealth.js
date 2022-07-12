@@ -52,15 +52,16 @@ export default function MentalHealth(props) {
     return (
         <>
         <MainHeader/>
-            <PageHeader title="Mental and Behavioural Health"/>
+            <PageHeader title="Mental and Behavioural Health" image="images/banner4.jpeg"/>
 
             {/* Page Main content start */}
             <div className="bg-white">
-                <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
+                <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-4">
                     <div className="max-w-3xl mx-auto text-center">
                     <h2 className="text-3xl font-extrabold text-gray-900">All-in-one platform</h2>
-                    <p className="mt-4 text-lg text-gray-500">
-                        Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
+                    <p className="mt-4 text-lg text-black">
+                    “State of well-being in which the individual realizes his or her own abilities, can cope with the normal stresses of life, realize their abilities, can work productively and fruitfully, and is able to make a contribution to his or her community”.  World Health Organization (WHO) 1948
+
                     </p>
                     </div>
                     <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">

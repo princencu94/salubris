@@ -39,7 +39,7 @@ const gymnacity = [
           'images/random6.jpg',
     },
     {
-        name: 'Wellness Spa',
+        name: 'Well woman program',
         imageUrl:
           'images/random1.jpg',
     },
@@ -47,11 +47,6 @@ const gymnacity = [
         name: 'Mental and Behavioural Health',
         imageUrl:
           'images/random8.jpg',
-    },
-    {
-        name: 'Nutrition and wellness',
-        imageUrl:
-          'images/random1.jpg',
     },
   ]
 
@@ -182,43 +177,43 @@ export default function Welcome(props) {
             <div className="">
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
                     <h2 className="text-4xl font-extrabold text-black text-center">Our Partners</h2>
-                    <div className="flow-root mt-8 lg:mt-10">
-                    <div className="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
-                        <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
-                        <img className="" src="images/partner-1.png" alt="Lotus" />
+                    <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+                        <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-6">
+                        <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                            <img className="h-30" src="images/partner-1.png" alt="Lotus" />
                         </div>
-                        <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
-                        <img className="" src="images/partner-2.png" alt="Marchant Couriers" />
+                        <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                            <img className="h-20" src="images/partner-2.png" alt="Marchant Couriers" />
                         </div>
-                        <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+                        <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                         <img
-                            className=""
+                            className="h-20"
                             src="images/partner-3.png"
                             alt="Timeless Beauty Spa"
                         />
                         </div>
-                        <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
-                        <img
-                            className=""
-                            src="images/partner-4.png"
-                            alt="Road Angels"
-                        />
+                        <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
+                            <img
+                                className="h-20"
+                                src="images/partner-4.png"
+                                alt="Road Angels"
+                            />
                         </div>
-                        <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
-                        <img
-                            className=""
-                            src="images/partner-5.png"
-                            alt="Raine Uplift"
-                        />
+                        <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
+                            <img
+                                className="h-20"
+                                src="images/partner-5.png"
+                                alt="Raine Uplift"
+                            />
                         </div>
-                        <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
-                        <img
-                            className=""
-                            src="images/partner-6.png"
-                            alt="Gymnacity"
-                        />
+                        <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
+                            <img
+                                className="h-20"
+                                src="images/partner-6.png"
+                                alt="Gymnacity"
+                            />
                         </div>
-                    </div>
+                        </div>
                     </div>
                 </div>
             </div>

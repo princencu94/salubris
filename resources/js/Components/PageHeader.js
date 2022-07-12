@@ -1,10 +1,10 @@
-export default function PageHeader({title}) {
+export default function PageHeader({title, image}) {
     return (
-      <div className="relative bg-indigo-800">
+      <div className="relative bg-indigo-800 h-4/6">
         <div className="absolute inset-0">
           <img
             className="w-full h-full object-cover"
-            src="images/random1.jpg"
+            src={image}
             alt=""
           />
           <div className="absolute inset-0 green-bg mix-blend-multiply" aria-hidden="true" />

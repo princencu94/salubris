@@ -22,8 +22,8 @@ import ApplicationLogo from './ApplicationLogo'
 const navigation = {
   categories: [
     {
-      id: 'salubris-gymnacity',
-      name: 'Salubris Gymnacity',
+      id: 'virtual-gym',
+      name: 'Virtual Gym',
       featured: [
         {
           name: 'Nutrition Expert',
@@ -43,9 +43,7 @@ const navigation = {
           id: 'courses',
           name: 'Courses',
           items: [
-            { name: 'Total Burn', href: '#' },
-            { name: 'Total Shred', href: '#' },
-            { name: 'Power of Yoga', href: '#' },
+        
           ],
         },
         {
@@ -96,9 +94,11 @@ const navigation = {
           items: [
             { name: 'Maternal Care', href: 'maternal-care' },
             { name: 'Preventive Care', href: 'preventive-care' },
-            { name: 'Wellness Spa', href: 'wellness-spa' },
             { name: 'Mental and Behavioural Health', href: 'mental-and-behavioural-health' },
-            { name: 'Nutrition and wellness', href: 'nutrition-and-wellness' },
+            { name: 'Rewards', href: 'rewards' },
+            { name: 'Well woman program', href: 'well-woman-program' },
+            { name: 'Men cave program', href: 'men-cave-program' },
+            { name: 'Corporate Employee Wellness Program', href: 'corporate-employee-wellness-program' },
           ],
         },
       ],
@@ -106,7 +106,7 @@ const navigation = {
   ],
   
   pages: [
-    { name: 'Store', href: '#' },
+    { name: 'Fitness store', href: '#' },
     { name: 'Blogs', href: 'blogs' },
   ],
 }

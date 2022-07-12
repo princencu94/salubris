@@ -40,7 +40,7 @@ const files = [
 export default function PreventiveCare(props) {
     return (
         <>
-        <MainHeader/>
+        <MainHeader title="Wellness SPA" image="images/banner5.jpeg"/>
 
             {/* Page Main content start */}
                           {/* Hero card */}

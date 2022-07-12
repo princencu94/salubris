@@ -55,6 +55,23 @@ Route::get('/blogs', function () {
     return Inertia::render('Blogs');
 });
 
+
+Route::get('/rewards', function () {
+    return Inertia::render('Rewards');
+});
+
+Route::get('/well-woman-program', function () {
+    return Inertia::render('WellWomanProgram');
+});
+
+Route::get('/men-cave-program', function () {
+    return Inertia::render('MenCaveProgram');
+});
+
+Route::get('/corporate-employee-wellness-program', function () {
+    return Inertia::render('CorporateEmployeeWellnessProgram');
+});
+
 // Route::get('/dashboard/add-blog', function () {
 //     return Inertia::render('Addblog');
 // });

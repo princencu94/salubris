@@ -9,18 +9,17 @@ export default function MaternalCare(props) {
     return (
         <>
         <MainHeader/>
-            <PageHeader title="Maternal Care"/>
+            <PageHeader title="Maternal Care" image="images/banner5.jpeg"/>
 
             {/* Page Main content start */}
-            <div className="relative bg-gray-50 pt-16 mb-16 overflow-hidden sm:pt-24 lg:pt-32">
+            <div className="relative bg-white pt-10 mb-16 overflow-hidden sm:pt-24 lg:pt-10">
                 <div className="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
                     <div>
                     <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
                         Antenatal class
                     </p>
-                    <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-                        Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper
-                        malesuada. Eleifend condimentum id viverra nulla.
+                    <p className="mt-5 max-w-prose mx-auto text-xl text-black">
+                    The health of women during pregnancy, childbirth, and the postpartum period. It encompasses the health care dimensions of family planning, preconception, prenatal, and postnatal care to ensure a positive and fulfilling experience
                     </p>
                     </div>
                     <div className="">

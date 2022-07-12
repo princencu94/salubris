@@ -4666,8 +4666,8 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var navigation = {
   categories: [{
-    id: 'salubris-gymnacity',
-    name: 'Salubris Gymnacity',
+    id: 'virtual-gym',
+    name: 'Virtual Gym',
     featured: [{
       name: 'Nutrition Expert',
       href: '#',
@@ -4682,16 +4682,7 @@ var navigation = {
     sections: [{
       id: 'courses',
       name: 'Courses',
-      items: [{
-        name: 'Total Burn',
-        href: '#'
-      }, {
-        name: 'Total Shred',
-        href: '#'
-      }, {
-        name: 'Power of Yoga',
-        href: '#'
-      }]
+      items: []
     }, {
       id: 'challenges',
       name: 'Challenges',
@@ -4729,19 +4720,25 @@ var navigation = {
         name: 'Preventive Care',
         href: 'preventive-care'
       }, {
-        name: 'Wellness Spa',
-        href: 'wellness-spa'
-      }, {
         name: 'Mental and Behavioural Health',
         href: 'mental-and-behavioural-health'
       }, {
-        name: 'Nutrition and wellness',
-        href: 'nutrition-and-wellness'
+        name: 'Rewards',
+        href: 'rewards'
+      }, {
+        name: 'Well woman program',
+        href: 'well-woman-program'
+      }, {
+        name: 'Men cave program',
+        href: 'men-cave-program'
+      }, {
+        name: 'Corporate Employee Wellness Program',
+        href: 'corporate-employee-wellness-program'
       }]
     }]
   }],
   pages: [{
-    name: 'Store',
+    name: 'Fitness store',
     href: '#'
   }, {
     name: 'Blogs',
@@ -5152,14 +5149,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function PageHeader(_ref) {
-  var title = _ref.title;
+  var title = _ref.title,
+      image = _ref.image;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-    className: "relative bg-indigo-800",
+    className: "relative bg-indigo-800 h-4/6",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
       className: "absolute inset-0",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
         className: "w-full h-full object-cover",
-        src: "images/random1.jpg",
+        src: image,
         alt: ""
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
         className: "absolute inset-0 green-bg mix-blend-multiply",
@@ -6641,6 +6639,179 @@ function Blogs(props) {
 
 /***/ }),
 
+/***/ "./resources/js/Pages/CorporateEmployeeWellnessProgram.js":
+/*!****************************************************************!*\
+  !*** ./resources/js/Pages/CorporateEmployeeWellnessProgram.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ CorporateEmployeeWellnessProgram)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Components/Mainheader */ "./resources/js/Components/Mainheader.js");
+/* harmony import */ var _Components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/Footer */ "./resources/js/Components/Footer.js");
+/* harmony import */ var _Components_PageHeader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Components/PageHeader */ "./resources/js/Components/PageHeader.js");
+/* harmony import */ var _Components_SalubrisRev__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/Components/SalubrisRev */ "./resources/js/Components/SalubrisRev.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+
+
+var people = [{
+  men: 'Prostate cancer screening',
+  women: 'Breast(mammogram) & Cervical cancer screening (Pap smear VIAC)',
+  children: 'Adolescent reproductive health and counselling'
+}, {
+  men: 'Hypertension screening',
+  women: 'Premenstrual syndrome therapy',
+  children: 'Alcohol and drug abuse'
+}, {
+  men: 'Diabetes screening',
+  women: 'Contraceptive therapy',
+  children: 'Autism screening'
+}, {
+  men: 'Sexual Dysfunction',
+  women: 'Hormone/diabetes/thyroid',
+  children: 'Obesity screening and counselling'
+}, {
+  men: 'STI screening & HIV test',
+  women: 'STI screening & HIV test',
+  children: 'STI/HIV Screening and behavioural counselling'
+}, {
+  men: 'Unhealthy alcohol use screening and counselling',
+  women: 'HPV testing & vaccination',
+  children: 'Depression screening'
+}, {
+  men: 'Unhealthy drug use screening and counselling',
+  women: 'Menopause management',
+  children: 'Covid-19 Vaccination'
+}, {
+  men: 'Back and Neck preventive program',
+  women: 'Cardiac disease screening with Electrocardiogram (ECG)',
+  children: 'Anxiety screening'
+}, {
+  men: 'Covid-19 Vaccination',
+  women: 'Nutrition management',
+  children: ''
+}, {
+  men: '',
+  women: 'Back and Neck preventive program',
+  children: ''
+}, {
+  men: '',
+  women: 'Covid-19 Vaccination',
+  children: ''
+}];
+function CorporateEmployeeWellnessProgram(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_PageHeader__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      title: "Corporate Employee Wellness Program",
+      image: "images/banner1.png"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "relative bg-white py-16 sm:py-24",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        className: "lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+          className: "relative sm:py-16 lg:py-0",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            "aria-hidden": "true",
+            className: "hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+              className: "absolute inset-y-0 right-1/2 w-full bg-gray-50 rounded-r-3xl lg:right-72"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("svg", {
+              className: "absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12",
+              width: 404,
+              height: 392,
+              fill: "none",
+              viewBox: "0 0 404 392",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("defs", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("pattern", {
+                  id: "02f20b47-fd69-4224-a62a-4c9de5c763f7",
+                  x: 0,
+                  y: 0,
+                  width: 20,
+                  height: 20,
+                  patternUnits: "userSpaceOnUse",
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("rect", {
+                    x: 0,
+                    y: 0,
+                    width: 4,
+                    height: 4,
+                    className: "text-gray-200",
+                    fill: "currentColor"
+                  })
+                })
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("rect", {
+                width: 404,
+                height: 392,
+                fill: "url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"
+              })]
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+            className: "relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+              className: "relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("img", {
+                className: "absolute inset-0 h-full w-full object-cover",
+                src: "https://images.unsplash.com/photo-1521510895919-46920266ddb3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&fp-x=0.5&fp-y=0.6&fp-z=3&width=1440&height=1440&sat=-100",
+                alt: ""
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+                className: "absolute inset-0 bg-orange-500 mix-blend-multiply"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+                className: "absolute inset-0 bg-gradient-to-t from-orange-600 via-orange-600 opacity-90"
+              })]
+            })
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+          className: "relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+            className: "pt-12 sm:pt-16 lg:pt-20",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+              className: "mt-6 text-gray-500 space-y-6",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
+                className: "text-lg",
+                children: "Employees are a company\u2019s most valuable asset. So, invest in their well-being and reduce health care costs, achieve a work-life balance, augment productivity, and increase employee retention"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("ul", {
+                role: "list",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("li", {
+                  children: "Wellness in the workplace."
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("li", {
+                  children: "Mental health therapy: stress management, retirement, retrenchment, Work life balance."
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("li", {
+                  children: "Financial education."
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("li", {
+                  children: "Health screenings and risk assessments."
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("li", {
+                  children: "Exercise programs and activities."
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("li", {
+                  children: "Coaching, mentoring, and training services."
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("li", {
+                  children: "Nutrition education."
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("li", {
+                  children: "Carenet specialists\u2019 referrals and links."
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("li", {
+                  children: "Support groups."
+                })]
+              })]
+            })
+          })
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
+  });
+}
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Dashboard.js":
 /*!*****************************************!*\
   !*** ./resources/js/Pages/Dashboard.js ***!
@@ -6719,9 +6890,10 @@ __webpack_require__.r(__webpack_exports__);
 function MaternalCare(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_PageHeader__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      title: "Maternal Care"
+      title: "Maternal Care",
+      image: "images/banner5.jpeg"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-      className: "relative bg-gray-50 pt-16 mb-16 overflow-hidden sm:pt-24 lg:pt-32",
+      className: "relative bg-white pt-10 mb-16 overflow-hidden sm:pt-24 lg:pt-10",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
         className: "mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
@@ -6729,8 +6901,8 @@ function MaternalCare(props) {
             className: "mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl",
             children: "Antenatal class"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
-            className: "mt-5 max-w-prose mx-auto text-xl text-gray-500",
-            children: "Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla."
+            className: "mt-5 max-w-prose mx-auto text-xl text-black",
+            children: "The health of women during pregnancy, childbirth, and the postpartum period. It encompasses the health care dimensions of family planning, preconception, prenatal, and postnatal care to ensure a positive and fulfilling experience"
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
           className: "",
@@ -6833,6 +7005,100 @@ function MaternalCare(props) {
 
 /***/ }),
 
+/***/ "./resources/js/Pages/MenCaveProgram.js":
+/*!**********************************************!*\
+  !*** ./resources/js/Pages/MenCaveProgram.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ MenCaveProgram)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Components/Mainheader */ "./resources/js/Components/Mainheader.js");
+/* harmony import */ var _Components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/Footer */ "./resources/js/Components/Footer.js");
+/* harmony import */ var _Components_PageHeader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Components/PageHeader */ "./resources/js/Components/PageHeader.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+
+var people = [{
+  men: 'Prostate cancer screening',
+  women: 'Breast(mammogram) & Cervical cancer screening (Pap smear VIAC)',
+  children: 'Adolescent reproductive health and counselling'
+}, {
+  men: 'Hypertension screening',
+  women: 'Premenstrual syndrome therapy',
+  children: 'Alcohol and drug abuse'
+}, {
+  men: 'Diabetes screening',
+  women: 'Contraceptive therapy',
+  children: 'Autism screening'
+}, {
+  men: 'Sexual Dysfunction',
+  women: 'Hormone/diabetes/thyroid',
+  children: 'Obesity screening and counselling'
+}, {
+  men: 'STI screening & HIV test',
+  women: 'STI screening & HIV test',
+  children: 'STI/HIV Screening and behavioural counselling'
+}, {
+  men: 'Unhealthy alcohol use screening and counselling',
+  women: 'HPV testing & vaccination',
+  children: 'Depression screening'
+}, {
+  men: 'Unhealthy drug use screening and counselling',
+  women: 'Menopause management',
+  children: 'Covid-19 Vaccination'
+}, {
+  men: 'Back and Neck preventive program',
+  women: 'Cardiac disease screening with Electrocardiogram (ECG)',
+  children: 'Anxiety screening'
+}, {
+  men: 'Covid-19 Vaccination',
+  women: 'Nutrition management',
+  children: ''
+}, {
+  men: '',
+  women: 'Back and Neck preventive program',
+  children: ''
+}, {
+  men: '',
+  women: 'Covid-19 Vaccination',
+  children: ''
+}];
+function MenCaveProgram(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_PageHeader__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      title: "Men Cave Program",
+      image: "images/banner3.jpg"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "relative bg-white pt-10 mb-16 overflow-hidden sm:pt-24 lg:pt-10",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+        className: "mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+            className: "mt-5 max-w-prose mx-auto text-xl text-black",
+            children: "To assist all men to live longer, happier, and more fulfilling lives; by providing positive habits and behavioural changes, preventative strategies and life promotion skills that enhance physical, mental and social wellbeing."
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+          className: ""
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
+  });
+}
+
+/***/ }),
+
 /***/ "./resources/js/Pages/MentalHealth.js":
 /*!********************************************!*\
   !*** ./resources/js/Pages/MentalHealth.js ***!
@@ -6894,19 +7160,20 @@ var features = [{
 function MentalHealth(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_PageHeader__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      title: "Mental and Behavioural Health"
+      title: "Mental and Behavioural Health",
+      image: "images/banner4.jpeg"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
       className: "bg-white",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-        className: "max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8",
+        className: "max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-4",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "max-w-3xl mx-auto text-center",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h2", {
             className: "text-3xl font-extrabold text-gray-900",
             children: "All-in-one platform"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
-            className: "mt-4 text-lg text-gray-500",
-            children: "Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec."
+            className: "mt-4 text-lg text-black",
+            children: "\u201CState of well-being in which the individual realizes his or her own abilities, can cope with the normal stresses of life, realize their abilities, can work productively and fruitfully, and is able to make a contribution to his or her community\u201D. \xA0World Health Organization (WHO) 1948"
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("dl", {
           className: "mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8",
@@ -7019,7 +7286,8 @@ var features = [{
 function NutritionWellness(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_PageHeader__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      title: "Nutrition and Wellness"
+      title: "Nutrition and Wellness",
+      image: "images/banner2.png"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
       className: "bg-white",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
@@ -7170,15 +7438,16 @@ var people = [{
 function PreventiveCare(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_PageHeader__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      title: "Preventive Care"
+      title: "Preventive Care",
+      image: "images/banner1.png"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-      className: "relative bg-gray-50 pt-16 mb-16 overflow-hidden sm:pt-24 lg:pt-32",
+      className: "relative bg-white pt-10 mb-16 overflow-hidden sm:pt-24 lg:pt-10",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
         className: "mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
-            className: "mt-5 max-w-prose mx-auto text-xl text-gray-500",
-            children: "Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla."
+            className: "mt-5 max-w-prose mx-auto text-xl text-black",
+            children: "Regular health care intended to keep you healthy and avoid disease by fighting non-communicable diseases (NCDs) associated with obesity such as hypertension, diabetes, and cancer."
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
           className: "",
@@ -7279,6 +7548,93 @@ function PreventiveCare(props) {
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Rewards.js":
+/*!***************************************!*\
+  !*** ./resources/js/Pages/Rewards.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Rewards)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Components/Mainheader */ "./resources/js/Components/Mainheader.js");
+/* harmony import */ var _Components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/Footer */ "./resources/js/Components/Footer.js");
+/* harmony import */ var _Components_PageHeader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Components/PageHeader */ "./resources/js/Components/PageHeader.js");
+/* harmony import */ var _heroicons_react_outline__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @heroicons/react/outline */ "./node_modules/@heroicons/react/outline/esm/CheckIcon.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+
+
+var features = [{
+  name: 'Wellness spa'
+}, {
+  name: 'Road recovery'
+}, {
+  name: 'Flights'
+}, {
+  name: 'Car rental'
+}, {
+  name: 'Courier'
+}, {
+  name: 'Dry cleaner'
+}, {
+  name: 'Holiday resorts'
+}, {
+  name: 'Swimming academy'
+}, {
+  name: 'Hardware'
+}, {
+  name: 'Wholesales'
+}];
+function Rewards(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_PageHeader__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      title: "Rewards",
+      image: "images/banner2.png"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "bg-white",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+        className: "max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:py-24 lg:px-8",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+          className: "max-w-3xl mx-auto text-center pb-6",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+            className: "mt-4 text-lg text-black",
+            children: "Get rewarded for living a healthy lifestyle. Earn points by participating in Salubris activities and events. Accomplish set wellness targets and challenges and earn more points redeemable at various Salubris Valued Partners. Get discounts, vouchers, hampers, instant prizes and more!"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("dl", {
+          className: "mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8",
+          children: features.map(function (feature) {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+              className: "relative",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("dt", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_heroicons_react_outline__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                  className: "absolute h-6 w-6 text-green-500",
+                  "aria-hidden": "true"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+                  className: "ml-9 text-lg leading-6 font-medium text-gray-900",
+                  children: feature.name
+                })]
+              })
+            }, feature.name);
+          })
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
+  });
+}
+
+/***/ }),
+
 /***/ "./resources/js/Pages/SalubrisRevolution.js":
 /*!**************************************************!*\
   !*** ./resources/js/Pages/SalubrisRevolution.js ***!
@@ -7309,7 +7665,8 @@ __webpack_require__.r(__webpack_exports__);
 function SalubrisRevolution(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_PageHeader__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      title: "Salubris Revolution"
+      title: "Salubris Revolution",
+      image: "images/banner5.jpeg"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_SalubrisRev__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
   });
 }
@@ -7457,14 +7814,11 @@ var managedcare = [{
   name: 'Preventive care',
   imageUrl: 'images/random6.jpg'
 }, {
-  name: 'Wellness Spa',
+  name: 'Well woman program',
   imageUrl: 'images/random1.jpg'
 }, {
   name: 'Mental and Behavioural Health',
   imageUrl: 'images/random8.jpg'
-}, {
-  name: 'Nutrition and wellness',
-  imageUrl: 'images/random1.jpg'
 }];
 function Welcome(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
@@ -7611,48 +7965,48 @@ function Welcome(props) {
           className: "text-4xl font-extrabold text-black text-center",
           children: "Our Partners"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-          className: "flow-root mt-8 lg:mt-10",
+          className: "max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-            className: "-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4",
+            className: "grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-6",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-              className: "mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4",
+              className: "col-span-1 flex justify-center md:col-span-2 lg:col-span-1",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-                className: "",
+                className: "h-30",
                 src: "images/partner-1.png",
                 alt: "Lotus"
               })
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-              className: "mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4",
+              className: "col-span-1 flex justify-center md:col-span-2 lg:col-span-1",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-                className: "",
+                className: "h-20",
                 src: "images/partner-2.png",
                 alt: "Marchant Couriers"
               })
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-              className: "mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4",
+              className: "col-span-1 flex justify-center md:col-span-2 lg:col-span-1",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-                className: "",
+                className: "h-20",
                 src: "images/partner-3.png",
                 alt: "Timeless Beauty Spa"
               })
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-              className: "mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4",
+              className: "col-span-1 flex justify-center md:col-span-3 lg:col-span-1",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-                className: "",
+                className: "h-20",
                 src: "images/partner-4.png",
                 alt: "Road Angels"
               })
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-              className: "mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4",
+              className: "col-span-2 flex justify-center md:col-span-3 lg:col-span-1",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-                className: "",
+                className: "h-20",
                 src: "images/partner-5.png",
                 alt: "Raine Uplift"
               })
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-              className: "mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4",
+              className: "col-span-2 flex justify-center md:col-span-3 lg:col-span-1",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-                className: "",
+                className: "h-20",
                 src: "images/partner-6.png",
                 alt: "Gymnacity"
               })
@@ -7661,6 +8015,102 @@ function Welcome(props) {
         })]
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {})]
+  });
+}
+
+/***/ }),
+
+/***/ "./resources/js/Pages/WellWomanProgram.js":
+/*!************************************************!*\
+  !*** ./resources/js/Pages/WellWomanProgram.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ WellWomanProgram)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Components/Mainheader */ "./resources/js/Components/Mainheader.js");
+/* harmony import */ var _Components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/Footer */ "./resources/js/Components/Footer.js");
+/* harmony import */ var _Components_PageHeader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Components/PageHeader */ "./resources/js/Components/PageHeader.js");
+/* harmony import */ var _Components_SalubrisRev__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/Components/SalubrisRev */ "./resources/js/Components/SalubrisRev.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+
+
+var people = [{
+  men: 'Prostate cancer screening',
+  women: 'Breast(mammogram) & Cervical cancer screening (Pap smear VIAC)',
+  children: 'Adolescent reproductive health and counselling'
+}, {
+  men: 'Hypertension screening',
+  women: 'Premenstrual syndrome therapy',
+  children: 'Alcohol and drug abuse'
+}, {
+  men: 'Diabetes screening',
+  women: 'Contraceptive therapy',
+  children: 'Autism screening'
+}, {
+  men: 'Sexual Dysfunction',
+  women: 'Hormone/diabetes/thyroid',
+  children: 'Obesity screening and counselling'
+}, {
+  men: 'STI screening & HIV test',
+  women: 'STI screening & HIV test',
+  children: 'STI/HIV Screening and behavioural counselling'
+}, {
+  men: 'Unhealthy alcohol use screening and counselling',
+  women: 'HPV testing & vaccination',
+  children: 'Depression screening'
+}, {
+  men: 'Unhealthy drug use screening and counselling',
+  women: 'Menopause management',
+  children: 'Covid-19 Vaccination'
+}, {
+  men: 'Back and Neck preventive program',
+  women: 'Cardiac disease screening with Electrocardiogram (ECG)',
+  children: 'Anxiety screening'
+}, {
+  men: 'Covid-19 Vaccination',
+  women: 'Nutrition management',
+  children: ''
+}, {
+  men: '',
+  women: 'Back and Neck preventive program',
+  children: ''
+}, {
+  men: '',
+  women: 'Covid-19 Vaccination',
+  children: ''
+}];
+function WellWomanProgram(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_PageHeader__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      title: "Well woman program",
+      image: "images/banner1.png"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "relative bg-white pt-10 mb-16 overflow-hidden sm:pt-24 lg:pt-10",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        className: "mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
+            className: "mt-5 max-w-prose mx-auto text-xl text-black",
+            children: "With all the responsibilities women have to deal with in their daily lives, they tend to forget to care for themselves hence this comprehensive care program to boost woman's health, vitality and quality of life."
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+          className: ""
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
   });
 }
 
@@ -7711,7 +8161,10 @@ var files = [{
 ];
 function PreventiveCare(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      title: "Wellness SPA",
+      image: "images/banner5.jpeg"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "relative",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
         className: "max-w-full max-h-full mx-auto sm:px-6 lg:px-8",
@@ -63838,16 +64291,22 @@ var map = {
 	"./Auth/VerifyEmail.js": "./resources/js/Pages/Auth/VerifyEmail.js",
 	"./Blogs": "./resources/js/Pages/Blogs.js",
 	"./Blogs.js": "./resources/js/Pages/Blogs.js",
+	"./CorporateEmployeeWellnessProgram": "./resources/js/Pages/CorporateEmployeeWellnessProgram.js",
+	"./CorporateEmployeeWellnessProgram.js": "./resources/js/Pages/CorporateEmployeeWellnessProgram.js",
 	"./Dashboard": "./resources/js/Pages/Dashboard.js",
 	"./Dashboard.js": "./resources/js/Pages/Dashboard.js",
 	"./MaternalCare": "./resources/js/Pages/MaternalCare.js",
 	"./MaternalCare.js": "./resources/js/Pages/MaternalCare.js",
+	"./MenCaveProgram": "./resources/js/Pages/MenCaveProgram.js",
+	"./MenCaveProgram.js": "./resources/js/Pages/MenCaveProgram.js",
 	"./MentalHealth": "./resources/js/Pages/MentalHealth.js",
 	"./MentalHealth.js": "./resources/js/Pages/MentalHealth.js",
 	"./NutritionWellness": "./resources/js/Pages/NutritionWellness.js",
 	"./NutritionWellness.js": "./resources/js/Pages/NutritionWellness.js",
 	"./PreventiveCare": "./resources/js/Pages/PreventiveCare.js",
 	"./PreventiveCare.js": "./resources/js/Pages/PreventiveCare.js",
+	"./Rewards": "./resources/js/Pages/Rewards.js",
+	"./Rewards.js": "./resources/js/Pages/Rewards.js",
 	"./SalubrisRevolution": "./resources/js/Pages/SalubrisRevolution.js",
 	"./SalubrisRevolution.js": "./resources/js/Pages/SalubrisRevolution.js",
 	"./Trainerdashboard": "./resources/js/Pages/Trainerdashboard.js",
@@ -63856,6 +64315,8 @@ var map = {
 	"./Userdashboard.js": "./resources/js/Pages/Userdashboard.js",
 	"./Welcome": "./resources/js/Pages/Welcome.js",
 	"./Welcome.js": "./resources/js/Pages/Welcome.js",
+	"./WellWomanProgram": "./resources/js/Pages/WellWomanProgram.js",
+	"./WellWomanProgram.js": "./resources/js/Pages/WellWomanProgram.js",
 	"./WellnessSpa": "./resources/js/Pages/WellnessSpa.js",
 	"./WellnessSpa.js": "./resources/js/Pages/WellnessSpa.js"
 };

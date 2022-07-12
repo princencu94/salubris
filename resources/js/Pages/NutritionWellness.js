@@ -36,7 +36,7 @@ export default function NutritionWellness(props) {
     return (
         <>
         <MainHeader/>
-            <PageHeader title="Nutrition and Wellness"/>
+            <PageHeader title="Nutrition and Wellness" image="images/banner2.png"/>
 
             {/* Page Main content start */}
             <div className="bg-white">

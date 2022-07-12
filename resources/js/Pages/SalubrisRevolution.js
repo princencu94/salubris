@@ -9,7 +9,7 @@ export default function SalubrisRevolution(props) {
     return (
         <>
         <MainHeader/>
-        <PageHeader title="Salubris Revolution"/>
+        <PageHeader title="Salubris Revolution" image="images/banner5.jpeg"/>
         <SalubrisRev/>
         <Footer/>
         </>

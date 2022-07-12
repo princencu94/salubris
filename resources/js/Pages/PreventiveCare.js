@@ -24,15 +24,15 @@ export default function PreventiveCare(props) {
     return (
         <>
         <MainHeader/>
-            <PageHeader title="Preventive Care"/>
+            <PageHeader title="Preventive Care" image="images/banner1.png"/>
 
             {/* Page Main content start */}
-            <div className="relative bg-gray-50 pt-16 mb-16 overflow-hidden sm:pt-24 lg:pt-32">
+            <div className="relative bg-white pt-10 mb-16 overflow-hidden sm:pt-24 lg:pt-10">
                 <div className="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
                     <div>
-                    <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-                        Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper
-                        malesuada. Eleifend condimentum id viverra nulla.
+                    <p className="mt-5 max-w-prose mx-auto text-xl text-black">
+                    Regular health care intended to keep you healthy and avoid disease by fighting non-communicable diseases (NCDs) associated with obesity such as hypertension, diabetes, and cancer.  
+
                     </p>
                     </div>
                     <div className="">
