@@ -1,25 +1,25 @@
 import React from 'react';
-import BlogsTable from '@/Components/BlogsTable';
+import TrainersTable from '@/Components/TrainersTable';
 import Authenticated from '@/Layouts/Authenticated';
 import { Head } from '@inertiajs/inertia-react';
-const ShowBlogs = (props) => {
+const ShowTrainers = (props) => {
 
     return (
         
         <Authenticated
             auth={props.auth}
             errors={props.errors}
-            header={<h2 className="font-semibold text-xl text-gray-800 leading-tight">Blogs</h2>}
+            header={<h2 className="font-semibold text-xl text-gray-800 leading-tight">Trainers</h2>}
         >
-            <Head title="Blogs" />
+            <Head title="Trainers" />
 
             <div className="py-12">
                 <div>
-                    <BlogsTable blogs={props.blogs}/>
+                    <TrainersTable trainers={props.trainers}/>
                 </div>
             </div>
         </Authenticated>
     )
 }
 
-export default ShowBlogs;
+export default ShowTrainers;

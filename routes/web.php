@@ -1,6 +1,8 @@
 <?php
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\TrainerController;
+use App\Http\Controllers\UserController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -92,5 +94,16 @@ Route::get('/adminblogs', [BlogController::class, 'index'])->middleware(['auth']
 Route::get('/editblog/{id}', [BlogController::class, 'show'])->middleware(['auth']);
 Route::put('/editblog/{id}', [BlogController::class, 'update'])->middleware(['auth']);
 Route::delete('/deleteblog/{id}', [BlogController::class, 'destroy'])->middleware(['auth']);
+
+
+// Trainer Routes
+Route::get('/trainers', [TrainerController::class, 'index'])->middleware(['auth'])->name('trainers');
+Route::get('/addtrainer', [TrainerController::class, 'create'])->middleware(['auth'])->name('addtrainer');
+Route::post('/addtrainer', [TrainerController::class, 'store'])->middleware(['auth'])->name('addtrainer');
+Route::get('/edittrainer/{id}', [TrainerController::class, 'show'])->middleware(['auth']);
+Route::delete('/removetrainer/{id}', [TrainerController::class, 'destroy'])->middleware(['auth'])->name('removetrainer');
+
+// User Route
+Route::get('/users', [UserController::class, 'index'])->middleware(['auth'])->name('users');
 
 require __DIR__.'/auth.php';

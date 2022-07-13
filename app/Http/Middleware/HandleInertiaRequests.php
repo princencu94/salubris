@@ -37,6 +37,11 @@ class HandleInertiaRequests extends Middleware
             'auth' => [
                 'user' => $request->user(),
             ],
+            'role' => [
+                'user_admin' => $request->user() !== null ? ($request->user()->hasRole('admin')) : null,
+                'user_trainer' => $request->user() !== null ? ($request->user()->hasRole('trainer')) : null,
+                'user_user' => $request->user() !== null ? ($request->user()->hasRole('user')) : null,
+            ]
         ]);
     }
 }

@@ -1,15 +1,10 @@
 import React, { useState } from 'react';
 import ApplicationLogo from '@/Components/ApplicationLogo';
-import Dropdown from '@/Components/Dropdown';
-import NavLink from '@/Components/NavLink';
-import Dashboardnav from '@/Components/Dashboardnav';
-import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
 import { Link } from '@inertiajs/inertia-react';
-
-
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
+import { usePage } from '@inertiajs/inertia-react'
 
 const user = {
 
@@ -19,15 +14,32 @@ const user = {
     imageUrl:
       'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   }
-  const navigation = [
+  const admin_navigation = [
   
   
     { name: 'Dashboard', href: "/dashboard", current: false },
-    { name: 'Trainers', href: '#', current: false },
+    { name: 'Trainers', href: '/trainers', current: false },
     { name: 'Livestreams', href: '#', current: false },
     { name: 'Blogs', href: '/adminblogs', current: false },
-    { name: 'Users', href: '#', current: false },
+    { name: 'Users', href: 'users', current: false },
   ]
+
+  const user_navigation = [
+  
+  
+    { name: 'Dashboard', href: "/dashboard", current: false },
+    { name: 'Users', href: 'users', current: false },
+  ]
+
+  const trainer_navigation = [
+  
+  
+    { name: 'Dashboard', href: "/dashboard", current: false },
+    { name: 'Blogs', href: '/adminblogs', current: false },
+   
+  ]
+
+
   const userNavigation = [
   
   
@@ -39,9 +51,13 @@ const user = {
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
   }
-export default function Authenticated({ auth, header, children }) {
-    
+export default function Authenticated({auth, header, children }) {
 
+  const { role } = usePage().props
+
+  console.log(role.user_admin + " By Prince");
+  console.log(role.user_trainer + " By Prince");
+  console.log(role.user_user + " By Prince");
     return (
         <div className="min-h-full">
         <Disclosure as="nav" className="bg-gray-800">
@@ -57,7 +73,9 @@ export default function Authenticated({ auth, header, children }) {
                     </div>
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
-                        {navigation.map((item) => (
+                        {
+                          role.user_admin === true ?
+                        admin_navigation.map((item) => (
                           <a
                             key={item.name}
                             href={item.href}
@@ -71,7 +89,45 @@ export default function Authenticated({ auth, header, children }) {
                           >
                             {item.name}
                           </a>
-                        ))}
+                          
+                        )) : role.user_trainer === true ?
+                      
+                        trainer_navigation.map((item) => (
+                          <a
+                            key={item.name}
+                            href={item.href}
+                            className={classNames(
+                              item.current
+                                ? 'bg-gray-900 text-white'
+                                : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                              'px-3 py-2 rounded-md text-sm font-medium'
+                            )}
+                            aria-current={item.current ? 'page' : undefined}
+                          >
+                            {item.name}
+                          </a>
+                          
+                        ))
+                        
+                        :
+
+                        user_navigation.map((item) => (
+                          <a
+                            key={item.name}
+                            href={item.href}
+                            className={classNames(
+                              item.current
+                                ? 'bg-gray-900 text-white'
+                                : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                              'px-3 py-2 rounded-md text-sm font-medium'
+                            )}
+                            aria-current={item.current ? 'page' : undefined}
+                          >
+                            {item.name}
+                          </a>
+                          
+                        ))
+                      }
                       </div>
                     </div>
                   </div>
@@ -141,20 +197,53 @@ export default function Authenticated({ auth, header, children }) {
 
               <Disclosure.Panel className="md:hidden">
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                  {navigation.map((item) => (
-                    <Disclosure.Button
-                      key={item.name}
-                      as="a"
-                      href={item.href}
-                      className={classNames(
-                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                        'block px-3 py-2 rounded-md text-base font-medium'
-                      )}
-                      aria-current={item.current ? 'page' : undefined}
-                    >
-                      {item.name}
-                    </Disclosure.Button>
-                  ))}
+                  {
+                    role.user_admin === true ?
+                      admin_navigation.map((item) => (
+                        <Disclosure.Button
+                          key={item.name}
+                          as="a"
+                          href={item.href}
+                          className={classNames(
+                            item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                            'block px-3 py-2 rounded-md text-base font-medium'
+                          )}
+                          aria-current={item.current ? 'page' : undefined}
+                        >
+                          {item.name}
+                        </Disclosure.Button>
+                      ))
+                      : role.user_trainer === true ? 
+                          trainer_navigation.map((item) => (
+                            <Disclosure.Button
+                              key={item.name}
+                              as="a"
+                              href={item.href}
+                              className={classNames(
+                                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                'block px-3 py-2 rounded-md text-base font-medium'
+                              )}
+                              aria-current={item.current ? 'page' : undefined}
+                            >
+                              {item.name}
+                            </Disclosure.Button>
+                          ))
+                      : 
+                          user_navigation.map((item) => (
+                            <Disclosure.Button
+                              key={item.name}
+                              as="a"
+                              href={item.href}
+                              className={classNames(
+                                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                'block px-3 py-2 rounded-md text-base font-medium'
+                              )}
+                              aria-current={item.current ? 'page' : undefined}
+                            >
+                              {item.name}
+                            </Disclosure.Button>
+                          ))
+                  }
                 </div>
                 <div className="pt-4 pb-3 border-t border-gray-700">
                   <div className="flex items-center px-5">
