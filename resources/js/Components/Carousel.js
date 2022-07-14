@@ -7,7 +7,7 @@ const CarouselHero = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="images/banner1.png"
+            src="images/220244_.png"
             alt="First slide"
           />
           <Carousel.Caption>
@@ -17,7 +17,7 @@ const CarouselHero = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="images/banner2.png"
+            src="images/220244_2.png"
             alt="Second slide"
           />
       
@@ -28,7 +28,7 @@ const CarouselHero = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="images/banner3.jpg"
+            src="images/220244_3.png"
             alt="Third slide"
           />
       

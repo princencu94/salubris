@@ -55,15 +55,12 @@ export default function Authenticated({auth, header, children }) {
 
   const { role } = usePage().props
 
-  console.log(role.user_admin + " By Prince");
-  console.log(role.user_trainer + " By Prince");
-  console.log(role.user_user + " By Prince");
     return (
-        <div className="min-h-full">
+        <div className="min-h-full ">
         <Disclosure as="nav" className="bg-gray-800">
           {({ open }) => (
             <>
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
@@ -280,8 +277,8 @@ export default function Authenticated({auth, header, children }) {
           )}
         </Disclosure>
 
-        <header className="bg-white shadow-sm">
-          <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+        <header className="bg-white shadow-sm ">
+          <div className="max-w-6xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
             <h1 className="text-lg leading-6 font-semibold text-gray-900">{header}</h1>
           </div>
         </header>

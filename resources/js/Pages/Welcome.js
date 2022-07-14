@@ -8,22 +8,22 @@ const gymnacity = [
     {
       name: 'Courses',
       imageUrl:
-        'images/random1.jpg',
+        'images/220244_4.png',
     },
     {
         name: 'Challenges',
         imageUrl:
-          'images/random2.jpg',
+          'images/220244_5.png',
     },
     {
         name: 'Private Classes',
         imageUrl:
-          'images/random3.jpg',
+          'images/220244_6.jpg',
     },
     {
         name: 'Bootcamps',
         imageUrl:
-          'images/random4.jpg',
+          'images/220244_7.jpg',
     },
   ]
 
