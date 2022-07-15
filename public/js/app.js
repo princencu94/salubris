@@ -4421,9 +4421,6 @@ var navigation = {
         name: 'Mental and Behavioural Health',
         href: 'mental-and-behavioural-health'
       }, {
-        name: 'Rewards',
-        href: 'rewards'
-      }, {
         name: 'Well woman program',
         href: 'well-woman-program'
       }, {
@@ -4436,6 +4433,9 @@ var navigation = {
     }]
   }],
   pages: [{
+    name: 'Rewards',
+    href: 'rewards'
+  }, {
     name: 'Fitness store',
     href: '#'
   }, {
@@ -5283,8 +5283,12 @@ var trainer_navigation = [{
   href: "/dashboard",
   current: false
 }, {
-  name: 'Blogs',
-  href: '/adminblogs',
+  name: 'Profile',
+  href: '#',
+  current: false
+}, {
+  name: 'Livestreams',
+  href: '#',
   current: false
 }];
 var userNavigation = [{
@@ -7965,6 +7969,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Components/Mainheader */ "./resources/js/Components/Mainheader.js");
 /* harmony import */ var _Components_Carousel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/Carousel */ "./resources/js/Components/Carousel.js");
 /* harmony import */ var _Components_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Components/Footer */ "./resources/js/Components/Footer.js");
+/* harmony import */ var _heroicons_react_outline__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @heroicons/react/outline */ "./node_modules/@heroicons/react/outline/esm/SparklesIcon.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -7974,10 +7979,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var gymnacity = [{
-  name: 'Courses',
-  imageUrl: 'images/220244_4.png'
-}, {
   name: 'Challenges',
   imageUrl: 'images/220244_5.png'
 }, {
@@ -7989,21 +7992,18 @@ var gymnacity = [{
 }];
 var managedcare = [{
   name: 'Maternal care',
-  imageUrl: 'images/random5.jpg'
+  imageUrl: 'images/220244_79.jpg'
 }, {
   name: 'Preventive care',
-  imageUrl: 'images/random6.jpg'
-}, {
-  name: 'Well woman program',
-  imageUrl: 'images/random1.jpg'
+  imageUrl: 'images/220244_81.jpg'
 }, {
   name: 'Mental and Behavioural Health',
-  imageUrl: 'images/random8.jpg'
+  imageUrl: 'images/220244_91.jpg'
 }];
 function Welcome(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_Carousel__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-      className: "bg-white from-stone-500",
+      className: "bg-white",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
         className: "mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
@@ -8019,7 +8019,7 @@ function Welcome(props) {
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("ul", {
             role: "list",
-            className: "space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-8",
+            className: "space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8",
             children: gymnacity.map(function (person) {
               return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
@@ -8064,7 +8064,7 @@ function Welcome(props) {
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("ul", {
             role: "list",
-            className: "space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-8",
+            className: "space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8",
             children: managedcare.map(function (person) {
               return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
@@ -8092,13 +8092,58 @@ function Welcome(props) {
           })]
         })
       })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "my-16",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+        className: "lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+          className: "px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
+                className: "h-12 w-12 rounded-md flex items-center justify-center bg-orange-600",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_heroicons_react_outline__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                  className: "h-6 w-6 text-white",
+                  "aria-hidden": "true"
+                })
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+              className: "mt-6",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h2", {
+                className: "text-3xl font-extrabold tracking-tight text-gray-900",
+                children: "Rewards"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+                className: "mt-4 text-lg text-gray-500",
+                children: "Get rewarded for living a healthy lifestyle. Earn points by participating in Salubris activities and events. Accomplish set wellness targets and challenges and earn more points redeemable at various Salubris Valued Partners. Get discounts, vouchers, hampers, instant prizes and more!"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                className: "mt-6",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
+                  href: "/rewards",
+                  className: "inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white green-bg hover:bg-orange-700",
+                  children: "Know more!"
+                })
+              })]
+            })]
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+          className: "mt-12 sm:mt-16 lg:mt-0 lg:col-start-1",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+            className: "pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+              className: "w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none",
+              src: "images/220244_10.jpg",
+              alt: "A group of showing their shoes"
+            })
+          })
+        })]
+      })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
       className: "relative py-16 bg-gray-100",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
         className: "hidden absolute top-0 inset-x-0 h-1/2  lg:block",
         "aria-hidden": "true"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-        className: "max-w-7xl mx-auto bg-indigo-600 lg:bg-transparent lg:px-8",
+        className: "max-w-7xl mx-auto  lg:bg-transparent lg:px-8",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "lg:grid lg:grid-cols-12",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
@@ -65770,6 +65815,41 @@ function ShoppingBagIcon(props, svgRef) {
 }
 
 const ForwardRef = react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(ShoppingBagIcon);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ForwardRef);
+
+/***/ }),
+
+/***/ "./node_modules/@heroicons/react/outline/esm/SparklesIcon.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@heroicons/react/outline/esm/SparklesIcon.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
+function SparklesIcon(props, svgRef) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    fill: "none",
+    viewBox: "0 0 24 24",
+    strokeWidth: 2,
+    stroke: "currentColor",
+    "aria-hidden": "true",
+    ref: svgRef
+  }, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    d: "M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+  }));
+}
+
+const ForwardRef = react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(SparklesIcon);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ForwardRef);
 
 /***/ }),

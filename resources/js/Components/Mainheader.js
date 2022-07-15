@@ -95,7 +95,6 @@ const navigation = {
             { name: 'Maternal Care', href: 'maternal-care' },
             { name: 'Preventive Care', href: 'preventive-care' },
             { name: 'Mental and Behavioural Health', href: 'mental-and-behavioural-health' },
-            { name: 'Rewards', href: 'rewards' },
             { name: 'Well woman program', href: 'well-woman-program' },
             { name: 'Men cave program', href: 'men-cave-program' },
             { name: 'Corporate Employee Wellness Program', href: 'corporate-employee-wellness-program' },
@@ -106,6 +105,7 @@ const navigation = {
   ],
   
   pages: [
+    { name: 'Rewards', href: 'rewards' },
     { name: 'Fitness store', href: '#' },
     { name: 'Blogs', href: 'blogs' },
   ],

@@ -35,7 +35,8 @@ const user = {
   
   
     { name: 'Dashboard', href: "/dashboard", current: false },
-    { name: 'Blogs', href: '/adminblogs', current: false },
+    { name: 'Profile', href: '#', current: false },
+    { name: 'Livestreams', href: '#', current: false },
    
   ]
 

@@ -3,13 +3,9 @@ import { Link, Head } from '@inertiajs/inertia-react';
 import MainHeader from '@/Components/Mainheader';
 import CarouselHero from '@/Components/Carousel';
 import Footer from '@/Components/Footer';
+import { SparklesIcon } from '@heroicons/react/outline';
     
 const gymnacity = [
-    {
-      name: 'Courses',
-      imageUrl:
-        'images/220244_4.png',
-    },
     {
         name: 'Challenges',
         imageUrl:
@@ -31,22 +27,17 @@ const gymnacity = [
     {
       name: 'Maternal care',
       imageUrl:
-        'images/random5.jpg',
+        'images/220244_79.jpg',
     },
     {
         name: 'Preventive care',
         imageUrl:
-          'images/random6.jpg',
-    },
-    {
-        name: 'Well woman program',
-        imageUrl:
-          'images/random1.jpg',
+          'images/220244_81.jpg',
     },
     {
         name: 'Mental and Behavioural Health',
         imageUrl:
-          'images/random8.jpg',
+          'images/220244_91.jpg',
     },
   ]
 
@@ -57,7 +48,7 @@ export default function Welcome(props) {
         <CarouselHero/>
         {/* 1st section  start*/}
 
-        <div className="bg-white from-stone-500">
+        <div className="bg-white">
             <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
                 <div className="space-y-12">
                 <div className="space-y-5 sm:space-y-4 max-w-3xl mx-auto md:max-w-xl lg:max-w-3xl xl:max-w-none">
@@ -68,7 +59,7 @@ export default function Welcome(props) {
                 </div>
                 <ul
                     role="list"
-                    className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-8"
+                    className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
                 >
                     {gymnacity.map((person) => (
                     <li key={person.name}>
@@ -107,7 +98,7 @@ export default function Welcome(props) {
                 </div>
                 <ul
                     role="list"
-                    className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-8"
+                    className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
                 >
                     {managedcare.map((person) => (
                     <li key={person.name}>
@@ -133,10 +124,52 @@ export default function Welcome(props) {
     
         {/* 2nd section end */}
 
+
+        {/* Rewards Section */}
+        <div className="my-16">
+            <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+            <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
+                <div>
+                <div>
+                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-orange-600">
+                    <SparklesIcon className="h-6 w-6 text-white" aria-hidden="true" />
+                    </span>
+                </div>
+                <div className="mt-6">
+                    <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+                        Rewards
+                    </h2>
+                    <p className="mt-4 text-lg text-gray-500">
+                        Get rewarded for living a healthy lifestyle. Earn points by participating in Salubris activities and events. Accomplish set wellness targets and challenges and earn more points redeemable at various Salubris Valued Partners. Get discounts, vouchers, hampers, instant prizes and more!
+                    </p>
+                    <div className="mt-6">
+                    <a
+                        href="/rewards"
+                        className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white green-bg hover:bg-orange-700"
+                    >
+                        Know more!
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
+                <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+                <img
+                    className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                    src="images/220244_10.jpg"
+                    alt="A group of showing their shoes"
+                />
+                </div>
+            </div>
+            </div>
+        </div>
+        {/* End Rewards Section */}
+
         {/* CTA Section start */}
         <div className="relative py-16 bg-gray-100">
             <div className="hidden absolute top-0 inset-x-0 h-1/2  lg:block" aria-hidden="true" />
-                <div className="max-w-7xl mx-auto bg-indigo-600 lg:bg-transparent lg:px-8">
+                <div className="max-w-7xl mx-auto  lg:bg-transparent lg:px-8">
                     <div className="lg:grid lg:grid-cols-12">
                     <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
                         <div className="absolute inset-x-0 h-1/2  lg:hidden" aria-hidden="true" />
@@ -172,6 +205,7 @@ export default function Welcome(props) {
                 </div>
             </div>
         {/* CTA Section end */}
+
 
         {/* Our partners section start */}
             <div className="">
