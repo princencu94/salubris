@@ -3,6 +3,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\TrainerController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -88,7 +89,7 @@ Route::group(['middleware' => ['auth']], function() {
 });
 
 
-// Blog Routes
+// Blog Routes Admin
 Route::post('/addblog', [BlogController::class, 'store'])->middleware(['auth']);
 Route::get('/adminblogs', [BlogController::class, 'index'])->middleware(['auth'])->name('adminblogs');
 Route::get('/editblog/{id}', [BlogController::class, 'show'])->middleware(['auth']);
@@ -96,14 +97,19 @@ Route::put('/editblog/{id}', [BlogController::class, 'update'])->middleware(['au
 Route::delete('/deleteblog/{id}', [BlogController::class, 'destroy'])->middleware(['auth']);
 
 
-// Trainer Routes
+// Trainer Routes Admin
 Route::get('/trainers', [TrainerController::class, 'index'])->middleware(['auth'])->name('trainers');
 Route::get('/addtrainer', [TrainerController::class, 'create'])->middleware(['auth'])->name('addtrainer');
 Route::post('/addtrainer', [TrainerController::class, 'store'])->middleware(['auth'])->name('addtrainer');
 Route::get('/edittrainer/{id}', [TrainerController::class, 'show'])->middleware(['auth']);
 Route::delete('/removetrainer/{id}', [TrainerController::class, 'destroy'])->middleware(['auth'])->name('removetrainer');
 
-// User Route
+// User Routes Admin
 Route::get('/users', [UserController::class, 'index'])->middleware(['auth'])->name('users');
+
+// Trainer Routes Trainer
+Route::get('/profile', [ProfileController::class, 'index'])->middleware(['auth'])->name('profile');
+Route::post('/saveprofile', [ProfileController::class, 'store'])->middleware(['auth'])->name('saveprofile');
+Route::put('/updateprofile/{id}', [ProfileController::class, 'update'])->middleware(['auth'])->name('updateprofile');
 
 require __DIR__.'/auth.php';

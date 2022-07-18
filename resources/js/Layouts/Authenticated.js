@@ -21,21 +21,21 @@ const user = {
     { name: 'Trainers', href: '/trainers', current: false },
     { name: 'Livestreams', href: '#', current: false },
     { name: 'Blogs', href: '/adminblogs', current: false },
-    { name: 'Users', href: 'users', current: false },
+    { name: 'Users', href: '/users', current: false },
   ]
 
   const user_navigation = [
   
   
     { name: 'Dashboard', href: "/dashboard", current: false },
-    { name: 'Users', href: 'users', current: false },
+    { name: 'Users', href: '/users', current: false },
   ]
 
   const trainer_navigation = [
   
   
     { name: 'Dashboard', href: "/dashboard", current: false },
-    { name: 'Profile', href: '#', current: false },
+    { name: 'Profile', href: '/profile', current: false },
     { name: 'Livestreams', href: '#', current: false },
    
   ]
