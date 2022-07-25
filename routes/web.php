@@ -4,6 +4,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\TrainerController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\LiveStreamController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -109,6 +110,12 @@ Route::get('/users', [UserController::class, 'index'])->middleware(['auth'])->na
 
 // Trainer Routes Trainer
 Route::get('/profile', [ProfileController::class, 'index'])->middleware(['auth'])->name('profile');
+Route::get('/livestreams', [LiveStreamController::class, 'index'])->middleware(['auth'])->name('livestreams');
+Route::get('/editlivestream/{id}', [LiveStreamController::class, 'edit'])->middleware(['auth'])->name('editlivestream');
+Route::put('/editlivestream/{id}', [LiveStreamController::class, 'update'])->middleware(['auth'])->name('editlivestream');
+Route::delete('/deletelivestream/{id}', [LiveStreamController::class, 'destroy'])->middleware(['auth'])->name('deletelivestream');
+Route::get('/addlivestream', [LiveStreamController::class, 'create'])->middleware(['auth'])->name('addlivestream');
+Route::post('/addlivestream', [LiveStreamController::class, 'store'])->middleware(['auth'])->name('addlivestream');
 Route::post('/saveprofile', [ProfileController::class, 'store'])->middleware(['auth'])->name('saveprofile');
 Route::put('/updateprofile/{id}', [ProfileController::class, 'update'])->middleware(['auth'])->name('updateprofile');
 

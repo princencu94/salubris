@@ -26,45 +26,49 @@ const navigation = {
       name: 'Virtual Gym',
       featured: [
         {
-          name: 'Nutrition Expert',
-          href: '#',
-          imageSrc: 'images/trainers-1.jpg',
-          imageAlt: '2 Models carrying weights',
-        },
-        {
           name: 'Join a Class',
           href: '#',
           imageSrc: 'images/trainers-2.jpg',
           imageAlt: 'Female looking ready to train',
         },
+        {
+          name: 'Nutrition Expert',
+          href: '#',
+          imageSrc: 'images/trainers-1.jpg',
+          imageAlt: '2 Models carrying weights',
+        },
+        
       ],
       sections: [
         {
-          id: 'courses',
-          name: 'Courses',
+          id: 'class',
+          name: 'Join A Class',
           items: [
-        
+            { name: 'Private Group', href: '#' },
+            ,
           ],
         },
         {
           id: 'challenges',
-          name: 'Challenges',
+          name: 'Challenges & Bootcamps',
           items: [
-           
+            { name: '20 Min HIIT', href: '#' },
+            { name: '20 Min HIIT', href: '#' },
+            { name: '20 Min HIIT', href: '#' },
+            { name: '20 Min HIIT', href: '#' },
+            { name: '20 Min HIIT', href: '#' },
           ],
         },
         {
-          id: 'private',
-          name: 'Private Class',
+          id: 'nutrition',
+          name: 'Nutrition Expert',
           items: [
-           
-          ],
-        },
-        {
-          id: 'bootcamp',
-          name: 'Bootcamp',
-          items: [
-           
+            { name: '20 Min HIIT', href: '#' },
+            { name: '20 Min HIIT', href: '#' },
+            { name: '20 Min HIIT', href: '#' },
+            { name: '20 Min HIIT', href: '#' },
+            { name: '20 Min HIIT', href: '#' },
+
           ],
         },
       ],
@@ -89,7 +93,7 @@ const navigation = {
       ],
       sections: [
         {
-          id: 'maternalcare',
+          id: 'managedhealthcare',
           name: 'Managed Healthcare',
           items: [
             { name: 'Maternal Care', href: 'maternal-care' },
@@ -188,6 +192,7 @@ export default function Example() {
                               <a href={item.href} className="mt-6 block font-medium text-gray-900">
                                 <span className="absolute z-10 inset-0" aria-hidden="true" />
                                 {item.name}
+                                {item.name2}
                               </a>
                               <p aria-hidden="true" className="mt-1">
                                 
@@ -209,6 +214,7 @@ export default function Example() {
                                 <li key={item.name} className="flow-root">
                                   <a href={item.href} className="-m-2 p-2 block text-gray-500">
                                     {item.name}
+                                    {item.name2}
                                   </a>
                                 </li>
                               ))}
@@ -317,7 +323,8 @@ export default function Example() {
                                           </div>
                                           <a href={item.href} className="mt-6 block font-medium text-gray-900">
                                             <span className="absolute z-10 inset-0" aria-hidden="true" />
-                                            {item.name}
+                                            {item.name} <br/>
+                                            {item.name2}
                                           </a>
                                           <p aria-hidden="true" className="mt-1">
                                             

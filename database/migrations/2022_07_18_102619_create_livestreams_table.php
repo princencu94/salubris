@@ -15,7 +15,7 @@ class CreateLivestreamsTable extends Migration
     {
         Schema::create('livestreams', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->unique();
+            $table->foreignId('user_id')->index();
             $table->string('title');
             $table->string('link');
             $table->date('start_date');
@@ -25,8 +25,6 @@ class CreateLivestreamsTable extends Migration
             $table->foreign('user_id')->references('id')->on('users');
         });
     }
-
-    
 
     /**
      * Reverse the migrations.

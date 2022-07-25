@@ -3489,6 +3489,215 @@ var AddBlogForm = function AddBlogForm() {
 
 /***/ }),
 
+/***/ "./resources/js/Components/AddLivestreamForm.js":
+/*!******************************************************!*\
+  !*** ./resources/js/Components/AddLivestreamForm.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+var AddLivestream = function AddLivestream() {
+  var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.useForm)({
+    title: '',
+    link: '',
+    description: '',
+    start_date: '',
+    start_time: ''
+  }),
+      data = _useForm.data,
+      setData = _useForm.setData,
+      post = _useForm.post,
+      processing = _useForm.processing,
+      errors = _useForm.errors;
+
+  var handleSubmit = function handleSubmit(e) {
+    e.preventDefault();
+    alert("Submitting");
+    post('/addlivestream');
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    className: "max-w-4xl ",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
+      className: "space-y-8 divide-y divide-gray-200",
+      onSubmit: handleSubmit,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "space-y-8 divide-y divide-gray-200",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
+              className: "text-lg leading-6 font-medium text-gray-900",
+              children: "Livestream Information"
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+              className: "sm:col-span-4",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                htmlFor: "username",
+                className: "block text-sm font-medium text-gray-700",
+                children: "Title"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                className: "mt-1 flex rounded-md shadow-sm",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                  type: "text",
+                  name: "title",
+                  id: "title",
+                  value: data.title,
+                  onChange: function onChange(e) {
+                    return setData('title', e.target.value);
+                  },
+                  className: "flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+                  className: "mt-2 text-sm text-red-600",
+                  id: "email-error",
+                  children: errors.title && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                    children: errors.title
+                  })
+                })]
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+              className: "sm:col-span-4",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                htmlFor: "link",
+                className: "block text-sm font-medium text-gray-700",
+                children: "Link"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                className: "mt-1 flex rounded-md shadow-sm",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                  type: "text",
+                  name: "link",
+                  id: "link",
+                  value: data.link,
+                  onChange: function onChange(e) {
+                    return setData('link', e.target.value);
+                  },
+                  className: "flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+                  className: "mt-2 text-sm text-red-600",
+                  id: "email-error",
+                  children: errors.link && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                    children: errors.link
+                  })
+                })]
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+              className: "sm:col-span-4",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                htmlFor: "start_date",
+                className: "block text-sm font-medium text-gray-700",
+                children: "Start Date"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                className: "mt-1 flex rounded-md shadow-sm",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                  type: "date",
+                  name: "start_date",
+                  id: "start_date",
+                  value: data.start_date,
+                  onChange: function onChange(e) {
+                    return setData('start_date', e.target.value);
+                  },
+                  className: "flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+                  className: "mt-2 text-sm text-red-600",
+                  id: "email-error",
+                  children: errors.start_date && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                    children: errors.start_date
+                  })
+                })]
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+              className: "sm:col-span-4",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                htmlFor: "start_time",
+                className: "block text-sm font-medium text-gray-700",
+                children: "Time"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                className: "mt-1 flex rounded-md shadow-sm",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                  type: "text",
+                  name: "start_time",
+                  id: "start_time",
+                  value: data.start_time,
+                  onChange: function onChange(e) {
+                    return setData('start_time', e.target.value);
+                  },
+                  className: "flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+                  className: "mt-2 text-sm text-red-600",
+                  id: "email-error",
+                  children: errors.start_time && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                    children: errors.start_time
+                  })
+                })]
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+              className: "sm:col-span-6",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                htmlFor: "about",
+                className: "block text-sm font-medium text-gray-700",
+                children: "Description"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                className: "mt-1",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("textarea", {
+                  id: "description",
+                  name: "description",
+                  value: data.description,
+                  onChange: function onChange(e) {
+                    return setData('description', e.target.value);
+                  },
+                  rows: 3,
+                  className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+                  className: "mt-2 text-sm text-red-600",
+                  id: "email-error",
+                  children: errors.description && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                    children: errors.description
+                  })
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+                className: "mt-2 text-sm text-gray-500",
+                children: "Write a few sentences about the Livestream."
+              })]
+            })]
+          })]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "pt-5",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "flex justify-end",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            type: "button",
+            className: "bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+            children: "Cancel"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            type: "submit",
+            disabled: processing,
+            className: "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white green-bg hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+            children: "Save"
+          })]
+        })
+      })]
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AddLivestream);
+
+/***/ }),
+
 /***/ "./resources/js/Components/AddTrainerForm.js":
 /*!***************************************************!*\
   !*** ./resources/js/Components/AddTrainerForm.js ***!
@@ -4125,6 +4334,224 @@ var EditBlogForm = function EditBlogForm(_ref) {
 
 /***/ }),
 
+/***/ "./resources/js/Components/EditLivestreamForm.js":
+/*!*******************************************************!*\
+  !*** ./resources/js/Components/EditLivestreamForm.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+var EditLivestreamForm = function EditLivestreamForm(_ref) {
+  var livestream = _ref.livestream;
+
+  var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.useForm)({
+    title: livestream.title,
+    link: livestream.link,
+    description: livestream.about,
+    start_date: livestream.start_date,
+    start_time: livestream.time
+  }),
+      data = _useForm.data,
+      setData = _useForm.setData,
+      destroy = _useForm["delete"],
+      put = _useForm.put,
+      processing = _useForm.processing,
+      errors = _useForm.errors;
+
+  var handleSubmit = function handleSubmit(e) {
+    e.preventDefault();
+    alert("Submitting");
+    put("/editlivestream/".concat(livestream.id));
+  };
+
+  var handleDelete = function handleDelete() {
+    alert("Deleting!!");
+    destroy("/deletelivestream/".concat(livestream.id));
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    className: "max-w-4xl ",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
+      className: "space-y-8 divide-y divide-gray-200",
+      onSubmit: handleSubmit,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "space-y-8 divide-y divide-gray-200",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
+              className: "text-lg leading-6 font-medium text-gray-900",
+              children: "Livestream Information"
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+              className: "sm:col-span-4",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                htmlFor: "username",
+                className: "block text-sm font-medium text-gray-700",
+                children: "Title"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                className: "mt-1 flex rounded-md shadow-sm",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                  type: "text",
+                  name: "title",
+                  id: "title",
+                  value: data.title,
+                  onChange: function onChange(e) {
+                    return setData('title', e.target.value);
+                  },
+                  className: "flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+                  className: "mt-2 text-sm text-red-600",
+                  id: "email-error",
+                  children: errors.title && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                    children: errors.title
+                  })
+                })]
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+              className: "sm:col-span-4",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                htmlFor: "link",
+                className: "block text-sm font-medium text-gray-700",
+                children: "Link"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                className: "mt-1 flex rounded-md shadow-sm",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                  type: "text",
+                  name: "link",
+                  id: "link",
+                  value: data.link,
+                  onChange: function onChange(e) {
+                    return setData('link', e.target.value);
+                  },
+                  className: "flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+                  className: "mt-2 text-sm text-red-600",
+                  id: "email-error",
+                  children: errors.link && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                    children: errors.link
+                  })
+                })]
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+              className: "sm:col-span-4",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                htmlFor: "start_date",
+                className: "block text-sm font-medium text-gray-700",
+                children: "Start Date"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                className: "mt-1 flex rounded-md shadow-sm",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                  type: "date",
+                  name: "start_date",
+                  id: "start_date",
+                  value: data.start_date,
+                  onChange: function onChange(e) {
+                    return setData('start_date', e.target.value);
+                  },
+                  className: "flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+                  className: "mt-2 text-sm text-red-600",
+                  id: "email-error",
+                  children: errors.start_date && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                    children: errors.start_date
+                  })
+                })]
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+              className: "sm:col-span-4",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                htmlFor: "start_time",
+                className: "block text-sm font-medium text-gray-700",
+                children: "Time"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                className: "mt-1 flex rounded-md shadow-sm",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                  type: "text",
+                  name: "start_time",
+                  id: "start_time",
+                  value: data.start_time,
+                  onChange: function onChange(e) {
+                    return setData('start_time', e.target.value);
+                  },
+                  className: "flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+                  className: "mt-2 text-sm text-red-600",
+                  id: "email-error",
+                  children: errors.start_time && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                    children: errors.start_time
+                  })
+                })]
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+              className: "sm:col-span-6",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                htmlFor: "about",
+                className: "block text-sm font-medium text-gray-700",
+                children: "Description"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                className: "mt-1",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("textarea", {
+                  id: "description",
+                  name: "description",
+                  value: data.description,
+                  onChange: function onChange(e) {
+                    return setData('description', e.target.value);
+                  },
+                  rows: 3,
+                  className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+                  className: "mt-2 text-sm text-red-600",
+                  id: "email-error",
+                  children: errors.description && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                    children: errors.description
+                  })
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+                className: "mt-2 text-sm text-gray-500",
+                children: "Write a few sentences about the Livestream."
+              })]
+            })]
+          })]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "pt-5",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "flex justify-end",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            type: "button",
+            onClick: handleDelete,
+            className: "bg-red-600 py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-white hover:bg-red-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white-500",
+            children: "Delete"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            type: "submit",
+            disabled: processing,
+            className: "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white green-bg hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+            children: "Update"
+          })]
+        })
+      })]
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EditLivestreamForm);
+
+/***/ }),
+
 /***/ "./resources/js/Components/Footer.js":
 /*!*******************************************!*\
   !*** ./resources/js/Components/Footer.js ***!
@@ -4305,6 +4732,127 @@ function Label(_ref) {
 
 /***/ }),
 
+/***/ "./resources/js/Components/LivestreamsTable.js":
+/*!*****************************************************!*\
+  !*** ./resources/js/Components/LivestreamsTable.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+var LivestreamsTable = function LivestreamsTable(_ref) {
+  var livestreams = _ref.livestreams;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    className: "mr-14",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "sm:flex sm:items-center",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "sm:flex-auto",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
+          className: "text-xl font-semibold text-gray-900",
+          children: "Livestreams"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+          className: "mt-2 text-sm text-gray-700"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "mt-4 sm:mt-0 sm:ml-16 sm:flex-none",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
+          href: "/addlivestream",
+          className: "inline-flex items-center justify-center rounded-md border border-transparent green-bg px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:w-auto",
+          children: "Add Livestream"
+        })
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "mt-8 flex flex-col",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          className: "inline-block min-w-full py-2 align-middle md:px-6 lg:px-8",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            className: "overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("table", {
+              className: "min-w-full divide-y divide-gray-300",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("thead", {
+                className: "bg-gray-50",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
+                    scope: "col",
+                    className: "py-3 pl-4 pr-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500 sm:pl-6",
+                    children: "Title"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
+                    scope: "col",
+                    className: "px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500",
+                    children: "Description"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
+                    scope: "col",
+                    className: "px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500",
+                    children: "Start Date"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
+                    scope: "col",
+                    className: "px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500",
+                    children: "Start Time"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
+                    scope: "col",
+                    className: "relative py-3 pl-3 pr-4 sm:pr-6",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      className: "sr-only",
+                      children: "Edit"
+                    })
+                  })]
+                })
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("tbody", {
+                className: "divide-y divide-gray-200 bg-white",
+                children: livestreams.map(function (livestream) {
+                  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+                      className: "whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6",
+                      children: livestream.title
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+                      className: "whitespace-nowrap px-3 py-4 text-sm text-gray-500",
+                      children: livestream.about.substring(0, 40)
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+                      className: "whitespace-nowrap px-3 py-4 text-sm text-gray-500",
+                      children: livestream.start_date
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+                      className: "whitespace-nowrap px-3 py-4 text-sm text-gray-500",
+                      children: livestream.time
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+                      className: "relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
+                        href: "/editlivestream/".concat(livestream.id),
+                        className: "text-indigo-600 hover:text-indigo-900",
+                        children: ["Edit", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("span", {
+                          className: "sr-only",
+                          children: [", ", livestream.id]
+                        })]
+                      })
+                    })]
+                  }, livestream.id);
+                })
+              })]
+            })
+          })
+        })
+      })
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LivestreamsTable);
+
+/***/ }),
+
 /***/ "./resources/js/Components/Mainheader.js":
 /*!***********************************************!*\
   !*** ./resources/js/Components/Mainheader.js ***!
@@ -4367,32 +4915,61 @@ var navigation = {
     id: 'virtual-gym',
     name: 'Virtual Gym',
     featured: [{
-      name: 'Nutrition Expert',
-      href: '#',
-      imageSrc: 'images/trainers-1.jpg',
-      imageAlt: '2 Models carrying weights'
-    }, {
       name: 'Join a Class',
       href: '#',
       imageSrc: 'images/trainers-2.jpg',
       imageAlt: 'Female looking ready to train'
+    }, {
+      name: 'Nutrition Expert',
+      href: '#',
+      imageSrc: 'images/trainers-1.jpg',
+      imageAlt: '2 Models carrying weights'
     }],
     sections: [{
-      id: 'courses',
-      name: 'Courses',
-      items: []
+      id: 'class',
+      name: 'Join A Class',
+      items: [{
+        name: 'Private Group',
+        href: '#'
+      },,]
     }, {
       id: 'challenges',
-      name: 'Challenges',
-      items: []
+      name: 'Challenges & Bootcamps',
+      items: [{
+        name: '20 Min HIIT',
+        href: '#'
+      }, {
+        name: '20 Min HIIT',
+        href: '#'
+      }, {
+        name: '20 Min HIIT',
+        href: '#'
+      }, {
+        name: '20 Min HIIT',
+        href: '#'
+      }, {
+        name: '20 Min HIIT',
+        href: '#'
+      }]
     }, {
-      id: 'private',
-      name: 'Private Class',
-      items: []
-    }, {
-      id: 'bootcamp',
-      name: 'Bootcamp',
-      items: []
+      id: 'nutrition',
+      name: 'Nutrition Expert',
+      items: [{
+        name: '20 Min HIIT',
+        href: '#'
+      }, {
+        name: '20 Min HIIT',
+        href: '#'
+      }, {
+        name: '20 Min HIIT',
+        href: '#'
+      }, {
+        name: '20 Min HIIT',
+        href: '#'
+      }, {
+        name: '20 Min HIIT',
+        href: '#'
+      }]
     }]
   }, {
     id: 'salubrisrev',
@@ -4409,7 +4986,7 @@ var navigation = {
       imageAlt: 'Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.'
     }],
     sections: [{
-      id: 'maternalcare',
+      id: 'managedhealthcare',
       name: 'Managed Healthcare',
       items: [{
         name: 'Maternal Care',
@@ -4546,7 +5123,7 @@ function Example() {
                               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
                                 className: "absolute z-10 inset-0",
                                 "aria-hidden": "true"
-                              }), item.name]
+                              }), item.name, item.name2]
                             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
                               "aria-hidden": "true",
                               className: "mt-1"
@@ -4566,10 +5143,10 @@ function Example() {
                             children: section.items.map(function (item) {
                               return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
                                 className: "flow-root",
-                                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+                                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
                                   href: item.href,
                                   className: "-m-2 p-2 block text-gray-500",
-                                  children: item.name
+                                  children: [item.name, item.name2]
                                 })
                               }, item.name);
                             })
@@ -4697,7 +5274,7 @@ function Example() {
                                           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
                                             className: "absolute z-10 inset-0",
                                             "aria-hidden": "true"
-                                          }), item.name]
+                                          }), item.name, " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), item.name2]
                                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
                                           "aria-hidden": "true",
                                           className: "mt-1"
@@ -5507,7 +6084,7 @@ var trainer_navigation = [{
   current: false
 }, {
   name: 'Livestreams',
-  href: '#',
+  href: '/livestreams',
   current: false
 }];
 var userNavigation = [{
@@ -7853,61 +8430,7 @@ function PreventiveCare(props) {
             children: "Regular health care intended to keep you healthy and avoid disease by fighting non-communicable diseases (NCDs) associated with obesity such as hypertension, diabetes, and cancer."
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-          className: "",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-            className: "px-4 sm:px-6 lg:px-8 mt-6 ",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-              className: "mt-8 flex flex-col mb-6",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-                className: "-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-                  className: "inline-block min-w-full py-2 align-middle md:px-6 lg:px-8",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-                    className: "overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg",
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("table", {
-                      className: "min-w-full divide-y divide-gray-300",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("thead", {
-                        className: "bg-gray-50",
-                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
-                          className: "divide-x divide-gray-200",
-                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
-                            scope: "col",
-                            className: "py-3.5 pl-4 pr-4 text-left text-sm font-semibold text-gray-900 sm:pl-6",
-                            children: "Men"
-                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
-                            scope: "col",
-                            className: "px-4 py-3.5 text-left text-sm font-semibold text-gray-900",
-                            children: "Women"
-                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
-                            scope: "col",
-                            className: "px-4 py-3.5 text-left text-sm font-semibold text-gray-900",
-                            children: "Children"
-                          })]
-                        })
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("tbody", {
-                        className: "divide-y divide-gray-200 bg-white",
-                        children: people.map(function (person) {
-                          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
-                            className: "divide-x divide-gray-200",
-                            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-                              className: "whitespace-nowrap py-4 pl-4 pr-4 text-sm font-medium text-gray-900 sm:pl-6",
-                              children: person.men
-                            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-                              className: "whitespace-nowrap p-4 text-sm text-gray-500",
-                              children: person.women
-                            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-                              className: "whitespace-nowrap p-4 text-sm text-gray-500",
-                              children: person.children
-                            })]
-                          }, person.men);
-                        })
-                      })]
-                    })
-                  })
-                })
-              })
-            })
-          })
+          className: ""
         })]
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
@@ -8073,6 +8596,151 @@ function SalubrisRevolution(props) {
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_SalubrisRev__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
   });
 }
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Trainer/EditLivestream.js":
+/*!******************************************************!*\
+  !*** ./resources/js/Pages/Trainer/EditLivestream.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Layouts/Authenticated */ "./resources/js/Layouts/Authenticated.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _Components_EditLivestreamForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/EditLivestreamForm */ "./resources/js/Components/EditLivestreamForm.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+var EditLivestream = function EditLivestream(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    auth: props.auth,
+    errors: props.errors,
+    header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
+      className: "font-semibold text-xl text-gray-800 leading-tight",
+      children: "EditLivestream"
+    }),
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
+      title: "EditLivestream"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      className: "py-12",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        className: "ml-14",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_EditLivestreamForm__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          livestream: props.livestream
+        })
+      })
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EditLivestream);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Trainer/Livestream.js":
+/*!**************************************************!*\
+  !*** ./resources/js/Pages/Trainer/Livestream.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Layouts/Authenticated */ "./resources/js/Layouts/Authenticated.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _Components_AddLivestreamForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/AddLivestreamForm */ "./resources/js/Components/AddLivestreamForm.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+var Livestream = function Livestream(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    auth: props.auth,
+    errors: props.errors,
+    header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
+      className: "font-semibold text-xl text-gray-800 leading-tight",
+      children: "Livestream"
+    }),
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
+      title: "Livestream"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      className: "py-12",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        className: "ml-14",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_AddLivestreamForm__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+      })
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Livestream);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Trainer/Livestreams.js":
+/*!***************************************************!*\
+  !*** ./resources/js/Pages/Trainer/Livestreams.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Layouts/Authenticated */ "./resources/js/Layouts/Authenticated.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _Components_LivestreamsTable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/LivestreamsTable */ "./resources/js/Components/LivestreamsTable.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+var Livestreams = function Livestreams(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    auth: props.auth,
+    errors: props.errors,
+    header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
+      className: "font-semibold text-xl text-gray-800 leading-tight",
+      children: "Livestreams"
+    }),
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
+      title: "Livestream"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      className: "py-12",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        className: "ml-14",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_LivestreamsTable__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          livestreams: props.livestreams
+        })
+      })
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Livestreams);
 
 /***/ }),
 
@@ -8266,7 +8934,7 @@ var managedcare = [{
   name: 'Maternal care',
   imageUrl: 'images/220244_79.jpg'
 }, {
-  name: 'Preventive care',
+  name: 'Managed Health care',
   imageUrl: 'images/220244_81.jpg'
 }, {
   name: 'Mental and Behavioural Health',
@@ -8329,7 +8997,7 @@ function Welcome(props) {
             className: "space-y-5 sm:space-y-4 max-w-3xl mx-auto md:max-w-xl lg:max-w-3xl xl:max-w-none",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h2", {
               className: "text-3xl font-extrabold tracking-tight sm:text-4xl text-center",
-              children: "Managed Healthcare"
+              children: "Salubris Revolution"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
               className: "text-xl text-black text-center max-w-3xl mx-auto",
               children: "Join 10+ million members on the top digital fitness platform and stay toned, lose weight, get strong, reduce stress, and reach your goals."
@@ -64814,6 +65482,12 @@ var map = {
 	"./Rewards.js": "./resources/js/Pages/Rewards.js",
 	"./SalubrisRevolution": "./resources/js/Pages/SalubrisRevolution.js",
 	"./SalubrisRevolution.js": "./resources/js/Pages/SalubrisRevolution.js",
+	"./Trainer/EditLivestream": "./resources/js/Pages/Trainer/EditLivestream.js",
+	"./Trainer/EditLivestream.js": "./resources/js/Pages/Trainer/EditLivestream.js",
+	"./Trainer/Livestream": "./resources/js/Pages/Trainer/Livestream.js",
+	"./Trainer/Livestream.js": "./resources/js/Pages/Trainer/Livestream.js",
+	"./Trainer/Livestreams": "./resources/js/Pages/Trainer/Livestreams.js",
+	"./Trainer/Livestreams.js": "./resources/js/Pages/Trainer/Livestreams.js",
 	"./Trainer/Profile": "./resources/js/Pages/Trainer/Profile.js",
 	"./Trainer/Profile.js": "./resources/js/Pages/Trainer/Profile.js",
 	"./Trainerdashboard": "./resources/js/Pages/Trainerdashboard.js",

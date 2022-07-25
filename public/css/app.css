@@ -772,6 +772,9 @@ select {
 .ml-auto {
   margin-left: auto;
 }
+.mr-14 {
+  margin-right: 3.5rem;
+}
 .-mb-px {
   margin-bottom: -1px;
 }
@@ -1325,6 +1328,10 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -1837,6 +1844,9 @@ select {
 .links {
     text-decoration: none;
 }
+a {
+   color: orange;
+}
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
@@ -1891,6 +1901,10 @@ a:active { text-decoration: none; }
 .hover\:bg-orange-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(194 65 12 / var(--tw-bg-opacity));
+}
+.hover\:bg-red-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 .hover\:bg-indigo-50:hover {
   --tw-bg-opacity: 1;
@@ -2032,6 +2046,10 @@ a:active { text-decoration: none; }
 .focus\:ring-white:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
+}
+.focus\:ring-red-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(239 68 68 / var(--tw-ring-opacity));
 }
 .focus\:ring-opacity-50:focus {
   --tw-ring-opacity: 0.5;

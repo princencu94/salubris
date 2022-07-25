@@ -48,4 +48,9 @@ class User extends Authenticatable
     {
         return $this->hasOne(Profile::class);
     }
+
+    public function livestream()
+    {
+        return $this->hasMany(Livestream::class);
+    }
 }

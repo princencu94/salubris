@@ -30,7 +30,7 @@ const gymnacity = [
         'images/220244_79.jpg',
     },
     {
-        name: 'Preventive care',
+        name: 'Managed Health care',
         imageUrl:
           'images/220244_81.jpg',
     },
@@ -91,7 +91,7 @@ export default function Welcome(props) {
             <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
                 <div className="space-y-12">
                 <div className="space-y-5 sm:space-y-4 max-w-3xl mx-auto md:max-w-xl lg:max-w-3xl xl:max-w-none">
-                    <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-center">Managed Healthcare</h2>
+                    <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-center">Salubris Revolution</h2>
                     <p className="text-xl text-black text-center max-w-3xl mx-auto">
                     Join 10+ million members on the top digital fitness platform and stay toned, lose weight, get strong, reduce stress, and reach your goals.
                     </p>
