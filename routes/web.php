@@ -5,6 +5,7 @@ use App\Http\Controllers\TrainerController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\LiveStreamController;
+use App\Http\Controllers\MemberController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -122,5 +123,14 @@ Route::get('/addlivestream', [LiveStreamController::class, 'create'])->middlewar
 Route::post('/addlivestream', [LiveStreamController::class, 'store'])->middleware(['auth'])->name('addlivestream');
 Route::post('/saveprofile', [ProfileController::class, 'store'])->middleware(['auth'])->name('saveprofile');
 Route::put('/updateprofile/{id}', [ProfileController::class, 'update'])->middleware(['auth'])->name('updateprofile');
+
+
+// Member Routes Member
+Route::get('/health-info', [MemberController::class, 'index'])->middleware(['auth'])->name('health-info');
+Route::get('/save-health-info', [MemberController::class, 'create'])->middleware(['auth'])->name('save-health-info');
+Route::post('/savehealthinfo', [MemberController::class, 'store'])->middleware(['auth'])->name('savehealthinfo');
+Route::get('/edithealthinfo/{id}', [MemberController::class, 'edit'])->middleware(['auth'])->name('edithealthinfo');
+Route::put('/edithealthinfo/{id}', [MemberController::class, 'update'])->middleware(['auth'])->name('edithealthinfo');
+
 
 require __DIR__.'/auth.php';

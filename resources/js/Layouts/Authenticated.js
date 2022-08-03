@@ -28,7 +28,7 @@ const user = {
   
   
     { name: 'Dashboard', href: "/dashboard", current: false },
-    { name: 'Users', href: '/users', current: false },
+    { name: 'Health Info', href: '/health-info', current: false },
   ]
 
   const trainer_navigation = [
