@@ -28,7 +28,7 @@ class MemberController extends Controller
      */
     public function create()
     {
-        return Inertia::render('Member/EditHealthInfo');
+        return Inertia::render('Member/AddHealthInfo');
     }
 
     /**

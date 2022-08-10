@@ -53,7 +53,7 @@ class ProfileController extends Controller
 
         $profile->save();
 
-        return redirect()->route('dashboard');
+        return redirect()->route('dashboard')->with('success', 'Profile has been updated!');;
     }
 
     public function store(Request $request)
@@ -82,6 +82,6 @@ class ProfileController extends Controller
         
         $profile->save();
 
-        return redirect()->route('dashboard');
+        return redirect()->route('dashboard')->with('success', 'Profile has been created!');;
     }
 }

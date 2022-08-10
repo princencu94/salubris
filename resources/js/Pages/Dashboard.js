@@ -28,6 +28,13 @@ export default function Dashboard(props) {
 
             <div className="pb-10">
                 <div>
+                        <div className='mb-7 max-w-4xl mx-auto'>
+                            {
+                                flash.message ?
+                                    <FlashMassage message={flash.message} />
+                                : null
+                            }
+                        </div>
                     <div className="mt-5">
                         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                             <div className="mt-2 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-2">

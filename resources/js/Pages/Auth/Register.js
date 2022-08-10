@@ -5,6 +5,7 @@ import Input from '@/Components/Input';
 import Label from '@/Components/Label';
 import ValidationErrors from '@/Components/ValidationErrors';
 import { Head, Link, useForm } from '@inertiajs/inertia-react';
+import ApplicationLogo from '@/Components/ApplicationLogo';
 
 export default function Register() {
     const { data, setData, post, processing, errors, reset } = useForm({
@@ -31,12 +32,24 @@ export default function Register() {
     };
 
     return (
-        <Guest>
-            <Head title="Register" />
+        <>
+        {/* Start of new form */}
 
+        <div className="min-h-full flex">
+        <div className="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
             <ValidationErrors errors={errors} />
 
-            <form onSubmit={submit}>
+          <div className="mx-auto w-full max-w-sm lg:w-96">
+            <div>
+                <Link href="/">
+                    <ApplicationLogo className="w-20 h-20 fill-current text-gray-500" />
+                </Link>
+              <h2 className="mt-6 text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
+            </div>
+
+            <div className="mt-8">
+              <div className="mt-6">
+              <form onSubmit={submit}>
                 <div>
                     <Label forInput="name" value="Name" />
 
@@ -102,7 +115,19 @@ export default function Register() {
                         Register
                     </Button>
                 </div>
-            </form>
-        </Guest>
+            </form>              
+            </div>
+            </div>
+          </div>
+        </div>
+        <div className="hidden lg:block relative w-0 flex-1">
+          <img
+            className="absolute inset-0 h-full w-full object-cover"
+            src="images/random2.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+        </>
     );
 }

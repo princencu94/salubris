@@ -53,7 +53,7 @@ class TrainerController extends Controller
         $user->attachRole('trainer'); 
         event(new Registered($user));
 
-        return redirect()->route('trainers');
+        return redirect()->route('trainers')->with('success', 'Trainer has been created!');;
     }
 
     /**
@@ -101,6 +101,6 @@ class TrainerController extends Controller
         $trainer = User::find($id);
         $trainer->delete();
 
-        return redirect()->route('trainers');
+        return redirect()->route('trainers')->with('success', 'Trainer has been deleted!');;
     }
 }

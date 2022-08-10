@@ -3,12 +3,12 @@ import { useForm } from '@inertiajs/inertia-react';
 
 const ProfileForm = (props) => {
 
-    console.log(props.profile.id + " By Prince");
+    console.log(props + " By Prince");
     const { data, setData, post, put, processing, errors } = useForm({
-        type: props.profile.type || '' ,
-        bio: props.profile.bio || '' ,
-        image: props.profile.image || '' ,
-        cover_photo: props.profile.cover_photo || '' ,
+        type: props.profile === null ? '' : props.profile.type ,
+        bio: props.profile === null ? '' : props.profile.bio  ,
+        image: props.profile === null ? '' : props.profile.image ,
+        cover_photo: props.profile === null ? '' : props.profile.cover_photo  ,
         email: props.auth.user.email ,
       })
 

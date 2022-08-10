@@ -45,7 +45,7 @@ const EditLivestreamForm = ({ livestream }) => {
                             id="title"
                             value={data.title}
                             onChange={e => setData('title', e.target.value)}
-                            className="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                            className="flex-1 focus:ring-orange-500 focus:border-orange-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
                             />
                             <p className="mt-2 text-sm text-red-600" id="email-error">
                                 {errors.title && <span>{errors.title}</span>}
@@ -65,7 +65,7 @@ const EditLivestreamForm = ({ livestream }) => {
                             id="link"
                             value={data.link}
                             onChange={e => setData('link', e.target.value)}
-                            className="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                            className="flex-1 focus:ring-orange-500 focus:border-orange-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
                             />
                             <p className="mt-2 text-sm text-red-600" id="email-error">
                                 {errors.link && <span>{errors.link}</span>}
@@ -85,7 +85,7 @@ const EditLivestreamForm = ({ livestream }) => {
                             id="start_date"
                             value={data.start_date}
                             onChange={e => setData('start_date', e.target.value)}
-                            className="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                            className="flex-1 focus:ring-orange-500 focus:border-orange-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
                             />
                             <p className="mt-2 text-sm text-red-600" id="email-error">
                                 {errors.start_date && <span>{errors.start_date}</span>}
@@ -105,7 +105,7 @@ const EditLivestreamForm = ({ livestream }) => {
                             id="start_time"
                             value={data.start_time}
                             onChange={e => setData('start_time', e.target.value)}
-                            className="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                            className="flex-1 focus:ring-orange-500 focus:border-orange-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
                             />
                             <p className="mt-2 text-sm text-red-600" id="email-error">
                                 {errors.start_time && <span>{errors.start_time}</span>}
@@ -124,7 +124,7 @@ const EditLivestreamForm = ({ livestream }) => {
                             value={data.description}
                             onChange={e => setData('description', e.target.value)}
                             rows={3}
-                            className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md"
+                            className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border border-gray-300 rounded-md"
                             />
                             <p className="mt-2 text-sm text-red-600" id="email-error">
                                 {errors.description && <span>{errors.description}</span>}
@@ -148,7 +148,7 @@ const EditLivestreamForm = ({ livestream }) => {
                     <button
                         type="submit"
                         disabled={processing}
-                        className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white green-bg hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white green-bg hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
                     >
                         Update
                     </button>

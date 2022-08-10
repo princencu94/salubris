@@ -3,7 +3,7 @@ import ProfileForm from '@/Components/ProfileForm';
 import Authenticated from '@/Layouts/Authenticated';
 import { Head } from '@inertiajs/inertia-react';
 const Profile = (props) => {
-
+    console.log(props);
     return (
         
         <Authenticated
@@ -14,6 +14,13 @@ const Profile = (props) => {
             <Head title="Profile" />
 
             <div className="py-12">
+                        <div className='mb-7 max-w-4xl mx-auto'>
+                            {
+                                flash.message ?
+                                    <FlashMassage message={flash.message} />
+                                : null
+                            }
+                        </div>
                 <div className='ml-14'>
                     <ProfileForm {...props}/>
                 </div>

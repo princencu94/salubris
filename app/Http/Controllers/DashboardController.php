@@ -8,12 +8,18 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
 use Inertia\Inertia;
+use App\Models\UserHealthInfo;
 
 class DashboardController extends Controller
 {
     public function index() {
+
+        $id = Auth::user()->id;
+        $profile = UserHealthInfo::where('user_id', $id)->first();
+
+
         if(Auth::user()->hasRole('user')) {
-            return Inertia::render('Userdashboard');
+            return Inertia::render('Userdashboard', ['profileinfo' => $profile]);
         } elseif (Auth::user()->hasRole('trainer')) {
             return Inertia::render('Trainerdashboard');
         } elseif (Auth::user()->hasRole('admin')) {

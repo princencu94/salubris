@@ -58,7 +58,7 @@ class LiveStreamController extends Controller
         
         $livestream->save();
 
-        return redirect()->route('livestreams');
+        return redirect()->route('livestreams')->with('success', 'Livestream has been created!');;
     }
 
     /**
@@ -113,7 +113,7 @@ class LiveStreamController extends Controller
         
         $livestream->save();
 
-        return redirect()->route('livestreams');
+        return redirect()->route('livestreams')->with('success', 'Livestream has been updated!');;
     }
 
     /**
@@ -127,6 +127,6 @@ class LiveStreamController extends Controller
         $livestream = Livestream::find($id);
         $livestream->delete();
 
-        return redirect()->route('livestreams');
+        return redirect()->route('livestreams')->with('success', 'Livestream has been deleted!');;
     }
 }

@@ -102,7 +102,7 @@ const HealthInfoForm = () => {
                                     value={data.title}
                                     onChange={e => setData('title', e.target.value)}
                                     autoComplete="title"
-                                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                    className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     >
                                         <option>Mr</option>
                                         <option>Mrs</option>
@@ -123,7 +123,7 @@ const HealthInfoForm = () => {
                                     value={data.gender}
                                     onChange={e => setData('gender', e.target.value)}
                                     autoComplete="gender"
-                                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                    className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     >
                                         <option>Male</option>
                                         <option>Female</option>
@@ -141,7 +141,7 @@ const HealthInfoForm = () => {
                                     id="dateofbirth"
                                     value={data.dateofbirth}
                                     onChange={e => setData('dateofbirth', e.target.value)}
-                                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                    className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
                                 </div>
                                 </div>
@@ -156,7 +156,7 @@ const HealthInfoForm = () => {
                                     id="surname"
                                     value={data.surname}
                                     onChange={e => setData('surname', e.target.value)}
-                                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                    className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
                                 </div>
                                 </div>
@@ -171,7 +171,7 @@ const HealthInfoForm = () => {
                                     id="first-name"
                                     value={data.first_name}
                                     onChange={e => setData('first_name', e.target.value)}
-                                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                    className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
                                 </div>
                                 </div>
@@ -186,7 +186,7 @@ const HealthInfoForm = () => {
                                     id="address"
                                     value={data.address}
                                     onChange={e => setData('address', e.target.value)}
-                                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                    className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
                                 </div>
                                 </div>
@@ -201,7 +201,7 @@ const HealthInfoForm = () => {
                                     id="mobile"
                                     value={data.mobile}
                                     onChange={e => setData('mobile', e.target.value)}
-                                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                    className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
                                 </div>
                                 </div>
@@ -216,7 +216,7 @@ const HealthInfoForm = () => {
                                     id="email"
                                     value={data.email}
                                     onChange={e => setData('email', e.target.value)}
-                                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                    className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
                                 </div>
                                 </div>
@@ -231,7 +231,7 @@ const HealthInfoForm = () => {
                                     id="emergency-contact"
                                     value={data.emergencycontact}
                                     onChange={e => setData('emergencycontact', e.target.value)}
-                                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                    className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
                                 </div>
                                 </div>
@@ -246,7 +246,7 @@ const HealthInfoForm = () => {
                                     id="phone"
                                     value={data.phone}
                                     onChange={e => setData('phone', e.target.value)}
-                                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                    className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
                                 </div>
                                 </div>
@@ -261,7 +261,7 @@ const HealthInfoForm = () => {
                                     value={data.healthinsuarance}
                                     onChange={e => setData('healthinsuarance', e.target.value)}
                                     autoComplete="health-insuarance"
-                                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                    className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     >
                                         <option>Yes</option>
                                         <option>No</option>
@@ -291,7 +291,7 @@ const HealthInfoForm = () => {
                                         value="Heart Disease"
                                         onChange={e => setData('heartdisease', e.target.value)}
                                         type="checkbox"
-                                        className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                        className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                     />
                                     </div>
                                     <div className="ml-3 text-sm">
@@ -312,7 +312,7 @@ const HealthInfoForm = () => {
                                         value="Cardiovascular Condition"
                                         onChange={e => setData('cardiovascularcondition', e.target.value)}
                                         type="checkbox"
-                                        className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                        className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                     />
                                     </div>
                                     <div className="ml-3 text-sm">
@@ -333,7 +333,7 @@ const HealthInfoForm = () => {
                                         value="Dizziness"
                                         onChange={e => setData('dizziness', e.target.value)}
                                         type="checkbox"
-                                        className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                        className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                     />
                                     </div>
                                     <div className="ml-3 text-sm">
@@ -360,7 +360,7 @@ const HealthInfoForm = () => {
                                             value="Blackouts"
                                             onChange={e => setData('blackouts', e.target.value)}
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -381,7 +381,7 @@ const HealthInfoForm = () => {
                                             value="Fainting"
                                             onChange={e => setData('fainting', e.target.value)}
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -402,7 +402,7 @@ const HealthInfoForm = () => {
                                             value="Asthma"
                                             onChange={e => setData('asthma', e.target.value)} 
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -429,7 +429,7 @@ const HealthInfoForm = () => {
                                             value="Blood Pressure"
                                             onChange={e => setData('bloodpressure', e.target.value)}
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -450,7 +450,7 @@ const HealthInfoForm = () => {
                                             value="Arthritis"
                                             onChange={e => setData('arthritis', e.target.value)}
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -471,7 +471,7 @@ const HealthInfoForm = () => {
                                             value="Diabetes"
                                             onChange={e => setData('diabetes', e.target.value)}
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -492,7 +492,7 @@ const HealthInfoForm = () => {
                                             value="Infectious Diseases"
                                             onChange={e => setData('infectiousdiseases', e.target.value)} 
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -519,7 +519,7 @@ const HealthInfoForm = () => {
                                             onChange={e => setData('epilepsy', e.target.value)}
                                             name="epilepsy"
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -540,7 +540,7 @@ const HealthInfoForm = () => {
                                             onChange={e => setData('gout', e.target.value)}
                                             name="gout"
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -561,7 +561,7 @@ const HealthInfoForm = () => {
                                             value="Family Hx of Heart Disease"
                                             onChange={e => setData('familyhxofheartdisease', e.target.value)}
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -582,7 +582,7 @@ const HealthInfoForm = () => {
                                             onChange={e => setData('otherconditions', e.target.value)}
                                             name="other"
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -612,7 +612,7 @@ const HealthInfoForm = () => {
                                             onChange={e => setData('knees', e.target.value)}
                                             name="knees"
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -633,7 +633,7 @@ const HealthInfoForm = () => {
                                             onChange={e => setData('lowerback', e.target.value)}
                                             name="lowerback"
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -654,7 +654,7 @@ const HealthInfoForm = () => {
                                             value="Neck Shoulders"
                                             onChange={e => setData('shoulders', e.target.value)}
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -675,7 +675,7 @@ const HealthInfoForm = () => {
                                             onChange={e => setData('hipspelvis', e.target.value)}
                                             name="hipspelvis"
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -697,7 +697,7 @@ const HealthInfoForm = () => {
                                             value="Flexibility"
                                             onChange={e => setData('flexibility', e.target.value)}
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -719,7 +719,7 @@ const HealthInfoForm = () => {
                                             onChange={e => setData('otherinjuries', e.target.value)}
                                             name="otherinjuries"
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -746,7 +746,7 @@ const HealthInfoForm = () => {
                                     value={data.pregnant}
                                     onChange={e => setData('pregnant', e.target.value)}
                                     autoComplete="title"
-                                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                    className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     >
                                         <option>Yes</option>
                                         <option>No</option>
@@ -779,7 +779,7 @@ const HealthInfoForm = () => {
                                 onChange={e => setData('height', e.target.value)}
                                 id="height"
                                 autoComplete="height"
-                                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                 />
                             </div>
                             </div>
@@ -794,7 +794,7 @@ const HealthInfoForm = () => {
                                 id="current-weight"
                                 value={data.currentweight}
                                 onChange={e => setData('currentweight', e.target.value)}
-                                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                 />
                             </div>
                             </div>
@@ -809,7 +809,7 @@ const HealthInfoForm = () => {
                                 value={data.goalweight}
                                 onChange={e => setData('goalweight', e.target.value)}
                                 id="goal-weight"
-                                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                 />
                             </div>
                             </div>
@@ -824,7 +824,7 @@ const HealthInfoForm = () => {
                                 id="body-type"
                                 value={data.bodytype}
                                 onChange={e => setData('bodytype', e.target.value)}
-                                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                 />
                             </div>
                             </div>
@@ -839,7 +839,7 @@ const HealthInfoForm = () => {
                                 id="typical-day"
                                 value={data.typicalday}
                                 onChange={e => setData('typicalday', e.target.value)}
-                                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                 />
                             </div>
                             </div>
@@ -854,7 +854,7 @@ const HealthInfoForm = () => {
                                 id="energy"
                                 value={data.energylevels}
                                 onChange={e => setData('energylevels', e.target.value)}
-                                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                 />
                             </div>
                             </div>
@@ -869,7 +869,7 @@ const HealthInfoForm = () => {
                                 id="physically-active"
                                 value={data.physicallyactive}
                                 onChange={e => setData('physicallyactive', e.target.value)}
-                                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                 />
                             </div>
                             </div>
@@ -884,7 +884,7 @@ const HealthInfoForm = () => {
                                 id="ideal-weight"
                                 value={data.idealweight}
                                 onChange={e => setData('idealweight', e.target.value)}
-                                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                 />
                             </div>
                             </div>
@@ -900,7 +900,7 @@ const HealthInfoForm = () => {
                                 id="most-attention"
                                 value={data.areamostattention}
                                 onChange={e => setData('areamostattention', e.target.value)}
-                                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                 />
                             </div>
                             </div>
@@ -923,7 +923,7 @@ const HealthInfoForm = () => {
                                             type="checkbox"
                                             value='Cardio'
                                             onChange={e => setData('cardio', e.target.value)}
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -944,7 +944,7 @@ const HealthInfoForm = () => {
                                             value="Zumba"
                                             onChange={e => setData('zumba', e.target.value)}
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -965,7 +965,7 @@ const HealthInfoForm = () => {
                                             value="Aerobics"
                                             onChange={e => setData('aerobics', e.target.value)}
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -987,7 +987,7 @@ const HealthInfoForm = () => {
                                             value="Pilates"
                                             onChange={e => setData('pilates', e.target.value)}
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -1009,7 +1009,7 @@ const HealthInfoForm = () => {
                                             value="Fusion"
                                             onChange={e => setData('fusion', e.target.value)}
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -1031,7 +1031,7 @@ const HealthInfoForm = () => {
                                             value="Yoga"
                                             onChange={e => setData('yoga', e.target.value)}
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -1061,7 +1061,7 @@ const HealthInfoForm = () => {
                                             value="Fast Food"
                                             onChange={e => setData('fastfood', e.target.value)}
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -1082,7 +1082,7 @@ const HealthInfoForm = () => {
                                             value="Drink Soda"
                                             onChange={e => setData('drinksoda', e.target.value)}
                                             type="checkbox"
-                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                                         />
                                         </div>
                                         <div className="ml-3 text-sm">
@@ -1106,15 +1106,15 @@ const HealthInfoForm = () => {
                     <button
                         type="button"
                         onClick={backStep}
-                        className="green-bg py-2 px-4 border  rounded-md shadow-sm text-sm font-medium text-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="green-bg py-2 px-4 border  rounded-md shadow-sm text-sm font-medium text-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
                     >
                         Back
                     </button>
                     <button
                         type="button"
                         onClick={nextStep}
-                        disabled={errors}
-                        className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white green-bg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        
+                        className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white green-bg hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
                     >
                         Next
                     </button>
@@ -1126,7 +1126,7 @@ const HealthInfoForm = () => {
                     <button
                         type="button"
                         onClick={backStep}
-                        className="green-bg py-2 px-4 border  rounded-md shadow-sm text-sm font-medium text-black hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="green-bg py-2 px-4 border  rounded-md shadow-sm text-sm font-medium text-black hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
                     >
                         Back
                     </button>
@@ -1134,7 +1134,7 @@ const HealthInfoForm = () => {
                         type="submit"
                         onClick={nextStep}
                         disabled={processing}
-                        className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-orange-700 hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-orange-700 hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
                     >
                         Submit
                     </button>

@@ -127,7 +127,7 @@ Route::put('/updateprofile/{id}', [ProfileController::class, 'update'])->middlew
 
 // Member Routes Member
 Route::get('/health-info', [MemberController::class, 'index'])->middleware(['auth'])->name('health-info');
-Route::get('/save-health-info', [MemberController::class, 'create'])->middleware(['auth'])->name('save-health-info');
+Route::get('/addhealthinfo', [MemberController::class, 'create'])->middleware(['auth'])->name('addhealthinfo');
 Route::post('/savehealthinfo', [MemberController::class, 'store'])->middleware(['auth'])->name('savehealthinfo');
 Route::get('/edithealthinfo/{id}', [MemberController::class, 'edit'])->middleware(['auth'])->name('edithealthinfo');
 Route::put('/edithealthinfo/{id}', [MemberController::class, 'update'])->middleware(['auth'])->name('edithealthinfo');

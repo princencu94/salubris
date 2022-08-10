@@ -3472,11 +3472,11 @@ var AddBlogForm = function AddBlogForm() {
           className: "flex justify-end",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
             type: "button",
-            className: "bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+            className: "bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500",
             children: "Cancel"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
             type: "submit",
-            className: "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+            className: "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white green-bg hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500",
             children: "Save"
           })]
         })
@@ -3680,12 +3680,12 @@ var AddLivestream = function AddLivestream() {
           className: "flex justify-end",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
             type: "button",
-            className: "bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+            className: "bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500",
             children: "Cancel"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
             type: "submit",
             disabled: processing,
-            className: "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white green-bg hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+            className: "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white green-bg hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500",
             children: "Save"
           })]
         })
@@ -3897,7 +3897,7 @@ var BlogsTable = function BlogsTable(_ref) {
         className: "mt-4 sm:mt-0 sm:ml-16 sm:flex-none",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
           href: "/add-blog",
-          className: "inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto",
+          className: "inline-flex items-center justify-center rounded-md border border-transparent green-bg px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 sm:w-auto",
           children: "Add Blog"
         })
       })]
@@ -3952,7 +3952,7 @@ var BlogsTable = function BlogsTable(_ref) {
                       className: "relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6",
                       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
                         href: "/editblog/".concat(blog.id),
-                        className: "text-indigo-600 hover:text-indigo-900",
+                        className: "text-orange-600 hover:text-indigo-900",
                         children: ["Edit", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("span", {
                           className: "sr-only",
                           children: [", ", blog.id]
@@ -4321,7 +4321,7 @@ var EditBlogForm = function EditBlogForm(_ref) {
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
             type: "submit",
             disabled: processing,
-            className: "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+            className: "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white green-bg hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500",
             children: "Update"
           })]
         })
@@ -4474,7 +4474,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                   return setData('title', e.target.value);
                 },
                 autoComplete: "title",
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md",
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md",
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
                   children: "Mr"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
@@ -4502,7 +4502,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                   return setData('gender', e.target.value);
                 },
                 autoComplete: "gender",
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md",
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md",
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
                   children: "Male"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
@@ -4526,7 +4526,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                 onChange: function onChange(e) {
                   return setData('dateofbirth', e.target.value);
                 },
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
               })
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -4545,7 +4545,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                 onChange: function onChange(e) {
                   return setData('surname', e.target.value);
                 },
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
               })
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -4564,7 +4564,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                 onChange: function onChange(e) {
                   return setData('firstname', e.target.value);
                 },
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
               })
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -4583,7 +4583,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                 onChange: function onChange(e) {
                   return setData('address', e.target.value);
                 },
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
               })
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -4602,7 +4602,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                 onChange: function onChange(e) {
                   return setData('mobile', e.target.value);
                 },
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
               })
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -4621,7 +4621,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                 onChange: function onChange(e) {
                   return setData('email', e.target.value);
                 },
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
               })
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -4640,7 +4640,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                 onChange: function onChange(e) {
                   return setData('emergencycontact', e.target.value);
                 },
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
               })
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -4659,7 +4659,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                 onChange: function onChange(e) {
                   return setData('phone', e.target.value);
                 },
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
               })
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -4678,7 +4678,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                   return setData('healthinsuarance', e.target.value);
                 },
                 autoComplete: "health-insuarance",
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md",
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md",
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
                   children: "Yes"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
@@ -4722,7 +4722,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                         return setData('heartdisease', e.target.value);
                       },
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -4752,7 +4752,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                         return setData('cardiovascularcondition', e.target.value);
                       },
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -4782,7 +4782,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                         return setData('dizziness', e.target.value);
                       },
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -4821,7 +4821,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                         return setData('blackouts', e.target.value);
                       },
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -4851,7 +4851,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                         return setData('fainting', e.target.value);
                       },
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -4881,7 +4881,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                         return setData('asthma', e.target.value);
                       },
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -4920,7 +4920,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                         return setData('bloodpressure', e.target.value);
                       },
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -4950,7 +4950,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                         return setData('arthritis', e.target.value);
                       },
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -4980,7 +4980,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                         return setData('diabetes', e.target.value);
                       },
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -5010,7 +5010,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                         return setData('infectiousdiseases', e.target.value);
                       },
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -5049,7 +5049,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                       },
                       name: "epilepsy",
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -5079,7 +5079,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                       },
                       name: "gout",
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -5109,7 +5109,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                         return setData('familyhxofheartdisease', e.target.value);
                       },
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -5139,7 +5139,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                       },
                       name: "other",
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -5181,7 +5181,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                       },
                       name: "knees",
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -5211,7 +5211,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                       },
                       name: "lowerback",
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -5241,7 +5241,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                         return setData('shoulders', e.target.value);
                       },
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -5271,7 +5271,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                       },
                       name: "hipspelvis",
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -5301,7 +5301,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                         return setData('flexibility', e.target.value);
                       },
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -5331,7 +5331,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                       },
                       name: "otherinjuries",
                       type: "checkbox",
-                      className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                     className: "ml-3 text-sm",
@@ -5366,7 +5366,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                     return setData('pregnant', e.target.value);
                   },
                   autoComplete: "title",
-                  className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md",
+                  className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md",
                   children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
                     children: "Yes"
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
@@ -5406,7 +5406,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                 },
                 id: "height",
                 autoComplete: "height",
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
               })
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -5425,7 +5425,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                 onChange: function onChange(e) {
                   return setData('currentweight', e.target.value);
                 },
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
               })
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -5444,7 +5444,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                   return setData('goalweight', e.target.value);
                 },
                 id: "goal-weight",
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
               })
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -5463,7 +5463,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                 onChange: function onChange(e) {
                   return setData('bodytype', e.target.value);
                 },
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
               })
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -5482,7 +5482,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                 onChange: function onChange(e) {
                   return setData('typicalday', e.target.value);
                 },
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
               })
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -5501,7 +5501,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                 onChange: function onChange(e) {
                   return setData('energylevels', e.target.value);
                 },
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
               })
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -5520,7 +5520,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                 onChange: function onChange(e) {
                   return setData('physicallyactive', e.target.value);
                 },
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
               })
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -5539,7 +5539,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                 onChange: function onChange(e) {
                   return setData('idealweight', e.target.value);
                 },
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
               })
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -5558,7 +5558,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                 onChange: function onChange(e) {
                   return setData('areamostattention', e.target.value);
                 },
-                className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
               })
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
@@ -5583,7 +5583,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                     onChange: function onChange(e) {
                       return setData('cardio', e.target.value);
                     },
-                    className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                    className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                   className: "ml-3 text-sm",
@@ -5613,7 +5613,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                       return setData('zumba', e.target.value);
                     },
                     type: "checkbox",
-                    className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                    className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                   className: "ml-3 text-sm",
@@ -5643,7 +5643,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                       return setData('aerobics', e.target.value);
                     },
                     type: "checkbox",
-                    className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                    className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                   className: "ml-3 text-sm",
@@ -5673,7 +5673,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                       return setData('pilates', e.target.value);
                     },
                     type: "checkbox",
-                    className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                    className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                   className: "ml-3 text-sm",
@@ -5703,7 +5703,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                       return setData('fusion', e.target.value);
                     },
                     type: "checkbox",
-                    className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                    className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                   className: "ml-3 text-sm",
@@ -5733,7 +5733,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                       return setData('yoga', e.target.value);
                     },
                     type: "checkbox",
-                    className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                    className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                   className: "ml-3 text-sm",
@@ -5772,7 +5772,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                       return setData('fastfood', e.target.value);
                     },
                     type: "checkbox",
-                    className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                    className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                   className: "ml-3 text-sm",
@@ -5802,7 +5802,7 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
                       return setData('drinksoda', e.target.value);
                     },
                     type: "checkbox",
-                    className: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                    className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
                   className: "ml-3 text-sm",
@@ -5830,12 +5830,12 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
             type: "button",
             onClick: backStep,
-            className: step === 1 ? 'hidden' : "green-bg py-2 px-4 border  rounded-md shadow-sm text-sm font-medium text-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+            className: step === 1 ? 'hidden' : "green-bg py-2 px-4 border  rounded-md shadow-sm text-sm font-medium text-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500",
             children: "Back"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
             type: "button",
             onClick: nextStep,
-            className: "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white green-bg hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+            className: "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white green-bg hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500",
             children: "Next"
           })]
         })
@@ -5846,13 +5846,13 @@ var EditHealthInfoForm = function EditHealthInfoForm(_ref) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
             type: "button",
             onClick: backStep,
-            className: "green-bg py-2 px-4 border  rounded-md shadow-sm text-sm font-medium text-black hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+            className: "green-bg py-2 px-4 border  rounded-md shadow-sm text-sm font-medium text-black hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500",
             children: "Back"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
             type: "submit",
             onClick: nextStep,
             disabled: processing,
-            className: "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-orange-700 hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+            className: "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-orange-700 hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500",
             children: "Submit"
           })]
         })
@@ -5943,7 +5943,7 @@ var EditLivestreamForm = function EditLivestreamForm(_ref) {
                   onChange: function onChange(e) {
                     return setData('title', e.target.value);
                   },
-                  className: "flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                  className: "flex-1 focus:ring-orange-500 focus:border-orange-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
                   className: "mt-2 text-sm text-red-600",
                   id: "email-error",
@@ -5968,7 +5968,7 @@ var EditLivestreamForm = function EditLivestreamForm(_ref) {
                   onChange: function onChange(e) {
                     return setData('link', e.target.value);
                   },
-                  className: "flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                  className: "flex-1 focus:ring-orange-500 focus:border-orange-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
                   className: "mt-2 text-sm text-red-600",
                   id: "email-error",
@@ -5993,7 +5993,7 @@ var EditLivestreamForm = function EditLivestreamForm(_ref) {
                   onChange: function onChange(e) {
                     return setData('start_date', e.target.value);
                   },
-                  className: "flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                  className: "flex-1 focus:ring-orange-500 focus:border-orange-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
                   className: "mt-2 text-sm text-red-600",
                   id: "email-error",
@@ -6018,7 +6018,7 @@ var EditLivestreamForm = function EditLivestreamForm(_ref) {
                   onChange: function onChange(e) {
                     return setData('start_time', e.target.value);
                   },
-                  className: "flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                  className: "flex-1 focus:ring-orange-500 focus:border-orange-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
                   className: "mt-2 text-sm text-red-600",
                   id: "email-error",
@@ -6043,7 +6043,7 @@ var EditLivestreamForm = function EditLivestreamForm(_ref) {
                     return setData('description', e.target.value);
                   },
                   rows: 3,
-                  className: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md"
+                  className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border border-gray-300 rounded-md"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
                   className: "mt-2 text-sm text-red-600",
                   id: "email-error",
@@ -6070,7 +6070,7 @@ var EditLivestreamForm = function EditLivestreamForm(_ref) {
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
             type: "submit",
             disabled: processing,
-            className: "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white green-bg hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+            className: "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white green-bg hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500",
             children: "Update"
           })]
         })
@@ -6080,6 +6080,95 @@ var EditLivestreamForm = function EditLivestreamForm(_ref) {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EditLivestreamForm);
+
+/***/ }),
+
+/***/ "./resources/js/Components/FlashMessage.js":
+/*!*************************************************!*\
+  !*** ./resources/js/Components/FlashMessage.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _heroicons_react_solid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @heroicons/react/solid */ "./node_modules/@heroicons/react/solid/esm/CheckCircleIcon.js");
+/* harmony import */ var _heroicons_react_solid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @heroicons/react/solid */ "./node_modules/@heroicons/react/solid/esm/XIcon.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+var FlashMassage = function FlashMassage(_ref) {
+  var message = _ref.message;
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true),
+      _useState2 = _slicedToArray(_useState, 2),
+      showMessage = _useState2[0],
+      setShowMessage = _useState2[1];
+
+  var handleMessageToggle = function handleMessageToggle() {
+    setShowMessage(!showMessage);
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    className: showMessage ? 'block' : 'hidden',
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "rounded-md bg-green-50 p-4",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "flex",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          className: "flex-shrink-0",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_heroicons_react_solid__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            className: "h-5 w-5 text-green-400",
+            "aria-hidden": "true"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          className: "ml-3",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            className: "text-sm font-medium text-green-800",
+            children: message
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          className: "ml-auto pl-3",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+            className: "-mx-1.5 -my-1.5",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("button", {
+              type: "button",
+              onClick: handleMessageToggle,
+              className: "inline-flex bg-green-50 rounded-md p-1.5 text-green-500 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-50 focus:ring-green-600",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+                className: "sr-only",
+                children: "Dismiss"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_heroicons_react_solid__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                className: "h-5 w-5",
+                "aria-hidden": "true"
+              })]
+            })
+          })
+        })]
+      })
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FlashMassage);
 
 /***/ }),
 
@@ -6181,6 +6270,1531 @@ function Footer() {
     })
   });
 }
+
+/***/ }),
+
+/***/ "./resources/js/Components/HealthInfoForm.js":
+/*!***************************************************!*\
+  !*** ./resources/js/Components/HealthInfoForm.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+var HealthInfoForm = function HealthInfoForm() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(1),
+      _useState2 = _slicedToArray(_useState, 2),
+      step = _useState2[0],
+      setStep = _useState2[1];
+
+  var nextStep = function nextStep() {
+    setStep(step + 1);
+  };
+
+  var backStep = function backStep() {
+    setStep(step - 1);
+  };
+
+  var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.useForm)({
+    title: '',
+    gender: '',
+    dateofbirth: "",
+    firstname: "",
+    surname: "",
+    address: "",
+    mobile: "",
+    email: "",
+    emergencycontact: "",
+    phone: "",
+    healthinsuarance: '',
+    fund: "N/A",
+    heartdisease: "",
+    cardiovascularcondition: "",
+    dizziness: "",
+    blackouts: "",
+    fainting: "",
+    asthma: "",
+    bloodpressure: "",
+    arthritis: "",
+    diabetes: "",
+    epilepsy: "",
+    gout: "",
+    familyhxofheartdisease: "",
+    infectiousdiseases: "",
+    otherconditions: "",
+    knees: "",
+    lowerback: "",
+    shoulders: "",
+    hipspelvis: "",
+    flexibility: "",
+    otherinjuries: "",
+    injuries: "",
+    pregnant: "",
+    height: "",
+    currentweight: "",
+    goalweight: "",
+    bodytype: "",
+    typicalday: "",
+    energylevels: "",
+    ideaweight: "",
+    areamostattention: "",
+    cardio: "",
+    zumba: "",
+    aerobics: "",
+    pilates: "",
+    fusion: "",
+    yoga: "",
+    fastfood: "",
+    drinksoda: ""
+  }),
+      data = _useForm.data,
+      setData = _useForm.setData,
+      post = _useForm.post,
+      processing = _useForm.processing,
+      errors = _useForm.errors;
+
+  var handleSubmit = function handleSubmit(e) {
+    e.preventDefault();
+    post('/savehealthinfo');
+    setStep(1);
+  };
+
+  var handleDelete = function handleDelete() {
+    alert("Deleting!!");
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    className: "max-w-4xl mx-auto",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
+      className: "space-y-8 divide-y divide-gray-200",
+      onSubmit: handleSubmit,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: step === 1 ? "mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6 transition delay-700 duration-300 ease-in" : "hidden",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "title",
+              className: "block text-sm font-medium text-gray-700",
+              children: "Title:(Mr/Mrs/Miss/Ms)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1 ",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("select", {
+                id: "title",
+                name: "title",
+                value: data.title,
+                onChange: function onChange(e) {
+                  return setData('title', e.target.value);
+                },
+                autoComplete: "title",
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
+                  children: "Mr"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
+                  children: "Mrs"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
+                  children: "Miss"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
+                  children: "Ms"
+                })]
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "gender",
+              className: "block text-sm font-medium text-gray-700",
+              children: "Gender"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1 ",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("select", {
+                id: "gender",
+                name: "gender",
+                value: data.gender,
+                onChange: function onChange(e) {
+                  return setData('gender', e.target.value);
+                },
+                autoComplete: "gender",
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
+                  children: "Male"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
+                  children: "Female"
+                })]
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "dateofbirth",
+              className: "block text-sm font-medium text-gray-700",
+              children: "Date of birth"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                type: "date",
+                name: "dateofbirth",
+                id: "dateofbirth",
+                value: data.dateofbirth,
+                onChange: function onChange(e) {
+                  return setData('dateofbirth', e.target.value);
+                },
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "surname",
+              className: "block text-sm font-medium text-gray-700",
+              children: "Surname"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                type: "text",
+                name: "surname",
+                id: "surname",
+                value: data.surname,
+                onChange: function onChange(e) {
+                  return setData('surname', e.target.value);
+                },
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "first-name",
+              className: "block text-sm font-medium text-gray-700",
+              children: "First Name"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                type: "text",
+                name: "firstname",
+                id: "first-name",
+                value: data.first_name,
+                onChange: function onChange(e) {
+                  return setData('first_name', e.target.value);
+                },
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "address",
+              className: "block text-sm font-medium text-gray-700",
+              children: "Address"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                type: "text",
+                name: "address",
+                id: "address",
+                value: data.address,
+                onChange: function onChange(e) {
+                  return setData('address', e.target.value);
+                },
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "mobile",
+              className: "block text-sm font-medium text-gray-700",
+              children: "Mobile"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                type: "text",
+                name: "mobile",
+                id: "mobile",
+                value: data.mobile,
+                onChange: function onChange(e) {
+                  return setData('mobile', e.target.value);
+                },
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "email",
+              className: "block text-sm font-medium text-gray-700",
+              children: "Email"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                type: "text",
+                name: "email",
+                id: "email",
+                value: data.email,
+                onChange: function onChange(e) {
+                  return setData('email', e.target.value);
+                },
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "emergency-contact",
+              className: "block text-sm font-medium text-gray-700",
+              children: "Emergency Contact"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                type: "text",
+                name: "emergencycontact",
+                id: "emergency-contact",
+                value: data.emergencycontact,
+                onChange: function onChange(e) {
+                  return setData('emergencycontact', e.target.value);
+                },
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "phone",
+              className: "block text-sm font-medium text-gray-700",
+              children: "Phone"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                type: "text",
+                name: "phone",
+                id: "phone",
+                value: data.phone,
+                onChange: function onChange(e) {
+                  return setData('phone', e.target.value);
+                },
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "health-insuarance",
+              className: "block text-sm font-medium text-gray-700",
+              children: "Do you have private health Insuarance?"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1 ",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("select", {
+                id: "health-insuarance",
+                name: "healthinsuarance",
+                value: data.healthinsuarance,
+                onChange: function onChange(e) {
+                  return setData('healthinsuarance', e.target.value);
+                },
+                autoComplete: "health-insuarance",
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
+                  children: "Yes"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
+                  children: "No"
+                })]
+              })
+            })]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: step === 2 ? 'block transition delay-700 duration-300 ease-in' : 'hidden',
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
+              className: "text-lg leading-6 font-medium text-gray-900",
+              children: "Medical Questionnaire"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+              className: "mt-1 max-w-2xl text-sm text-gray-500",
+              children: "Have you ever or do you have any of the following?"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "sm:col-span-3",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("fieldset", {
+                className: "space-y-5",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("legend", {
+                  className: "sr-only",
+                  children: "Medical Questionnaire"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "heart-disease",
+                      "aria-describedby": "Heart-disease-description",
+                      name: "heartdisease",
+                      value: "Heart Disease",
+                      onChange: function onChange(e) {
+                        return setData('heartdisease', e.target.value);
+                      },
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "Heart Disease",
+                      className: "font-medium text-gray-700",
+                      children: "Heart Disease"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "heart-disease-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Heart Disease "
+                      })
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "cardiovascular-condition",
+                      "aria-describedby": "cardiovascular-condition-description",
+                      name: "cardiovascularcondition",
+                      value: "Cardiovascular Condition",
+                      onChange: function onChange(e) {
+                        return setData('cardiovascularcondition', e.target.value);
+                      },
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "cardiovascular-condition",
+                      className: "font-medium text-gray-700",
+                      children: "Cardiovascular Condition"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "cardiovascular-condition-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Cardiovascular Condition"
+                      })
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "dizziness",
+                      "aria-describedby": "dizziness-description",
+                      name: "dizziness",
+                      value: "Dizziness",
+                      onChange: function onChange(e) {
+                        return setData('dizziness', e.target.value);
+                      },
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "dizziness",
+                      className: "font-medium text-gray-700",
+                      children: "Dizziness"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "dizziness-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Dizziness "
+                      })
+                    })]
+                  })]
+                })]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "sm:col-span-3",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("fieldset", {
+                className: "space-y-5",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("legend", {
+                  className: "sr-only",
+                  children: "Medical Questionnaire"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "blackouts",
+                      "aria-describedby": "blackouts-description",
+                      name: "blackouts",
+                      value: "Blackouts",
+                      onChange: function onChange(e) {
+                        return setData('blackouts', e.target.value);
+                      },
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "blackouts",
+                      className: "font-medium text-gray-700",
+                      children: "Blackouts"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "blackouts-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Blackouts "
+                      })
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "fainting",
+                      "aria-describedby": "fainting-description",
+                      name: "fainting",
+                      value: "Fainting",
+                      onChange: function onChange(e) {
+                        return setData('fainting', e.target.value);
+                      },
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "fainting",
+                      className: "font-medium text-gray-700",
+                      children: "Fainting"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "fainting-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Fainting "
+                      })
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "asthma",
+                      "aria-describedby": "Asthma-description",
+                      name: "asthma",
+                      value: "Asthma",
+                      onChange: function onChange(e) {
+                        return setData('asthma', e.target.value);
+                      },
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "asthma",
+                      className: "font-medium text-gray-700",
+                      children: "Asthma"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "asthma-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Asthma"
+                      })
+                    })]
+                  })]
+                })]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "sm:col-span-3",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("fieldset", {
+                className: "space-y-5",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("legend", {
+                  className: "sr-only",
+                  children: "Medical Questionnaire"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "blood-pressure",
+                      "aria-describedby": "blood-pressure-description",
+                      name: "bloodpressure",
+                      value: "Blood Pressure",
+                      onChange: function onChange(e) {
+                        return setData('bloodpressure', e.target.value);
+                      },
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "blood-pressure",
+                      className: "font-medium text-gray-700",
+                      children: "High/Low Blood Pressure"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "blood-pressure-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "blood-pressure "
+                      })
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "arthritis",
+                      "aria-describedby": "arthritis-description",
+                      name: "arthritis",
+                      value: "Arthritis",
+                      onChange: function onChange(e) {
+                        return setData('arthritis', e.target.value);
+                      },
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "arthritis",
+                      className: "font-medium text-gray-700",
+                      children: "Arthritis"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "arthritis-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Arthritis "
+                      })
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "diabetes",
+                      "aria-describedby": "diabetes-description",
+                      name: "diabetes",
+                      value: "Diabetes",
+                      onChange: function onChange(e) {
+                        return setData('diabetes', e.target.value);
+                      },
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "diabetes",
+                      className: "font-medium text-gray-700",
+                      children: "Diabetes"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "diabetes-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Diabetes"
+                      })
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "infectious-diseases",
+                      "aria-describedby": "infectious-diseases-description",
+                      name: "infectiousdiseases",
+                      value: "Infectious Diseases",
+                      onChange: function onChange(e) {
+                        return setData('infectiousdiseases', e.target.value);
+                      },
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "infectious-diseases",
+                      className: "font-medium text-gray-700",
+                      children: "Infectious diseases"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "infectious-diseases-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Infectious diseases"
+                      })
+                    })]
+                  })]
+                })]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "sm:col-span-3",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("fieldset", {
+                className: "space-y-5",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("legend", {
+                  className: "sr-only",
+                  children: "Medical Questionnaire"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "epilepsy",
+                      "aria-describedby": "epilepsy-description",
+                      value: "Epilepsy/Fits",
+                      onChange: function onChange(e) {
+                        return setData('epilepsy', e.target.value);
+                      },
+                      name: "epilepsy",
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "epilepsy",
+                      className: "font-medium text-gray-700",
+                      children: "Epilepsy/Fits"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "epilepsy-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Epilepsy/Fits"
+                      })
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "gout",
+                      "aria-describedby": "Gout-description",
+                      value: "Gout",
+                      onChange: function onChange(e) {
+                        return setData('gout', e.target.value);
+                      },
+                      name: "gout",
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "gout",
+                      className: "font-medium text-gray-700",
+                      children: "Gout"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "gout-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Gout "
+                      })
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "family-hx-of-heart-disease",
+                      "aria-describedby": "family-hx-of-heart-disease-description",
+                      name: "family-hx-of-heart-disease",
+                      value: "Family Hx of Heart Disease",
+                      onChange: function onChange(e) {
+                        return setData('familyhxofheartdisease', e.target.value);
+                      },
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "family-hx-of-heart-disease",
+                      className: "font-medium text-gray-700",
+                      children: "Family Hx of Heart Disease"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "family-hx-of-heart-disease-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Family Hx of Heart Disease"
+                      })
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "other-conditions",
+                      "aria-describedby": "other-description",
+                      value: "Other Conditions",
+                      onChange: function onChange(e) {
+                        return setData('otherconditions', e.target.value);
+                      },
+                      name: "other",
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "other",
+                      className: "font-medium text-gray-700",
+                      children: "Other"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "other-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Other"
+                      })
+                    })]
+                  })]
+                })]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+              className: "sm:col-span-3",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+                className: "mt-1 max-w-2xl text-sm text-gray-500",
+                children: "Do you have any problems/injuries in the follow areas?"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("fieldset", {
+                className: "space-y-5",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("legend", {
+                  className: "sr-only",
+                  children: "Medical Questionnaire"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "knees",
+                      "aria-describedby": "Knees-description",
+                      value: "Knees",
+                      onChange: function onChange(e) {
+                        return setData('knees', e.target.value);
+                      },
+                      name: "knees",
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "knees",
+                      className: "font-medium text-gray-700",
+                      children: "Knees"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "knees-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Knees"
+                      })
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "lower-back",
+                      "aria-describedby": "lower-back-description",
+                      value: "Lower Back",
+                      onChange: function onChange(e) {
+                        return setData('lowerback', e.target.value);
+                      },
+                      name: "lowerback",
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "lower-back",
+                      className: "font-medium text-gray-700",
+                      children: "Lower Back"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "lower-back-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Lower Back "
+                      })
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "neck-shoulders",
+                      "aria-describedby": "neck-shoulders-description",
+                      name: "neckshoulders",
+                      value: "Neck Shoulders",
+                      onChange: function onChange(e) {
+                        return setData('shoulders', e.target.value);
+                      },
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "neck-shoulders",
+                      className: "font-medium text-gray-700",
+                      children: "Neck/Shoulders"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "neck-shoulders-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Neck/Shoulders"
+                      })
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "hips-pelvis",
+                      "aria-describedby": "hips-pelvis-description",
+                      value: "Hips Pelvis",
+                      onChange: function onChange(e) {
+                        return setData('hipspelvis', e.target.value);
+                      },
+                      name: "hipspelvis",
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "hips-pelvis",
+                      className: "font-medium text-gray-700",
+                      children: "Hips Pelvis"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "hips-pelvis-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Hips Pelvis"
+                      })
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "flexiblity",
+                      "aria-describedby": "flexiblity-description",
+                      name: "flexiblity",
+                      value: "Flexibility",
+                      onChange: function onChange(e) {
+                        return setData('flexibility', e.target.value);
+                      },
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "flexiblity",
+                      className: "font-medium text-gray-700",
+                      children: "Flexibility"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "flexiblity-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Flexibility"
+                      })
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "relative flex items-start",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    className: "flex items-center h-5",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                      id: "otherinjuries",
+                      "aria-describedby": "other-description",
+                      value: "Other Injuries",
+                      onChange: function onChange(e) {
+                        return setData('otherinjuries', e.target.value);
+                      },
+                      name: "otherinjuries",
+                      type: "checkbox",
+                      className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    className: "ml-3 text-sm",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                      htmlFor: "other",
+                      className: "font-medium text-gray-700",
+                      children: "Other"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      id: "other-description",
+                      className: "text-gray-500",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                        className: "sr-only",
+                        children: "Other"
+                      })
+                    })]
+                  })]
+                })]
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+              className: "sm:col-span-3",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                htmlFor: "title",
+                className: "block text-sm font-medium text-gray-700",
+                children: "Are you Pregnant?"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                className: "mt-1 ",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("select", {
+                  id: "pregnant",
+                  name: "pregnant",
+                  value: data.pregnant,
+                  onChange: function onChange(e) {
+                    return setData('pregnant', e.target.value);
+                  },
+                  autoComplete: "title",
+                  className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
+                    children: "Yes"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
+                    children: "No"
+                  })]
+                })
+              })]
+            })]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: step === 3 ? "mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6 transition delay-700 duration-300 ease-in" : 'hidden',
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
+              className: "text-lg leading-6 font-medium text-gray-900",
+              children: "Segments"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+              className: "mt-1 max-w-2xl text-sm text-gray-500",
+              children: "Biometrics"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            className: "sm:col-span-3"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "height",
+              className: "block text-sm font-medium text-gray-700",
+              children: "Height"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                type: "text",
+                name: "height",
+                value: data.height,
+                onChange: function onChange(e) {
+                  return setData('height', e.target.value);
+                },
+                id: "height",
+                autoComplete: "height",
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "current-weight",
+              className: "block text-sm font-medium text-gray-700",
+              children: "Current Weight"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                type: "text",
+                name: "currentweight",
+                id: "current-weight",
+                value: data.currentweight,
+                onChange: function onChange(e) {
+                  return setData('currentweight', e.target.value);
+                },
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "goal-weight",
+              className: "block text-sm font-medium text-gray-700",
+              children: "Your Goal Weight"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                type: "text",
+                name: "goal-weight",
+                value: data.goalweight,
+                onChange: function onChange(e) {
+                  return setData('goalweight', e.target.value);
+                },
+                id: "goal-weight",
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "body-type",
+              className: "block text-sm font-medium text-gray-700",
+              children: "Body Type"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                type: "text",
+                name: "bodytype",
+                id: "body-type",
+                value: data.bodytype,
+                onChange: function onChange(e) {
+                  return setData('bodytype', e.target.value);
+                },
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "typical-day",
+              className: "block text-sm font-medium text-gray-700",
+              children: "Typical Day"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                type: "text",
+                name: "typicalday",
+                id: "typical-day",
+                value: data.typicalday,
+                onChange: function onChange(e) {
+                  return setData('typicalday', e.target.value);
+                },
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "energy",
+              className: "block text-sm font-medium text-gray-700",
+              children: "Energy Levels"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                type: "text",
+                name: "energy",
+                id: "energy",
+                value: data.energylevels,
+                onChange: function onChange(e) {
+                  return setData('energylevels', e.target.value);
+                },
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "physically-active",
+              className: "block text-sm font-medium text-gray-700",
+              children: "How physically active are you"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                type: "text",
+                name: "physically-active",
+                id: "physically-active",
+                value: data.physicallyactive,
+                onChange: function onChange(e) {
+                  return setData('physicallyactive', e.target.value);
+                },
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "ideal-weight",
+              className: "block text-sm font-medium text-gray-700",
+              children: "Last time on ideal weight"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                type: "text",
+                name: "idealweight",
+                id: "ideal-weight",
+                value: data.idealweight,
+                onChange: function onChange(e) {
+                  return setData('idealweight', e.target.value);
+                },
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+              htmlFor: "most-attention",
+              className: "block text-sm font-medium text-gray-700",
+              children: "Which areas need the most attention"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mt-1",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                type: "text",
+                name: "mostattention",
+                id: "most-attention",
+                value: data.areamostattention,
+                onChange: function onChange(e) {
+                  return setData('areamostattention', e.target.value);
+                },
+                className: "shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            className: "sm:col-span-3"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+              className: "mt-1 max-w-2xl text-sm text-gray-500",
+              children: "Which activities do you prefer?"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("fieldset", {
+              className: "space-y-5",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                className: "relative flex items-start",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                  className: "flex items-center h-5",
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                    id: "cardio",
+                    "aria-describedby": "Cardio-description",
+                    name: "cardio",
+                    type: "checkbox",
+                    value: "Cardio",
+                    onChange: function onChange(e) {
+                      return setData('cardio', e.target.value);
+                    },
+                    className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "ml-3 text-sm",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                    htmlFor: "cardio",
+                    className: "font-medium text-gray-700",
+                    children: "Cardio"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                    id: "cardio-description",
+                    className: "text-gray-500",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      className: "sr-only",
+                      children: "Cardio"
+                    })
+                  })]
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                className: "relative flex items-start",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                  className: "flex items-center h-5",
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                    id: "zumba",
+                    "aria-describedby": "zumba-description",
+                    name: "zumba",
+                    value: "Zumba",
+                    onChange: function onChange(e) {
+                      return setData('zumba', e.target.value);
+                    },
+                    type: "checkbox",
+                    className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "ml-3 text-sm",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                    htmlFor: "zumba",
+                    className: "font-medium text-gray-700",
+                    children: "Zumba"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                    id: "zumba-description",
+                    className: "text-gray-500",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      className: "sr-only",
+                      children: "Zumba"
+                    })
+                  })]
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                className: "relative flex items-start",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                  className: "flex items-center h-5",
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                    id: "aerobics",
+                    "aria-describedby": "aerobics-description",
+                    name: "aerobics",
+                    value: "Aerobics",
+                    onChange: function onChange(e) {
+                      return setData('aerobics', e.target.value);
+                    },
+                    type: "checkbox",
+                    className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "ml-3 text-sm",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                    htmlFor: "aerobics",
+                    className: "font-medium text-gray-700",
+                    children: "Aerobics"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                    id: "aerobics-description",
+                    className: "text-gray-500",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      className: "sr-only",
+                      children: "Aerobics"
+                    })
+                  })]
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                className: "relative flex items-start",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                  className: "flex items-center h-5",
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                    id: "pilates",
+                    "aria-describedby": "pilates-description",
+                    name: "pilates",
+                    value: "Pilates",
+                    onChange: function onChange(e) {
+                      return setData('pilates', e.target.value);
+                    },
+                    type: "checkbox",
+                    className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "ml-3 text-sm",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                    htmlFor: "pilates",
+                    className: "font-medium text-gray-700",
+                    children: "Pilates"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                    id: "pilates-description",
+                    className: "text-gray-500",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      className: "sr-only",
+                      children: "Pilates"
+                    })
+                  })]
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                className: "relative flex items-start",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                  className: "flex items-center h-5",
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                    id: "fusion",
+                    "aria-describedby": "fusion-description",
+                    name: "fusion",
+                    value: "Fusion",
+                    onChange: function onChange(e) {
+                      return setData('fusion', e.target.value);
+                    },
+                    type: "checkbox",
+                    className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "ml-3 text-sm",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                    htmlFor: "fusion",
+                    className: "font-medium text-gray-700",
+                    children: "Fusion"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                    id: "fusion-description",
+                    className: "text-gray-500",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      className: "sr-only",
+                      children: "Fusion"
+                    })
+                  })]
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                className: "relative flex items-start",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                  className: "flex items-center h-5",
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                    id: "yoga",
+                    "aria-describedby": "yoga-description",
+                    name: "yoga",
+                    value: "Yoga",
+                    onChange: function onChange(e) {
+                      return setData('yoga', e.target.value);
+                    },
+                    type: "checkbox",
+                    className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "ml-3 text-sm",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                    htmlFor: "yoga",
+                    className: "font-medium text-gray-700",
+                    children: "Yoga"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                    id: "yoga-description",
+                    className: "text-gray-500",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      className: "sr-only",
+                      children: "Yoga"
+                    })
+                  })]
+                })]
+              })]
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "sm:col-span-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+              className: "mt-1 max-w-2xl text-sm text-gray-500",
+              children: "Eating habits"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("fieldset", {
+              className: "space-y-5",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                className: "relative flex items-start",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                  className: "flex items-center h-5",
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                    id: "fast-food",
+                    "aria-describedby": "fast-food-description",
+                    name: "fastfood",
+                    value: "Fast Food",
+                    onChange: function onChange(e) {
+                      return setData('fastfood', e.target.value);
+                    },
+                    type: "checkbox",
+                    className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "ml-3 text-sm",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                    htmlFor: "fast-food",
+                    className: "font-medium text-gray-700",
+                    children: "Fast Food"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                    id: "fast-food-description",
+                    className: "text-gray-500",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      className: "sr-only",
+                      children: "Fast Food"
+                    })
+                  })]
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                className: "relative flex items-start",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                  className: "flex items-center h-5",
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                    id: "drink-soda",
+                    "aria-describedby": "drink-soda-description",
+                    name: "drinksoda",
+                    value: "Drink Soda",
+                    onChange: function onChange(e) {
+                      return setData('drinksoda', e.target.value);
+                    },
+                    type: "checkbox",
+                    className: "focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "ml-3 text-sm",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+                    htmlFor: "drink-soda",
+                    className: "font-medium text-gray-700",
+                    children: "Drink Soda"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                    id: "drink-soda-description",
+                    className: "text-gray-500",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                      className: "sr-only",
+                      children: "Drink Soda"
+                    })
+                  })]
+                })]
+              })]
+            })]
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: step === 3 ? 'hidden' : "block pt-5",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "flex justify-end",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            type: "button",
+            onClick: backStep,
+            className: "green-bg py-2 px-4 border  rounded-md shadow-sm text-sm font-medium text-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500",
+            children: "Back"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            type: "button",
+            onClick: nextStep,
+            className: "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white green-bg hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500",
+            children: "Next"
+          })]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: step !== 3 ? 'hidden' : "block pt-5",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "flex justify-end",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            type: "button",
+            onClick: backStep,
+            className: "green-bg py-2 px-4 border  rounded-md shadow-sm text-sm font-medium text-black hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500",
+            children: "Back"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            type: "submit",
+            onClick: nextStep,
+            disabled: processing,
+            className: "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-orange-700 hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500",
+            children: "Submit"
+          })]
+        })
+      })]
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HealthInfoForm);
 
 /***/ }),
 
@@ -6362,7 +7976,7 @@ var LivestreamsTable = function LivestreamsTable(_ref) {
                       className: "relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6",
                       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
                         href: "/editlivestream/".concat(livestream.id),
-                        className: "text-indigo-600 hover:text-indigo-900",
+                        className: "text-orange-600 hover:text-orange-900",
                         children: ["Edit", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("span", {
                           className: "sr-only",
                           children: [", ", livestream.id]
@@ -6609,7 +8223,7 @@ function Example() {
                       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_headlessui_react__WEBPACK_IMPORTED_MODULE_6__.Tab, {
                         className: function className(_ref) {
                           var selected = _ref.selected;
-                          return classNames(selected ? 'text-indigo-600 border-indigo-600' : 'text-gray-900 border-transparent', 'flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium');
+                          return classNames(selected ? 'text-orange-600 border-orange-600' : 'text-gray-900 border-transparent', 'flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium');
                         },
                         children: category.name
                       }, category.name);
@@ -6749,7 +8363,7 @@ function Example() {
                         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
                           className: "relative flex",
                           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_headlessui_react__WEBPACK_IMPORTED_MODULE_8__.Popover.Button, {
-                            className: classNames(open ? 'border-b-indigo-600 green-text' : 'border-transparent text-gray-700 hover:text-gray-800', 'relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px'),
+                            className: classNames(open ? 'border-b-orange-600 green-text' : 'border-transparent text-gray-700 hover:text-gray-800', 'relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px'),
                             children: category.name
                           })
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_headlessui_react__WEBPACK_IMPORTED_MODULE_3__.Transition, {
@@ -6955,13 +8569,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ProfileForm = function ProfileForm(props) {
-  console.log(props.profile.id + " By Prince");
+  console.log(props + " By Prince");
 
   var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.useForm)({
-    type: props.profile.type || '',
-    bio: props.profile.bio || '',
-    image: props.profile.image || '',
-    cover_photo: props.profile.cover_photo || '',
+    type: props.profile === null ? '' : props.profile.type,
+    bio: props.profile === null ? '' : props.profile.bio,
+    image: props.profile === null ? '' : props.profile.image,
+    cover_photo: props.profile === null ? '' : props.profile.cover_photo,
     email: props.auth.user.email
   }),
       data = _useForm.data,
@@ -7417,7 +9031,7 @@ var TrainersTable = function TrainersTable(_ref) {
         className: "mt-4 sm:mt-0 sm:ml-16 sm:flex-none",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
           href: "/addtrainer",
-          className: "inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto",
+          className: "inline-flex items-center justify-center rounded-md border border-transparent green-bg px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 sm:w-auto",
           children: "Add Trainer"
         })
       })]
@@ -7465,7 +9079,7 @@ var TrainersTable = function TrainersTable(_ref) {
                       className: "relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6",
                       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
                         href: "/edittrainer/".concat(trainer.id),
-                        className: "text-indigo-600 hover:text-indigo-900",
+                        className: "text-orange-600 hover:text-orange-900",
                         children: ["Edit", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("span", {
                           className: "sr-only",
                           children: [", ", trainer.id]
@@ -7583,10 +9197,14 @@ var admin_navigation = [{
 var user_navigation = [{
   name: 'Dashboard',
   href: "/dashboard",
-  current: false
+  current: true
 }, {
   name: 'Health Info',
   href: '/health-info',
+  current: false
+}, {
+  name: 'Recommendations',
+  href: '#',
   current: false
 }];
 var trainer_navigation = [{
@@ -7646,7 +9264,7 @@ function Authenticated(_ref) {
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
                   className: "flex-shrink-0",
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Link, {
-                    href: "/",
+                    href: "/dashboard",
                     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Components_ApplicationLogo__WEBPACK_IMPORTED_MODULE_1__["default"], {
                       className: "block h-9 w-auto text-gray-500"
                     })
@@ -8590,7 +10208,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Components_Label__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Components/Label */ "./resources/js/Components/Label.js");
 /* harmony import */ var _Components_ValidationErrors__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/Components/ValidationErrors */ "./resources/js/Components/ValidationErrors.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Components_ApplicationLogo__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/Components/ApplicationLogo */ "./resources/js/Components/ApplicationLogo.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
 
 
 
@@ -8629,81 +10250,111 @@ function Register() {
     post(route('register'));
   };
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_Layouts_Guest__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__.Head, {
-      title: "Register"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_ValidationErrors__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      errors: errors
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("form", {
-      onSubmit: submit,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Label__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          forInput: "name",
-          value: "Name"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Input__WEBPACK_IMPORTED_MODULE_3__["default"], {
-          type: "text",
-          name: "name",
-          value: data.name,
-          className: "mt-1 block w-full",
-          autoComplete: "name",
-          isFocused: true,
-          handleChange: onHandleChange,
-          required: true
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+      className: "min-h-full flex",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+        className: "flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Components_ValidationErrors__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          errors: errors
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+          className: "mx-auto w-full max-w-sm lg:w-96",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__.Link, {
+              href: "/",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Components_ApplicationLogo__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                className: "w-20 h-20 fill-current text-gray-500"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h2", {
+              className: "mt-6 text-3xl font-extrabold text-gray-900",
+              children: "Sign in to your account"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+            className: "mt-8",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+              className: "mt-6",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("form", {
+                onSubmit: submit,
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Components_Label__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                    forInput: "name",
+                    value: "Name"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Components_Input__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                    type: "text",
+                    name: "name",
+                    value: data.name,
+                    className: "mt-1 block w-full",
+                    autoComplete: "name",
+                    isFocused: true,
+                    handleChange: onHandleChange,
+                    required: true
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+                  className: "mt-4",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Components_Label__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                    forInput: "email",
+                    value: "Email"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Components_Input__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                    type: "email",
+                    name: "email",
+                    value: data.email,
+                    className: "mt-1 block w-full",
+                    autoComplete: "username",
+                    handleChange: onHandleChange,
+                    required: true
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+                  className: "mt-4",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Components_Label__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                    forInput: "password",
+                    value: "Password"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Components_Input__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                    type: "password",
+                    name: "password",
+                    value: data.password,
+                    className: "mt-1 block w-full",
+                    autoComplete: "new-password",
+                    handleChange: onHandleChange,
+                    required: true
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+                  className: "mt-4",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Components_Label__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                    forInput: "password_confirmation",
+                    value: "Confirm Password"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Components_Input__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                    type: "password",
+                    name: "password_confirmation",
+                    value: data.password_confirmation,
+                    className: "mt-1 block w-full",
+                    handleChange: onHandleChange,
+                    required: true
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+                  className: "flex items-center justify-end mt-4",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__.Link, {
+                    href: route('login'),
+                    className: "underline text-sm text-gray-600 hover:text-gray-900",
+                    children: "Already registered?"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Components_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+                    className: "ml-4",
+                    processing: processing,
+                    children: "Register"
+                  })]
+                })]
+              })
+            })
+          })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-        className: "mt-4",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Label__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          forInput: "email",
-          value: "Email"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Input__WEBPACK_IMPORTED_MODULE_3__["default"], {
-          type: "email",
-          name: "email",
-          value: data.email,
-          className: "mt-1 block w-full",
-          autoComplete: "username",
-          handleChange: onHandleChange,
-          required: true
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-        className: "mt-4",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Label__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          forInput: "password",
-          value: "Password"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Input__WEBPACK_IMPORTED_MODULE_3__["default"], {
-          type: "password",
-          name: "password",
-          value: data.password,
-          className: "mt-1 block w-full",
-          autoComplete: "new-password",
-          handleChange: onHandleChange,
-          required: true
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-        className: "mt-4",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Label__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          forInput: "password_confirmation",
-          value: "Confirm Password"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Input__WEBPACK_IMPORTED_MODULE_3__["default"], {
-          type: "password",
-          name: "password_confirmation",
-          value: data.password_confirmation,
-          className: "mt-1 block w-full",
-          handleChange: onHandleChange,
-          required: true
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-        className: "flex items-center justify-end mt-4",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__.Link, {
-          href: route('login'),
-          className: "underline text-sm text-gray-600 hover:text-gray-900",
-          children: "Already registered?"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
-          className: "ml-4",
-          processing: processing,
-          children: "Register"
-        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+        className: "hidden lg:block relative w-0 flex-1",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("img", {
+          className: "absolute inset-0 h-full w-full object-cover",
+          src: "images/random2.jpg",
+          alt: ""
+        })
       })]
-    })]
+    })
   });
 }
 
@@ -9297,8 +10948,13 @@ function Dashboard(props) {
       title: "Overview"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "pb-10",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "mb-7 max-w-4xl mx-auto",
+          children: flash.message ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(FlashMassage, {
+            message: flash.message
+          }) : null
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
           className: "mt-5",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
             className: "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8",
@@ -9347,7 +11003,7 @@ function Dashboard(props) {
               })
             })
           })
-        })
+        })]
       })
     })]
   });
@@ -9497,6 +11153,53 @@ function MaternalCare(props) {
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
   });
 }
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Member/AddHealthInfo.js":
+/*!****************************************************!*\
+  !*** ./resources/js/Pages/Member/AddHealthInfo.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Layouts/Authenticated */ "./resources/js/Layouts/Authenticated.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _Components_HealthInfoForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/HealthInfoForm */ "./resources/js/Components/HealthInfoForm.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+var AddHealthInfo = function AddHealthInfo(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    auth: props.auth,
+    errors: props.errors,
+    header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
+      className: "font-semibold text-xl text-gray-800 leading-tight",
+      children: "Add Health Info"
+    }),
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
+      title: "Add Health Info"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      className: "py-12",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        className: "",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_HealthInfoForm__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+      })
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AddHealthInfo);
 
 /***/ }),
 
@@ -10654,7 +12357,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Layouts/Authenticated */ "./resources/js/Layouts/Authenticated.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
 /* harmony import */ var _Components_LivestreamsTable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/LivestreamsTable */ "./resources/js/Components/LivestreamsTable.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Components_FlashMessage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Components/FlashMessage */ "./resources/js/Components/FlashMessage.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -10663,23 +12368,28 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Livestreams = function Livestreams(props) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__["default"], {
     auth: props.auth,
     errors: props.errors,
-    header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
+    header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h2", {
       className: "font-semibold text-xl text-gray-800 leading-tight",
       children: "Livestreams"
     }),
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
       title: "Livestream"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
       className: "py-12",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+        className: "mb-7 max-w-4xl mx-auto",
+        children: flash.message ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_FlashMessage__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          message: flash.message
+        }) : null
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
         className: "ml-14",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_LivestreamsTable__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_LivestreamsTable__WEBPACK_IMPORTED_MODULE_3__["default"], {
           livestreams: props.livestreams
         })
-      })
+      })]
     })]
   });
 };
@@ -10718,6 +12428,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 var Profile = function Profile(props) {
+  console.log(props);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_2__["default"], {
     auth: props.auth,
     errors: props.errors,
@@ -10727,12 +12438,17 @@ var Profile = function Profile(props) {
     }),
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_3__.Head, {
       title: "Profile"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
       className: "py-12",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        className: "mb-7 max-w-4xl mx-auto",
+        children: flash.message ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(FlashMassage, {
+          message: flash.message
+        }) : null
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
         className: "ml-14",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_ProfileForm__WEBPACK_IMPORTED_MODULE_1__["default"], _objectSpread({}, props))
-      })
+      })]
     })]
   });
 };
@@ -10762,6 +12478,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Dashboard(props) {
+  var auth = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props.auth;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__["default"], {
     auth: props.auth,
     errors: props.errors,
@@ -10773,15 +12490,20 @@ function Dashboard(props) {
       title: "Dashboard"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "py-12",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
         className: "max-w-7xl mx-auto sm:px-6 lg:px-8",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "mb-7 max-w-4xl mx-auto",
+          children: flash.message ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(FlashMassage, {
+            message: flash.message
+          }) : null
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
           className: "bg-white overflow-hidden shadow-sm sm:rounded-lg",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
             className: "p-6 bg-white border-b border-gray-200",
-            children: "You're logged in as a Trainer!"
+            children: ["Welcome ", auth.user.name]
           })
-        })
+        })]
       })
     })]
   });
@@ -10803,33 +12525,48 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Layouts/Authenticated */ "./resources/js/Layouts/Authenticated.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Components_FlashMessage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/FlashMessage */ "./resources/js/Components/FlashMessage.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
 
 
 function Dashboard(props) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  var _usePage$props = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props,
+      flash = _usePage$props.flash,
+      auth = _usePage$props.auth;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__["default"], {
     auth: props.auth,
     errors: props.errors,
-    header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h2", {
+    header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
       className: "font-semibold text-xl text-gray-800 leading-tight",
       children: "Dashboard"
     }),
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
       title: "Dashboard"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "py-12",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
         className: "max-w-7xl mx-auto sm:px-6 lg:px-8",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          className: "mb-7 max-w-4xl mx-auto",
+          children: flash.message ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_FlashMessage__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            message: flash.message
+          }) : null
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
           className: "bg-white overflow-hidden shadow-sm sm:rounded-lg",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
             className: "p-6 bg-white border-b border-gray-200",
-            children: "You're logged in as a user!"
+            children: ["Welcome ", auth.user.name, props.profileinfo === null ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
+              children: ["Please fill in your health info on this ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Link, {
+                href: "/addhealthinfo",
+                children: "form"
+              })]
+            }) : null]
           })
-        })
+        })]
       })
     })]
   });
@@ -68869,6 +70606,8 @@ var map = {
 	"./Dashboard.js": "./resources/js/Pages/Dashboard.js",
 	"./MaternalCare": "./resources/js/Pages/MaternalCare.js",
 	"./MaternalCare.js": "./resources/js/Pages/MaternalCare.js",
+	"./Member/AddHealthInfo": "./resources/js/Pages/Member/AddHealthInfo.js",
+	"./Member/AddHealthInfo.js": "./resources/js/Pages/Member/AddHealthInfo.js",
 	"./Member/EditHealthInfo": "./resources/js/Pages/Member/EditHealthInfo.js",
 	"./Member/EditHealthInfo.js": "./resources/js/Pages/Member/EditHealthInfo.js",
 	"./Member/HealthInfo": "./resources/js/Pages/Member/HealthInfo.js",
@@ -70314,6 +72053,72 @@ function XIcon(props, svgRef) {
     strokeLinecap: "round",
     strokeLinejoin: "round",
     d: "M6 18L18 6M6 6l12 12"
+  }));
+}
+
+const ForwardRef = react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(XIcon);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ForwardRef);
+
+/***/ }),
+
+/***/ "./node_modules/@heroicons/react/solid/esm/CheckCircleIcon.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@heroicons/react/solid/esm/CheckCircleIcon.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
+function CheckCircleIcon(props, svgRef) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    ref: svgRef
+  }, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fillRule: "evenodd",
+    d: "M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z",
+    clipRule: "evenodd"
+  }));
+}
+
+const ForwardRef = react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(CheckCircleIcon);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ForwardRef);
+
+/***/ }),
+
+/***/ "./node_modules/@heroicons/react/solid/esm/XIcon.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@heroicons/react/solid/esm/XIcon.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
+function XIcon(props, svgRef) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    ref: svgRef
+  }, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fillRule: "evenodd",
+    d: "M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z",
+    clipRule: "evenodd"
   }));
 }
 

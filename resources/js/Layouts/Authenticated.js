@@ -27,8 +27,9 @@ const user = {
   const user_navigation = [
   
   
-    { name: 'Dashboard', href: "/dashboard", current: false },
+    { name: 'Dashboard', href: "/dashboard", current: true },
     { name: 'Health Info', href: '/health-info', current: false },
+    { name: 'Recommendations', href: '#', current: false },
   ]
 
   const trainer_navigation = [
@@ -65,7 +66,7 @@ export default function Authenticated({auth, header, children }) {
                 <div className="flex items-center justify-between h-16">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
-                        <Link href="/">
+                        <Link href="/dashboard">
                             <ApplicationLogo className="block h-9 w-auto text-gray-500" />
                         </Link>
                     </div>

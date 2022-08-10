@@ -2,6 +2,7 @@ import React from 'react';
 import Authenticated from '@/Layouts/Authenticated';
 import { Head } from '@inertiajs/inertia-react';
 import LivestreamsTable from '@/Components/LivestreamsTable';
+import FlashMassage from '@/Components/FlashMessage';
 const Livestreams = (props) => {
 
     return (
@@ -14,6 +15,13 @@ const Livestreams = (props) => {
             <Head title="Livestream" />
 
             <div className="py-12">
+                <div className='mb-7 max-w-4xl mx-auto'>
+                                {
+                                    flash.message ?
+                                        <FlashMassage message={flash.message} />
+                                    : null
+                                }
+                </div>
                 <div className='ml-14'>
                     <LivestreamsTable livestreams={props.livestreams} />
                 </div>
