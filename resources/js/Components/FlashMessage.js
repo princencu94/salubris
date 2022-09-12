@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CheckCircleIcon, XIcon } from '@heroicons/react/solid';
+import { CheckCircleIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const FlashMassage = ({message}) => {
     const [showMessage, setShowMessage] = useState(true);
@@ -25,7 +25,7 @@ const FlashMassage = ({message}) => {
                         className="inline-flex bg-green-50 rounded-md p-1.5 text-green-500 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-50 focus:ring-green-600"
                         >
                         <span className="sr-only">Dismiss</span>
-                            <XIcon className="h-5 w-5" aria-hidden="true" />
+                            <XMarkIcon className="h-5 w-5" aria-hidden="true" />
                         </button>
                     </div>
                     </div>

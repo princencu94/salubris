@@ -1,9 +1,10 @@
 import React from 'react';
 import BlogsTable from '@/Components/BlogsTable';
 import Authenticated from '@/Layouts/Authenticated';
-import { Head } from '@inertiajs/inertia-react';
+import FlashMassage from '@/Components/FlashMessage';
+import { Head, usePage } from '@inertiajs/inertia-react';
 const ShowBlogs = (props) => {
-
+    const { flash } = usePage().props
     return (
         
         <Authenticated
@@ -13,8 +14,15 @@ const ShowBlogs = (props) => {
         >
             <Head title="Blogs" />
 
-            <div className="py-12">
-                <div>
+            <div className="py-12 ">
+            <div className='mb-7 max-w-4xl mx-auto'>
+                            {
+                                flash.message ?
+                                    <FlashMassage message={flash.message} />
+                                : null
+                            }
+                        </div>
+                <div className='px-8'>
                     <BlogsTable blogs={props.blogs}/>
                 </div>
             </div>

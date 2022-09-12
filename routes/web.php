@@ -7,8 +7,11 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\LiveStreamController;
 use App\Http\Controllers\MemberController;
 use Illuminate\Foundation\Application;
+use App\Http\Controllers\ScheduleController;
+use App\Http\Controllers\BillingController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -40,15 +43,15 @@ Route::get('/maternal-care', function () {
     return Inertia::render('MaternalCare');
 });
 
-Route::get('/preventive-care', function () {
-    return Inertia::render('PreventiveCare');
+Route::get('/managed-healthcare', function () {
+    return Inertia::render('ManagedHealthCare');
 });
 
 Route::get('/wellness-spa', function () {
     return Inertia::render('WellnessSpa');
 });
 
-Route::get('/mental-and-behavioural-health', function () {
+Route::get('/mental-health-management', function () {
     return Inertia::render('MentalHealth');
 });
 
@@ -56,9 +59,7 @@ Route::get('/nutrition-and-wellness', function () {
     return Inertia::render('NutritionWellness');
 });
 
-Route::get('/blogs', function () {
-    return Inertia::render('Blogs');
-});
+Route::get('/blogs', [BlogController::class, 'blogtopics']);
 
 
 Route::get('/rewards', function () {
@@ -77,7 +78,7 @@ Route::get('/virtual-gym', function () {
     return Inertia::render('VirtualGym');
 });
 
-Route::get('/corporate-employee-wellness-program', function () {
+Route::get('/corporate-wellness-program', function () {
     return Inertia::render('CorporateEmployeeWellnessProgram');
 });
 
@@ -96,6 +97,7 @@ Route::group(['middleware' => ['auth']], function() {
 
 
 // Blog Routes Admin
+Route::get('/add-blog', [BlogController::class, 'create'])->middleware(['auth']);
 Route::post('/addblog', [BlogController::class, 'store'])->middleware(['auth']);
 Route::get('/adminblogs', [BlogController::class, 'index'])->middleware(['auth'])->name('adminblogs');
 Route::get('/editblog/{id}', [BlogController::class, 'show'])->middleware(['auth']);
@@ -131,6 +133,18 @@ Route::get('/addhealthinfo', [MemberController::class, 'create'])->middleware(['
 Route::post('/savehealthinfo', [MemberController::class, 'store'])->middleware(['auth'])->name('savehealthinfo');
 Route::get('/edithealthinfo/{id}', [MemberController::class, 'edit'])->middleware(['auth'])->name('edithealthinfo');
 Route::put('/edithealthinfo/{id}', [MemberController::class, 'update'])->middleware(['auth'])->name('edithealthinfo');
+
+// Schedule Routes
+Route::get('/schedule', [ScheduleController::class, 'index'])->middleware(['auth'])->name('schedule');
+Route::get('/addschedule', [ScheduleController::class, 'create'])->middleware(['auth'])->name('addschedule');
+Route::post('/add-schedule', [ScheduleController::class, 'store'])->middleware(['auth'])->name('add-schedule');
+Route::get('/editschedule/{id}', [ScheduleController::class, 'edit'])->middleware(['auth'])->name('editschedule');
+Route::put('/edit-schedule/{id}', [ScheduleController::class, 'update'])->middleware(['auth'])->name('edit-schedule');
+Route::delete('/delete-schedule/{id}', [ScheduleController::class, 'destroy'])->middleware(['auth'])->name('delete-schedule');
+
+// Billing Portal Routes
+Route::get('/billing', [BillingController::class, 'index'])->middleware(['auth'])->name('billing');
+Route::get('/billing-plans', [BillingController::class, 'plans'])->middleware(['auth'])->name('billing');
 
 
 require __DIR__.'/auth.php';

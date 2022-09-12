@@ -1,7 +1,7 @@
 
 import { Fragment, useState } from 'react'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
-import { MenuIcon, SearchIcon, ShoppingBagIcon, XIcon } from '@heroicons/react/outline'
+import { Bars4Icon, SearchIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import ApplicationLogo from './ApplicationLogo'
 
 const navigation = {
@@ -13,13 +13,25 @@ const navigation = {
         {
           name: 'Join a Class',
           href: 'virtual-gym',
-          imageSrc: 'images/trainers-2.jpg',
+          imageSrc: 'images/220244_4.jpg',
+          imageAlt: 'Female looking ready to train',
+        },
+        {
+          name: 'Personal Training',
+          href: 'virtual-gym',
+          imageSrc: 'images/220244_5.jpg',
+          imageAlt: '2 Models carrying weights',
+        },
+        {
+          name: 'Challenges & Bootcamps',
+          href: 'virtual-gym',
+          imageSrc: 'images/220244_6.jpg',
           imageAlt: 'Female looking ready to train',
         },
         {
           name: 'Nutrition Expert',
-          href: '#',
-          imageSrc: 'images/trainers-1.jpg',
+          href: 'virtual-gym',
+          imageSrc: 'images/Nutrition.jpg',
           imageAlt: '2 Models carrying weights',
         },
         
@@ -63,15 +75,29 @@ const navigation = {
       name: 'Salubris Revolution',
       featured: [
         {
-          name: '',
-          href: '#',
-          imageSrc: 'images/random1.jpg',
+          name: 'Maternal Care',
+          href: 'maternal-care',
+          imageSrc: 'images/220244_8.jpg',
           imageAlt: 'Drawstring top with elastic loop closure and textured interior padding.',
         },
         {
-          name: '',
-          href: '#',
-          imageSrc: 'images/random2.jpg',
+          name: 'Managed healthcare',
+          href: 'managed-healthcare',
+          imageSrc: 'images/220244_7.jpg',
+          imageAlt:
+            'Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.',
+        },
+
+        {
+          name: 'Mental health management',
+          href: 'mental-health-management',
+          imageSrc: 'images/220244_9.jpg',
+          imageAlt: 'Drawstring top with elastic loop closure and textured interior padding.',
+        },
+        {
+          name: 'Corporate wellness program',
+          href: 'corporate-wellness-program',
+          imageSrc: 'images/corporate-banner.jpg',
           imageAlt:
             'Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.',
         },
@@ -82,10 +108,8 @@ const navigation = {
           name: '',
           items: [
             { name: 'Maternal Care', href: 'maternal-care' },
-            { name: 'Preventive Care', href: 'preventive-care' },
-            { name: 'Mental and Behavioural Health', href: 'mental-and-behavioural-health' },
-            { name: 'Well woman program', href: 'well-woman-program' },
-            { name: 'Men cave program', href: 'men-cave-program' },
+            { name: 'Managed Healthcare', href: 'managed-healthcare' },
+            { name: 'Mental health Management ', href: 'mental-health-management' },
             { name: 'Corporate Employee Wellness Program', href: 'corporate-employee-wellness-program' },
           ],
         },
@@ -95,7 +119,7 @@ const navigation = {
   
   pages: [
     { name: 'Rewards', href: 'rewards' },
-    { name: 'Fitness store', href: '#' },
+    { name: 'Fitness store', href: 'https://store.salubriswellness.com/' },
     { name: 'Blogs', href: 'blogs' },
   ],
 }
@@ -111,7 +135,7 @@ export default function Example() {
     <div className="bg-white ">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
-        <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
+        <Dialog as="div" className="relative z-10 lg:hidden" onClose={setOpen}>
           <Transition.Child
             as={Fragment}
             enter="transition-opacity ease-linear duration-300"
@@ -124,7 +148,7 @@ export default function Example() {
             <div className="fixed inset-0 bg-black bg-opacity-25" />
           </Transition.Child>
 
-          <div className="fixed inset-0 flex z-40">
+          <div className="fixed inset-0 flex z-10">
             <Transition.Child
               as={Fragment}
               enter="transition ease-in-out duration-300 transform"
@@ -142,7 +166,7 @@ export default function Example() {
                     onClick={() => setOpen(false)}
                   >
                     <span className="sr-only">Close menu</span>
-                    <XIcon className="h-6 w-6" aria-hidden="true" />
+                    <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
                 </div>
 
@@ -185,27 +209,21 @@ export default function Example() {
                             </div>
                           ))}
                         </div>
-                        {category.sections.map((section) => (
-                          <div key={section.name}>
-                            <p id={`${category.id}-${section.id}-heading-mobile`} className="font-medium text-gray-900">
-                              {section.name}
-                            </p>
-                            <ul
-                              role="list"
-                              aria-labelledby={`${category.id}-${section.id}-heading-mobile`}
-                              className="mt-6 flex flex-col space-y-6"
-                            >
-                              {section.items.map((item) => (
-                                <li key={item.name} className="flow-root">
-                                  <a href={item.href} className="-m-2 p-2 block text-gray-500">
-                                    {item.name}
-                            
-                                  </a>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        ))}
+                        {category.featured.map((item) => (
+                            <div key={item.name} className="group relative text-sm">
+                              <div className="aspect-w-1 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden group-hover:opacity-75">
+                                <img src={item.imageSrc} alt={item.imageAlt} className="object-center object-cover" />
+                              </div>
+                              <a href={item.href} className="mt-6 block font-medium text-gray-900">
+                                <span className="absolute z-10 inset-0" aria-hidden="true" />
+                                {item.name}
+                               
+                              </a>
+                              <p aria-hidden="true" className="mt-1">
+                                
+                              </p>
+                            </div>
+                          ))}
                       </Tab.Panel>
                     ))}
                   </Tab.Panels>
@@ -249,7 +267,7 @@ export default function Example() {
                 onClick={() => setOpen(true)}
               >
                 <span className="sr-only">Open menu</span>
-                <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                <Bars4Icon className="h-6 w-6" aria-hidden="true" />
               </button>
 
               {/* Logo */}
@@ -261,7 +279,7 @@ export default function Example() {
               </div>
 
               {/* Flyout menus */}
-              <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch z-40">
+              <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch z-10">
                 <div className="h-full flex space-x-8">
                   {navigation.categories.map((category) => (
                     <Popover key={category.name} className="flex">
@@ -272,7 +290,7 @@ export default function Example() {
                               className={classNames(
                                 open
                                   ? 'border-b-orange-600 green-text'
-                                  : 'border-transparent text-gray-700 hover:text-gray-800',
+                                  : 'border-transparent text-black hover:text-gray-800',
                                 'relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px'
                               )}
                             >
@@ -295,8 +313,8 @@ export default function Example() {
 
                               <div className="relative bg-white">
                                 <div className="max-w-7xl mx-auto px-8">
-                                  <div className="grid grid-cols-2 gap-y-10 gap-x-8 py-16">
-                                    <div className="col-start-2 grid grid-cols-2 gap-x-8">
+                                  <div className="grid grid-cols-4 gap-4 py-16">
+                                    
                                       {category.featured.map((item) => (
                                         <div key={item.name} className="group relative text-base sm:text-sm">
                                           <div className="aspect-w-1 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden group-hover:opacity-75">
@@ -316,29 +334,6 @@ export default function Example() {
                                           </p>
                                         </div>
                                       ))}
-                                    </div>
-                                    <div className="row-start-1 grid grid-cols-3 gap-y-10 gap-x-8 text-sm">
-                                      {category.sections.map((section) => (
-                                        <div key={section.name}>
-                                          <p id={`${section.name}-heading`} className="font-medium text-gray-900">
-                                            {section.name}
-                                          </p>
-                                          <ul
-                                            role="list"
-                                            aria-labelledby={`${section.name}-heading`}
-                                            className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
-                                          >
-                                            {section.items.map((item) => (
-                                              <li key={item.name} className="flex">
-                                                <a href={item.href} className="hover:text-gray-800">
-                                                  {item.name}
-                                                </a>
-                                              </li>
-                                            ))}
-                                          </ul>
-                                        </div>
-                                      ))}
-                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -372,25 +367,8 @@ export default function Example() {
                   </a>
                 </div>
 
-                {/* Search */}
-                <div className="flex lg:ml-6">
-                  <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
-                    <span className="sr-only">Search</span>
-                    <SearchIcon className="w-6 h-6" aria-hidden="true" />
-                  </a>
-                </div>
 
-                {/* Cart */}
-                <div className="ml-4 flow-root lg:ml-6">
-                  <a href="#" className="group -m-2 p-2 flex items-center">
-                    <ShoppingBagIcon
-                      className="flex-shrink-0 h-6 w-6 text-gray-400 group-hover:text-gray-500"
-                      aria-hidden="true"
-                    />
-                    <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
-                    <span className="sr-only">items in cart, view bag</span>
-                  </a>
-                </div>
+                
               </div>
             </div>
           </div>

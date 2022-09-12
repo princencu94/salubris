@@ -13,8 +13,8 @@ const ShowTrainers = (props) => {
         >
             <Head title="Trainers" />
 
-            <div className="py-12">
-                <div>
+            <div className="py-12 ">
+                <div className='px-8'>
                     <TrainersTable trainers={props.trainers}/>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from '@inertiajs/inertia-react';
 
-const AddBlogForm = () => {
+const AddBlogForm = (props) => {
     const { data, setData, post, processing, errors } = useForm({
         title: null,
         description: null,
@@ -16,7 +16,7 @@ const AddBlogForm = () => {
         post('/addblog');
     }
     return (
-        <div className='max-w-4xl mx-auto'>
+        <div className='max-w-4xl ml-12'>
             <form className="space-y-8 divide-y divide-gray-200" onSubmit={handleSubmit}>
                 <div className="space-y-8 divide-y divide-gray-200">
                     <div>
@@ -25,7 +25,7 @@ const AddBlogForm = () => {
                     </div>
 
                     <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
-                        <div className="sm:col-span-4">
+                        <div className="sm:col-span-6">
                         <label htmlFor="username" className="block text-sm font-medium text-gray-700">
                             Blog Title
                         </label>
@@ -71,7 +71,7 @@ const AddBlogForm = () => {
                             <label htmlFor="country" className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
                                 Category
                             </label>
-                            <div className="mt-1 sm:mt-0 sm:col-span-2">
+                            <div className="mt-1 sm:mt-0 sm:col-span-6">
                                 <select
                                 id="category"
                                 name="category"
@@ -80,14 +80,11 @@ const AddBlogForm = () => {
                                 autoComplete="blog-category"
                                 className="max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
                                 >
-                                    <option>Nutrition</option>
-                                    <option>Mental Well Being</option>
-                                    <option>Fitness</option>
-                                    <option>Sexual Healing</option>
-                                    <option>Sleep</option>
-                                    <option>Womens Wellness</option>
-                                    <option>Parenthood </option>
-                                    <option>Product Reviews</option>
+                                    {
+                                        props.categories.map((categorie) => 
+                                            <option key={categorie.id} value={categorie.id}>{categorie.name}</option>
+                                        )
+                                    }
                                 </select>
                             </div>
                         </div>

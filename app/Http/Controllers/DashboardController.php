@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
 use Inertia\Inertia;
 use App\Models\UserHealthInfo;
+use App\Models\Subscription;
+use App\Models\User;
+use App\Models\Livestream;
+use App\Models\Blog;
+
 
 class DashboardController extends Controller
 {
@@ -16,29 +21,23 @@ class DashboardController extends Controller
 
         $id = Auth::user()->id;
         $profile = UserHealthInfo::where('user_id', $id)->first();
+        $subscription = Subscription::where('user_id', $id)->first();
+        $trialendingtime = strtotime($subscription->trial_period_end) - strtotime($subscription->trial_period_start);
+
+        // Admin Dashboard Stats
+        $livestreams = Livestream::all()->count();
+        $users = User::whereRoleIs('user')->count();
+        $blogs = Blog::all()->count();
+        $trainers = User::whereRoleIs('trainer')->count();
 
 
         if(Auth::user()->hasRole('user')) {
-            return Inertia::render('Userdashboard', ['profileinfo' => $profile]);
+            return Inertia::render('Userdashboard', ['profileinfo' => $profile, 'trialending' => floor($trialendingtime/(24*60*60))]);
         } elseif (Auth::user()->hasRole('trainer')) {
             return Inertia::render('Trainerdashboard');
         } elseif (Auth::user()->hasRole('admin')) {
-            return Inertia::render('Dashboard');
+            return Inertia::render('Dashboard', ['users' => $users, 'livestreams' => $livestreams, 'blogs' => $blogs, 'trainers' => $trainers]);
         }
     }
 
-    public function addblog() {
-        return Inertia::render('Admin/Addblog');
-    }
-
-    // public function userprofile() {
-    //     return view('user.profile');
-    // }
-
-
-    // public function userlivestreams() {
-        
-    //     $response = Http::get('https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCwrXi5ZknKThspJc-Gai04g&maxResults=10&key=AIzaSyAJqrPpe8fI5JUsrark2I93gv6Je0pmNJk')['items'];
-    //     return view('user.livestreams', ['response' => $response]);
-    // }
 }

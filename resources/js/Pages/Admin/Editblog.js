@@ -14,8 +14,8 @@ const AddBlog = (props) => {
             <Head title="Blogs" />
 
             <div className="py-12">
-                <div className="">
-                    <EditBlogForm blog={props.blog}/>
+                <div >
+                    <EditBlogForm {...props}/>
                 </div>
             </div>
         </Authenticated>

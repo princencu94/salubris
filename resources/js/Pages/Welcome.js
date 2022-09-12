@@ -1,43 +1,60 @@
 import React from 'react';
-import { Link, Head } from '@inertiajs/inertia-react';
 import MainHeader from '@/Components/Mainheader';
 import CarouselHero from '@/Components/Carousel';
 import Footer from '@/Components/Footer';
-import { SparklesIcon } from '@heroicons/react/outline';
+import { SparklesIcon } from '@heroicons/react/24/outline';
     
 const gymnacity = [
     {
-        name: 'Challenges',
+        name: 'Live stream fitness class',
         imageUrl:
-          'images/220244_5.png',
+          'images/220244_4.jpg',
+        bio:'Morning and Evening sessions at the comfort of your home or office. Sessions include Step Class, Core Conditioning.'
     },
     {
-        name: 'Private Classes',
+        name: 'Personal Training',
+        imageUrl:
+          'images/220244_5.jpg',
+        bio:'Private classes online and/ or home visits by professional trainers. Personalised training programs'
+    },
+    {
+        name: 'Challenges & Bootcamp ',
         imageUrl:
           'images/220244_6.jpg',
+        bio: 'Result oriented competitions - personal, group and corporate challenges'
     },
     {
-        name: 'Bootcamps',
+        name: 'Nutrition Expert',
         imageUrl:
-          'images/220244_7.jpg',
+          'images/Nutrition.jpg',
+        bio:'Access to various bootcamps - Strength, Weight loss, Belly, Butt, Thighs bootcamp, build up Bootcamp'
     },
   ]
 
   const managedcare = [
     {
-      name: 'Maternal care',
+      name: 'Maternal Care',
       imageUrl:
-        'images/220244_79.jpg',
+        'images/220244_8.jpg',
+    bio:''
     },
     {
-        name: 'Managed Health care',
+        name: 'Managed Health Care',
         imageUrl:
-          'images/220244_81.jpg',
+          'images/220244_7.jpg',
+        bio:''
     },
     {
-        name: 'Mental and Behavioural Health',
+        name: 'Mental Health Management ',
         imageUrl:
-          'images/220244_91.jpg',
+          'images/220244_9.jpg',
+        bio:''
+    },
+    {
+        name: 'Corporate Wellness Program',
+        imageUrl:
+          'images/corporate-banner.jpg',
+        bio:''
     },
   ]
 
@@ -59,7 +76,7 @@ export default function Welcome(props) {
                 </div>
                 <ul
                     role="list"
-                    className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
+                    className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-4 lg:mr-8"
                 >
                     {gymnacity.map((person) => (
                     <li key={person.name}>
@@ -70,7 +87,10 @@ export default function Welcome(props) {
 
                         <div className="space-y-2">
                             <div className="text-base leading-6 space-y-1">
-                            <h3 className="text-lg font-medium">{person.name}</h3>
+                                <h3 className="text-lg font-medium">{person.name}</h3>
+                            </div>
+                            <div className="text-sm">
+                                <p className="text-gray-500">{person.bio}</p>
                             </div>
                         </div>
                         </div>
@@ -98,7 +118,7 @@ export default function Welcome(props) {
                 </div>
                 <ul
                     role="list"
-                    className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
+                    className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-4 lg:mr-8"
                 >
                     {managedcare.map((person) => (
                     <li key={person.name}>
@@ -109,7 +129,10 @@ export default function Welcome(props) {
 
                         <div className="space-y-2">
                             <div className="text-base leading-6 space-y-1">
-                            <h3 className="text-lg font-medium">{person.name}</h3>
+                                <h3 className="text-lg font-medium">{person.name}</h3>
+                            </div>
+                            <div className="text-lg">
+                                <p className="text-gray-500">{person.bio}</p>
                             </div>
                         </div>
                         </div>

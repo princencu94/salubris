@@ -1,10 +1,10 @@
 import React from 'react';
 import Authenticated from '@/Layouts/Authenticated';
-import { Head } from '@inertiajs/inertia-react';
+import { Head, usePage } from '@inertiajs/inertia-react';
 import LivestreamsTable from '@/Components/LivestreamsTable';
 import FlashMassage from '@/Components/FlashMessage';
 const Livestreams = (props) => {
-
+    const { auth, flash } = usePage().props
     return (
         
         <Authenticated

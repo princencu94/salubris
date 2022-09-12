@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Blog extends Model
 {
-    protected $fillable = ['title','description','image_file', 'category'];
+    protected $fillable = ['user_id', 'title','description','image_path', 'category'];
     use HasFactory;
 }

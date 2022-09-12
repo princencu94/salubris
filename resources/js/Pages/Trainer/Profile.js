@@ -1,9 +1,9 @@
 import React from 'react';
 import ProfileForm from '@/Components/ProfileForm';
 import Authenticated from '@/Layouts/Authenticated';
-import { Head } from '@inertiajs/inertia-react';
+import { Head, usePage } from '@inertiajs/inertia-react';
 const Profile = (props) => {
-    console.log(props);
+    const { auth, flash } = usePage().props
     return (
         
         <Authenticated

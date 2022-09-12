@@ -2,7 +2,6 @@ import React from 'react';
 import Authenticated from '@/Layouts/Authenticated';
 import { Head, Link } from '@inertiajs/inertia-react';
 
-import { PaperClipIcon } from '@heroicons/react/solid'
 
 const HealthInfo = (props) => {
     

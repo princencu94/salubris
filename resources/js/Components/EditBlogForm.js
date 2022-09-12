@@ -1,29 +1,29 @@
 import React from 'react';
 import { useForm } from '@inertiajs/inertia-react';
 
-const EditBlogForm = ({ blog }) => {
+const EditBlogForm = ( props) => {
     const { data, setData, put, delete: destroy, processing, errors } = useForm({
-        title: blog.title || '',
-        description: blog.description || '',
-        image_file: blog.image_file || '',
-        category: blog.category || '',
+        title: props.blog.title || '',
+        description: props.blog.description || '',
+        image_file: props.blog.image_file || '',
+        category: props.category || '',
       });
 
     
     const handleSubmit = (e) => {
         e.preventDefault();
         alert("Submitting");
-        put(`/editblog/${blog.id}`);
+        put(`/editblog/${props.blog.id}`);
     }
 
     const handleDelete = () => {
         alert("Deleting!!");
-        destroy(`/deleteblog/${blog.id}`);
+        destroy(`/deleteblog/${props.blog.id}`);
     }
 
 
     return (
-        <div className='max-w-4xl mx-auto'>
+        <div className='max-w-4xl ml-12'>
             <form className="space-y-8 divide-y divide-gray-200" onSubmit={handleSubmit}>
                 <div className="space-y-8 divide-y divide-gray-200">
                     <div>
@@ -65,7 +65,7 @@ const EditBlogForm = ({ blog }) => {
                             onChange={e => setData('description', e.target.value)}
                             rows={3}
                             className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md"
-                            defaultValue={''}
+                            
                             />
                             <p className="mt-2 text-sm text-red-600" id="email-error">
                                 {errors.description && <span>{errors.description}</span>}
@@ -87,14 +87,11 @@ const EditBlogForm = ({ blog }) => {
                                 autoComplete="blog-category"
                                 className="max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
                                 >
-                                    <option>Nutrition</option>
-                                    <option>Mental Well Being</option>
-                                    <option>Fitness</option>
-                                    <option>Sexual Healing</option>
-                                    <option>Sleep</option>
-                                    <option>Womens Wellness</option>
-                                    <option>Parenthood </option>
-                                    <option>Product Reviews</option>
+                                    {
+                                        props.categories.map((categorie) => 
+                                            <option key={categorie.id} value={categorie.id}>{categorie.name}</option>
+                                        )
+                                    }
                                 </select>
                             </div>
                         </div>

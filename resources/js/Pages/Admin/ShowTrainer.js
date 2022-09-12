@@ -14,7 +14,7 @@ const ShowTrainer = (props) => {
             <Head title="Trainer" />
 
             <div className="py-12">
-                <div className="">
+                <div>
                     <ShowTrainerForm trainer={props.trainer}/>
                 </div>
             </div>

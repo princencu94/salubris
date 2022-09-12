@@ -3,7 +3,7 @@ import Authenticated from '@/Layouts/Authenticated';
 import { Head, usePage } from '@inertiajs/inertia-react';
 
 export default function Dashboard(props) {
-    const { auth } = usePage().props
+    const { auth, flash } = usePage().props
     return (
         <Authenticated
             auth={props.auth}

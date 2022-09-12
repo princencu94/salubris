@@ -19,7 +19,7 @@ const ShowTrainerForm = ({ trainer }) => {
 
 
     return (
-        <div className='max-w-4xl mx-auto'>
+        <div className='max-w-4xl ml-12'>
             <form onSubmit={handleSubmit}>
                     <div>
                         <Label forInput="name" value="Name" />

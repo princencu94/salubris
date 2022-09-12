@@ -1,6 +1,7 @@
 import React from 'react';
 import Authenticated from '@/Layouts/Authenticated';
-import { Head } from '@inertiajs/inertia-react';
+import { Head, usePage } from '@inertiajs/inertia-react';
+import FlashMassage from '@/Components/FlashMessage';
 import {
     SupportIcon,
     UserIcon,
@@ -8,16 +9,19 @@ import {
     ClipboardIcon
   } from '@heroicons/react/outline';
 
-const cards = [
-    { name: 'Trainers', href: '/trainers', icon: SupportIcon, amount: '50' },
-    { name: 'Live Streams', href: '#', icon: PlayIcon, amount: '12' },
-    { name: 'Blogs', href: '/adminblogs', icon: ClipboardIcon, amount: '14' },
 
-    { name: 'Users', href: '/users', icon: UserIcon, amount: '100' },
-   
-]
 
 export default function Dashboard(props) {
+    const { flash } = usePage().props
+    const { trainers, users, blogs, livestreams } = props;
+     
+    const cards = [
+        { name: 'Trainers', href: '/trainers', icon: SupportIcon, amount: trainers },
+        { name: 'Live Streams', href: '#', icon: PlayIcon, amount: livestreams },
+        { name: 'Blogs', href: '/adminblogs', icon: ClipboardIcon, amount: blogs },
+        { name: 'Users', href: '/users', icon: UserIcon, amount: users },
+       
+    ]
     return (
         <Authenticated
             auth={props.auth}
@@ -40,7 +44,7 @@ export default function Dashboard(props) {
                             <div className="mt-2 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-2">
                             {/* Card */}
                             {cards.map((card) => (
-                                <div key={card.name} className="bg-gray-50 overflow-hidden shadow rounded-lg">
+                                <div key={card.name} className="bg-gray-50 overflow-hidden shadow shadow-orange-600 rounded-lg">
                                 <div className="p-5">
                                     <div className="flex items-center">
                                     <div className="flex-shrink-0">

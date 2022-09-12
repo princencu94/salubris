@@ -3,7 +3,7 @@ import ApplicationLogo from '@/Components/ApplicationLogo';
 import { Link } from '@inertiajs/inertia-react';
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
+import { BellIcon, Bars4Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { usePage } from '@inertiajs/inertia-react'
 
 const user = {
@@ -22,6 +22,7 @@ const user = {
     { name: 'Livestreams', href: '#', current: false },
     { name: 'Blogs', href: '/adminblogs', current: false },
     { name: 'Users', href: '/users', current: false },
+    { name: 'Schedule', href: '/schedule', current: false },
   ]
 
   const user_navigation = [
@@ -59,7 +60,7 @@ export default function Authenticated({auth, header, children }) {
 
     return (
         <div className="min-h-full ">
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className="bg-gray-100">
           {({ open }) => (
             <>
               <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -81,7 +82,7 @@ export default function Authenticated({auth, header, children }) {
                             className={classNames(
                               item.current
                                 ? 'bg-gray-900 text-white'
-                                : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                : 'text-gray-300 hover:bg-gray-200 hover:text-white',
                               'px-3 py-2 rounded-md text-sm font-medium'
                             )}
                             aria-current={item.current ? 'page' : undefined}
@@ -98,7 +99,7 @@ export default function Authenticated({auth, header, children }) {
                             className={classNames(
                               item.current
                                 ? 'bg-gray-900 text-white'
-                                : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                : 'text-gray-300 hover:bg-gray-200 hover:text-white',
                               'px-3 py-2 rounded-md text-sm font-medium'
                             )}
                             aria-current={item.current ? 'page' : undefined}
@@ -117,7 +118,7 @@ export default function Authenticated({auth, header, children }) {
                             className={classNames(
                               item.current
                                 ? 'bg-gray-900 text-white'
-                                : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                : 'text-gray-300 hover:bg-gray-200 hover:text-white',
                               'px-3 py-2 rounded-md text-sm font-medium'
                             )}
                             aria-current={item.current ? 'page' : undefined}
@@ -185,9 +186,9 @@ export default function Authenticated({auth, header, children }) {
                     <Disclosure.Button className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                       <span className="sr-only">Open main menu</span>
                       {open ? (
-                        <XIcon className="block h-6 w-6" aria-hidden="true" />
+                        <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                       ) : (
-                        <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                        <Bars4Icon className="block h-6 w-6" aria-hidden="true" />
                       )}
                     </Disclosure.Button>
                   </div>

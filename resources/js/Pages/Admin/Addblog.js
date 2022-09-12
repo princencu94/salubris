@@ -14,7 +14,7 @@ const AddBlog = (props) => {
 
             <div className="py-12">
                 <div className="">
-                    <AddBlogForm/>
+                    <AddBlogForm {...props}/>
                 </div>
             </div>
         </Authenticated>

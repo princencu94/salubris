@@ -22,7 +22,7 @@ const AddTrainerForm = () => {
         post(route('addtrainer'));
     }
     return (
-        <div className='max-w-4xl mx-auto'>
+        <div className='max-w-4xl ml-12'>
             <ValidationErrors errors={errors} />
                 <form onSubmit={handleSubmit}>
                     <div>
