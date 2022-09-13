@@ -19,24 +19,15 @@ export default function MaternalCare(props) {
                             <div>
                             <div className="mt-6">
                                 <h2 className="text-2xl font-bold tracking-tight text-gray-900">
-                                    Just for you mother
-                                </h2>
-                                <ul role="list">
-                                    <li>Welcome pack after registration</li>
-                                    <li>Gift pack on delivery</li>
-                                    <li>Care pack - tissue oils, facial tissues</li>
-                                </ul>
-
-                                <h2 className="text-2xl font-bold tracking-tight text-gray-900">
                                     Basics
                                 </h2>
                                 <ul role="list">
-                                    <li>Prenatal & Post Natal Classes</li>
-                                    <li>Home massage Services</li>
-                                    
-                                </ul>
-  
-                                
+                                    <li>Prenatal and Post Natal Classes</li>
+                                    <li>24HR professional advice line</li>
+                                    <li>Home massage services </li>
+                                    <li>Salubris mother forum</li>
+                                    <li>Care package </li>
+                                </ul> 
                             </div>
                             </div>
                         </div>
@@ -44,7 +35,7 @@ export default function MaternalCare(props) {
                             <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                             <img
                                 className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                                src="images/livestream.jpg"
+                                src="images/220244_24.jpg"
                                 alt="Inbox user interface"
                             />
                             </div>

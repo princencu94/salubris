@@ -53,7 +53,7 @@ const gymnacity = [
     {
         name: 'Corporate Wellness Program',
         imageUrl:
-          'images/corporate-banner.jpg',
+          'images/220244_20.jpg',
         bio:''
     },
   ]
@@ -180,7 +180,7 @@ export default function Welcome(props) {
                 <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                 <img
                     className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                    src="images/220244_10.jpg"
+                    src="images/220244_11.jpg"
                     alt="A group of showing their shoes"
                 />
                 </div>

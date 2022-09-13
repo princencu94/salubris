@@ -61,7 +61,7 @@ class RegisteredUserController extends Controller
                 'subscription_end' => null,
             ]);
 
-            $user->attachRole('admin'); 
+            $user->attachRole('user'); 
             event(new Registered($user));
 
             Auth::login($user);

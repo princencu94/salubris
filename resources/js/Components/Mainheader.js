@@ -77,13 +77,13 @@ const navigation = {
         {
           name: 'Maternal Care',
           href: 'maternal-care',
-          imageSrc: 'images/220244_8.jpg',
+          imageSrc: 'images/220244_23.jpg',
           imageAlt: 'Drawstring top with elastic loop closure and textured interior padding.',
         },
         {
           name: 'Managed healthcare',
           href: 'managed-healthcare',
-          imageSrc: 'images/220244_7.jpg',
+          imageSrc: 'images/220244_18.jpg',
           imageAlt:
             'Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.',
         },
@@ -91,13 +91,13 @@ const navigation = {
         {
           name: 'Mental health management',
           href: 'mental-health-management',
-          imageSrc: 'images/220244_9.jpg',
+          imageSrc: 'images/220244_19.jpg',
           imageAlt: 'Drawstring top with elastic loop closure and textured interior padding.',
         },
         {
           name: 'Corporate wellness program',
           href: 'corporate-wellness-program',
-          imageSrc: 'images/corporate-banner.jpg',
+          imageSrc: 'images/220244_20.jpg',
           imageAlt:
             'Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.',
         },

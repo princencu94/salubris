@@ -9,6 +9,7 @@ use App\Http\Controllers\MemberController;
 use Illuminate\Foundation\Application;
 use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\BillingController;
+use App\Http\Controllers\ContactUsController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -89,6 +90,9 @@ Route::get('/corporate-wellness-program', function () {
 // Route::get('/dashboard', function () {
 //     return Inertia::render('Dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard')->uses([DashboardController::class, 'index']);
+
+// Contact form mail sending 
+Route::post('/sendmail', [ContactUsController::class, 'store'])->name('sendmail');
 
 Route::group(['middleware' => ['auth']], function() {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
