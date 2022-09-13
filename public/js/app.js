@@ -14106,15 +14106,15 @@ var gymnacity = [{
 }];
 var managedcare = [{
   name: 'Maternal Care',
-  imageUrl: 'images/220244_8.jpg',
+  imageUrl: 'images/220244_23.jpg',
   bio: ''
 }, {
   name: 'Managed Health Care',
-  imageUrl: 'images/220244_7.jpg',
+  imageUrl: 'images/220244_18.jpg',
   bio: ''
 }, {
   name: 'Mental Health Management ',
-  imageUrl: 'images/220244_9.jpg',
+  imageUrl: 'images/220244_19.jpg',
   bio: ''
 }, {
   name: 'Corporate Wellness Program',
