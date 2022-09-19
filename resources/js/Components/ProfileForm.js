@@ -3,7 +3,7 @@ import { useForm } from '@inertiajs/inertia-react';
 
 const ProfileForm = (props) => {
 
-    console.log(props + " By Prince");
+
     const { data, setData, post, put, processing, errors } = useForm({
         type: props.profile === null ? '' : props.profile.type ,
         bio: props.profile === null ? '' : props.profile.bio  ,
@@ -12,13 +12,16 @@ const ProfileForm = (props) => {
         email: props.auth.user.email ,
       })
 
-    
+   
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert("Submitting")
-            if(props.profile.user_id === undefined) {
+        
+            if(props.profile === null) {
                 post('/saveprofile');
+                alert("Submitting Save");
             } else {
+                alert("Submitting Update");
                 put(`/updateprofile/${props.auth.user.id}`);
             }
     }

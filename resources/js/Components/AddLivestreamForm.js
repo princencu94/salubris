@@ -1,13 +1,14 @@
 import React from 'react';
 import { useForm } from '@inertiajs/inertia-react';
 
-const AddLivestream = () => {
+const AddLivestream = ( props ) => {
     const { data, setData, post, processing, errors } = useForm({
         title: '',
         link: '',
-        description: '',
+        about: '',
+        category:'',
         start_date: '',
-        start_time:'',
+        time:'',
       })
 
     
@@ -67,6 +68,27 @@ const AddLivestream = () => {
                         </div>
 
                         <div className="sm:col-span-4">
+                            <label htmlFor="country" className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
+                                Livestream Type
+                            </label>
+                            <div className="mt-1 sm:mt-0 sm:col-span-6">
+                                <select
+                                id="trainer"
+                                name="category"
+                                value={data.category}
+                                onChange={e => setData('category', e.target.value)}
+                                className="max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+                                >
+                                    {
+                                        props.exercises.map((exercise) => (
+                                            <option key={exercise.id}>{exercise.name}</option>
+                                        ))
+                                    }
+                                </select>
+                            </div>
+                        </div>
+
+                        <div className="sm:col-span-4">
                         <label htmlFor="start_date" className="block text-sm font-medium text-gray-700">
                             Start Date
                         </label>
@@ -93,34 +115,34 @@ const AddLivestream = () => {
                         <div className="mt-1 flex rounded-md shadow-sm">
 
                             <input
-                            type="text"
-                            name="start_time"
-                            id="start_time"
-                            value={data.start_time}
-                            onChange={e => setData('start_time', e.target.value)}
+                            type="time"
+                            name="time"
+                            id="time"
+                            value={data.time}
+                            onChange={e => setData('time', e.target.value)}
                             className="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
                             />
                             <p className="mt-2 text-sm text-red-600" id="email-error">
-                                {errors.start_time && <span>{errors.start_time}</span>}
+                                {errors.time && <span>{errors.time}</span>}
                             </p>
                         </div>
                         </div>
 
-                        <div className="sm:col-span-6">
+                        <div className="sm:col-span-4">
                         <label htmlFor="about" className="block text-sm font-medium text-gray-700">
                             Description
                         </label>
                         <div className="mt-1">
                             <textarea
                             id="description"
-                            name="description"
-                            value={data.description}
-                            onChange={e => setData('description', e.target.value)}
+                            name="about"
+                            value={data.about}
+                            onChange={e => setData('about', e.target.value)}
                             rows={3}
                             className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md"
                             />
                             <p className="mt-2 text-sm text-red-600" id="email-error">
-                                {errors.description && <span>{errors.description}</span>}
+                                {errors.about && <span>{errors.about}</span>}
                             </p>
                         </div>
                         <p className="mt-2 text-sm text-gray-500">Write a few sentences about the Livestream.</p>

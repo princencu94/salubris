@@ -83,6 +83,7 @@ Route::get('/corporate-wellness-program', function () {
     return Inertia::render('CorporateEmployeeWellnessProgram');
 });
 
+
 // Route::get('/dashboard/add-blog', function () {
 //     return Inertia::render('Addblog');
 // });

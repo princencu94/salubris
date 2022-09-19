@@ -12,7 +12,7 @@ const user = {
     name: 'Tom Cook',
     email: 'tom@example.com',
     imageUrl:
-      'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      'images/profile.png',
   }
   const admin_navigation = [
   
@@ -280,11 +280,11 @@ export default function Authenticated({auth, header, children }) {
           )}
         </Disclosure>
 
-        <header className="bg-white shadow-sm ">
+        {/* <header className="bg-white shadow-sm ">
           <div className="max-w-6xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
             <h1 className="text-lg leading-6 font-semibold text-gray-900">{header}</h1>
           </div>
-        </header>
+        </header> */}
         <main>
           <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
             {children}

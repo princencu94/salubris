@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Inertia\Inertia;
 use App\Models\Livestream;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class LiveStreamController extends Controller
 {
@@ -26,7 +27,8 @@ class LiveStreamController extends Controller
      */
     public function create()
     {
-        return Inertia::render('Trainer/Livestream');
+        $exercises = DB::table('exercise_categories')->get();
+        return Inertia::render('Trainer/Livestream', ['exercises' => $exercises]);
     }
 
     /**
@@ -38,23 +40,25 @@ class LiveStreamController extends Controller
     public function store(Request $request)
     {
 
-        // $request->validate([
-        //     'title' => 'required',
-        //     'link' => 'required',
-        //     'about' => 'required',
-        //     'start_date' => 'required',
-        //     'start_time' => 'required',
+        $request->validate([
+            'title' => 'required',
+            'link' => 'required',
+            'category' => 'required',
+            'about' => 'required',
+            'start_date' => 'required',
+            'time' => 'required',
             
-        // ]);
+        ]);
 
         $livestream = new Livestream;
 
         $livestream->user_id = Auth::id();
         $livestream->title = $request->title;
-        $livestream->about = $request->description;
+        $livestream->about = $request->about;
         $livestream->link = $request->link;
         $livestream->start_date = $request->start_date;
-        $livestream->time = $request->start_time;
+        $livestream->time = $request->time;
+        $livestream->category = $request->category;
         
         $livestream->save();
 

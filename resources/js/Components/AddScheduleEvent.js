@@ -80,7 +80,7 @@ const AddScheduleEvent = ({ trainers }) => {
                                 >
                                     {
                                         trainers.map((trainer) => (
-                                            <option key={trainer.id}>{trainer.name}</option>
+                                            <option key={trainer.id} value={trainer.id}>{trainer.name}</option>
                                         ))
                                     }
                                     <option>Keegan Cooke</option>

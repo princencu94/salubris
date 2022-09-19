@@ -15,7 +15,7 @@ const Livestream = (props) => {
 
             <div className="py-12">
                 <div className='ml-14'>
-                    <AddLivestream/>
+                    <AddLivestream {...props}/>
                 </div>
             </div>
         </Authenticated>

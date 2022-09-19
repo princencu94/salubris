@@ -24,26 +24,18 @@ class CreateUserHealthInfosTable extends Migration
             $table->string('address');
             $table->string('mobile');
             $table->string('email');
-            $table->string('emergency_contact');
-            $table->string('phone');
-            $table->string('health_insuarance');
-            $table->string('fund');
-            $table->string('health_conditions');
-            $table->string('injuries');
+            $table->string('emergency_contact')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('health_conditions')->nullable();
+            $table->string('injuries')->nullable();
             $table->string('pregnant');
-            $table->integer('height');
-            $table->integer('current_weight');
-            $table->string('goal_weight');
-            $table->string('body_type');
-            $table->string('typical_day');
-            $table->string('energy_levels');
-            $table->string('last_time_weight');
-            $table->string('area_most_attention');
-            $table->string('activities');
-            $table->string('eating_habits');
-            $table->timestamps();
+            $table->string('area_of_attention');
+            $table->string('main_goal');
+            $table->string('personal_trainer');
+            $table->string('motivation');
 
             $table->foreign('user_id')->references('id')->on('users');
+            $table->timestamps();
         });
     }
 

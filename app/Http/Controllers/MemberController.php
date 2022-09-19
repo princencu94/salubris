@@ -40,7 +40,24 @@ class MemberController extends Controller
     public function store(Request $request)
     {
 
-        
+        $request->validate([
+ 
+            'title'  => 'required',
+            'gender'  => 'required',
+            'dateofbirth' => 'required',
+            'firstname' => 'required',
+            'surname' => 'required',
+            'address' => 'required',
+            'mobile' => 'required',
+            'email' => 'required',
+            'pregnant' => 'required',
+            'areaofattention' => 'required',
+            'maingoal' => 'required',
+            'personaltrainer' => 'required',
+            'motivation' => 'required'
+        ]);
+
+
         $id = Auth::user()->id;
         
         $userhealthinfo = new UserHealthInfo;
@@ -49,28 +66,21 @@ class MemberController extends Controller
         $userhealthinfo->title = $request->title;
         $userhealthinfo->gender = $request->gender;
         $userhealthinfo->date_of_birth = $request->dateofbirth;
-        $userhealthinfo->first_name = $request->first_name;
+        $userhealthinfo->first_name = $request->firstname;
         $userhealthinfo->surname = $request->surname;
         $userhealthinfo->address = $request->address;
         $userhealthinfo->mobile = $request->mobile; 	
         $userhealthinfo->email = $request->email; 	
         $userhealthinfo->emergency_contact = $request->emergencycontact;	
         $userhealthinfo->phone = $request->phone;	
-        $userhealthinfo->health_insuarance = $request->healthinsuarance;	
-        $userhealthinfo->fund = $request->fund;	
         $userhealthinfo->health_conditions = $request->heartdisease . "," . $request->cardiovascularcondition . "," . $request->dizziness . "," . $request->blackouts . "," . $request->fainting . "," . $request->asthma . "," . $request->bloodpressure . "," . $request->arthritis . "," . $request->diabetes . "," . $request->epilepsy . "," . $request->gout . "," . $request->familyhxofheartdisease . "," . $request->infectiousdiseases . "," . $request->otherconditions; 	
         $userhealthinfo->injuries = $request->knees . "," . $request->lowerback . "," . $request->shoulders . "," . $request->hipspelvis . "," . $request->flexibility . "," . $request->otherinjuries;	
         $userhealthinfo->pregnant = $request->pregnant;	
-        $userhealthinfo->height = $request->height;	
-        $userhealthinfo->current_weight = $request->currentweight;	
-        $userhealthinfo->goal_weight = $request->goalweight;	
-        $userhealthinfo->body_type = $request->bodytype;
-        $userhealthinfo->typical_day = $request->typicalday;	
-        $userhealthinfo->energy_levels = $request->energylevels;
-        $userhealthinfo->last_time_weight = $request->idealweight;	
-        $userhealthinfo->area_most_attention = $request->areamostattention;	
-        $userhealthinfo->activities = $request->cardio . $request->zumba . "," . $request->aerobics . "," . $request->pilates . "," . $request->fusion . "," . $request->yoga;	
-        $userhealthinfo->eating_habits = $request->fastfood . "," . $request->drinksoda;
+        $userhealthinfo->area_of_attention = $request->areaofattention;
+        $userhealthinfo->main_goal = $request->maingoal;	
+        $userhealthinfo->personal_trainer = $request->personaltrainer;	
+        $userhealthinfo->motivation = $request->motivation;		
+        
 
         $userhealthinfo->save();
 
@@ -111,6 +121,23 @@ class MemberController extends Controller
     public function update(Request $request, $id)
     {
 
+        $request->validate([
+ 
+            'title'  => 'required',
+            'gender'  => 'required',
+            'dateofbirth' => 'required',
+            'firstname' => 'required',
+            'surname' => 'required',
+            'address' => 'required',
+            'mobile' => 'required',
+            'email' => 'required',
+            'pregnant' => 'required',
+            'areaofattention' => 'required',
+            'maingoal' => 'required',
+            'personaltrainer' => 'required',
+            'motivation' => 'required'
+        ]);
+
         $userhealthinfo = UserHealthInfo::where('user_id', $id)->first();
 
         $userhealthinfo->user_id = $id;
@@ -124,21 +151,13 @@ class MemberController extends Controller
         $userhealthinfo->email = $request->email; 	
         $userhealthinfo->emergency_contact = $request->emergencycontact;	
         $userhealthinfo->phone = $request->phone;	
-        $userhealthinfo->health_insuarance = $request->healthinsuarance;	
-        $userhealthinfo->fund = $request->fund;	
         $userhealthinfo->health_conditions = $request->heartdisease . "," . $request->cardiovascularcondition . "," . $request->dizziness . "," . $request->blackouts . "," . $request->fainting . "," . $request->asthma . "," . $request->bloodpressure . "," . $request->arthritis . "," . $request->diabetes . "," . $request->epilepsy . "," . $request->gout . "," . $request->familyhxofheartdisease . "," . $request->infectiousdiseases . "," . $request->otherconditions; 	
         $userhealthinfo->injuries = $request->knees . "," . $request->lowerback . "," . $request->shoulders . "," . $request->hipspelvis . "," . $request->flexibility . "," . $request->otherinjuries;	
         $userhealthinfo->pregnant = $request->pregnant;	
-        $userhealthinfo->height = $request->height;	
-        $userhealthinfo->current_weight = $request->currentweight;	
-        $userhealthinfo->goal_weight = $request->goalweight;	
-        $userhealthinfo->body_type = $request->bodytype;
-        $userhealthinfo->typical_day = $request->typicalday;	
-        $userhealthinfo->energy_levels = $request->energylevels;
-        $userhealthinfo->last_time_weight = $request->idealweight;	
-        $userhealthinfo->area_most_attention = $request->areamostattention;	
-        $userhealthinfo->activities = $request->cardio . $request->zumba . "," . $request->aerobics . "," . $request->pilates . "," . $request->fusion . "," . $request->yoga;	
-        $userhealthinfo->eating_habits = $request->fastfood . "," . $request->drinksoda;
+        $userhealthinfo->area_of_attention = $request->areaofattention;
+        $userhealthinfo->main_goal = $request->maingoal;	
+        $userhealthinfo->personal_trainer = $request->personaltrainer;	
+        $userhealthinfo->motivation = $request->motivation;	
 
         $userhealthinfo->save();
 

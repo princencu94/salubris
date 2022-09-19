@@ -5,7 +5,7 @@ import { Head, Link } from '@inertiajs/inertia-react';
 
 const HealthInfo = (props) => {
     
-    const {user_id, title,gender,date_of_birth, first_name, surname, address, mobile, email, emergency_contact, phone, health_insuarance, fund, health_conditions, injuries, pregnant, height, current_weight, goal_weight, body_type, typical_day, energy_levels, last_time_weight, area_most_attention, activities, eating_habits  } = props.profileinfo;
+    const {user_id, title,gender,date_of_birth, first_name, surname, address, mobile, email, emergency_contact, phone, health_conditions, injuries, pregnant, motivation, main_goal, personal_trainer, area_of_attention  } = props.profileinfo;
     
     return (
         
@@ -70,14 +70,6 @@ const HealthInfo = (props) => {
                             <dt className="text-sm font-medium text-gray-500">Phone</dt>
                             <dd className="mt-1 text-sm text-gray-900">{phone}</dd>
                         </div>
-                        <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Private Health Insuarance</dt>
-                            <dd className="mt-1 text-sm text-gray-900">{health_insuarance}</dd>
-                        </div>
-                        <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Which Fund?</dt>
-                            <dd className="mt-1 text-sm text-gray-900">{fund}</dd>
-                        </div>
                         </dl>
                     </div>
                     <div className="px-4 py-5 sm:px-6">
@@ -98,66 +90,33 @@ const HealthInfo = (props) => {
                             <dt className="text-sm font-medium text-gray-500">Are you pregnant?</dt>
                             <dd className="mt-1 text-sm text-gray-900">{pregnant}</dd>
                         </div>
-                        <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">If so, how many weeks?</dt>
-                            <dd className="mt-1 text-sm text-gray-900">N/A</dd>
-                        </div>
+    
                         </dl>
                     </div>
                     <div className="px-4 py-5 sm:px-6">
-                        <h3 className="text-lg leading-6 font-medium text-gray-900">Segments</h3>
+                        <h3 className="text-lg leading-6 font-medium text-gray-900">Fitness Segments</h3>
                         <p className="mt-1 max-w-2xl text-sm text-gray-500">Personal details and application.</p>
                     </div>
                     <div className="border-t border-b border-gray-200 px-4 py-5 sm:px-6">
                         <dl className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
                         <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Height(Cms)</dt>
-                            <dd className="mt-1 text-sm text-gray-900">{height} </dd>
+                            <dt className="text-sm font-medium text-gray-500">Which areas need the most attention:</dt>
+                            <dd className="mt-1 text-sm text-gray-900">{area_of_attention} </dd>
                         </div>
                         <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Current Weight(Kgs)</dt>
-                            <dd className="mt-1 text-sm text-gray-900">{current_weight}</dd>
+                            <dt className="text-sm font-medium text-gray-500">What’s your main goal</dt>
+                            <dd className="mt-1 text-sm text-gray-900">{main_goal}</dd>
                         </div>
                         <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Your goal weight</dt>
-                            <dd className="mt-1 text-sm text-gray-900">{goal_weight}</dd>
+                            <dt className="text-sm font-medium text-gray-500">Do you need a personal trainer</dt>
+                            <dd className="mt-1 text-sm text-gray-900">{personal_trainer}</dd>
                         </div>
                         <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Body Type</dt>
-                            <dd className="mt-1 text-sm text-gray-900">{body_type}</dd>
+                            <dt className="text-sm font-medium text-gray-500">What motivates you to exercise</dt>
+                            <dd className="mt-1 text-sm text-gray-900">{motivation}</dd>
                         </div>
-                        <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Typical day</dt>
-                            <dd className="mt-1 text-sm text-gray-900">{typical_day}</dd>
-                        </div>
-                        <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Energy levels</dt>
-                            <dd className="mt-1 text-sm text-gray-900">{energy_levels}</dd>
-                        </div>
-                        <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">How physically active are you?</dt>
-                            <dd className="mt-1 text-sm text-gray-900">N/A</dd>
-                        </div>
-                        <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Last time on ideal weight?</dt>
-                            <dd className="mt-1 text-sm text-gray-900">{last_time_weight}</dd>
-                        </div>
-                        <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Which areas need the most attention</dt>
-                            <dd className="mt-1 text-sm text-gray-900">{area_most_attention}</dd>
-                        </div>
-                        <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">What's your main goal</dt>
-                            <dd className="mt-1 text-sm text-gray-900">N/A</dd>
-                        </div>
-                        <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Which activities do you prefer?</dt>
-                            <dd className="mt-1 text-sm text-gray-900">{activities.replace(/,+/g, ',').replace(/(^,)|(,$)/g, '')}</dd>
-                        </div>
-                        <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Eating Habits</dt>
-                            <dd className="mt-1 text-sm text-gray-900">{eating_habits.replace(/,+/g, ',').replace(/(^,)|(,$)/g, '')}</dd>
-                        </div>
+                        
+    
                         </dl>
                     </div>
                     </div>

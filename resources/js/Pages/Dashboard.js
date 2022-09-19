@@ -3,11 +3,11 @@ import Authenticated from '@/Layouts/Authenticated';
 import { Head, usePage } from '@inertiajs/inertia-react';
 import FlashMassage from '@/Components/FlashMessage';
 import {
-    SupportIcon,
+    UserGroupIcon,
     UserIcon,
     PlayIcon,
     ClipboardIcon
-  } from '@heroicons/react/outline';
+  } from '@heroicons/react/24/outline';
 
 
 
@@ -16,7 +16,7 @@ export default function Dashboard(props) {
     const { trainers, users, blogs, livestreams } = props;
      
     const cards = [
-        { name: 'Trainers', href: '/trainers', icon: SupportIcon, amount: trainers },
+        { name: 'Trainers', href: '/trainers', icon: UserGroupIcon, amount: trainers },
         { name: 'Live Streams', href: '#', icon: PlayIcon, amount: livestreams },
         { name: 'Blogs', href: '/adminblogs', icon: ClipboardIcon, amount: blogs },
         { name: 'Users', href: '/users', icon: UserIcon, amount: users },

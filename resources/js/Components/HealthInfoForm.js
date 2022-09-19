@@ -15,7 +15,6 @@ const HealthInfoForm = () => {
         
     }
 
- 
     const { data, setData, post, processing, errors } = useForm({
         
         title:'',
@@ -28,8 +27,6 @@ const HealthInfoForm = () => {
         email: "",
         emergencycontact: "",
         phone: "",
-        healthinsuarance: '',
-        fund: "N/A",
         heartdisease: "",
         cardiovascularcondition: "",
         dizziness: "",
@@ -52,30 +49,17 @@ const HealthInfoForm = () => {
         otherinjuries: "",
         injuries: "",
         pregnant: "",
-        height: "",
-        currentweight: "",
-        goalweight: "",
-        bodytype: "",
-        typicalday: "",
-        energylevels:"",
-        ideaweight: "",
-        areamostattention:"",
-        cardio: "",
-        zumba: "",
-        aerobics: "",
-        pilates: "",
-        fusion: "",
-        yoga: "",
-        fastfood: "",
-        drinksoda: "",
-        
+        areaofattention:"",
+        maingoal:"",
+        personaltrainer:"",
+        motivation:""
       });
 
       
     const handleSubmit = (e) => {
         e.preventDefault();
         post('/savehealthinfo');
-        setStep(1);
+        step(3)
     }
 
     const handleDelete = () => {
@@ -168,9 +152,9 @@ const HealthInfoForm = () => {
                                     <input
                                     type="text"
                                     name="firstname"
-                                    id="first-name"
-                                    value={data.first_name}
-                                    onChange={e => setData('first_name', e.target.value)}
+                                    id="firstname"
+                                    value={data.firstname}
+                                    onChange={e => setData('firstname', e.target.value)}
                                     className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
                                 </div>
@@ -228,7 +212,7 @@ const HealthInfoForm = () => {
                                     <input
                                     type="text"
                                     name="emergencycontact"
-                                    id="emergency-contact"
+                                    id="emergencycontact"
                                     value={data.emergencycontact}
                                     onChange={e => setData('emergencycontact', e.target.value)}
                                     className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
@@ -250,26 +234,10 @@ const HealthInfoForm = () => {
                                     />
                                 </div>
                                 </div>
-                                <div className="sm:col-span-3">
-                                <label htmlFor="health-insuarance" className="block text-sm font-medium text-gray-700">
-                                    Do you have private health Insuarance?
-                                </label>
-                                <div className="mt-1 ">
-                                    <select
-                                    id="health-insuarance"
-                                    name="healthinsuarance"
-                                    value={data.healthinsuarance}
-                                    onChange={e => setData('healthinsuarance', e.target.value)}
-                                    autoComplete="health-insuarance"
-                                    className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                                    >
-                                        <option>Yes</option>
-                                        <option>No</option>
-                                    </select>
-                                </div>
-                                </div>
+                                
 
                             </div>
+                        {/* Second block  */}
                         <div className={step === 2 ? 'block transition delay-700 duration-300 ease-in' : 'hidden'}>
                         <div>
                             <h3 className="text-lg leading-6 font-medium text-gray-900">Medical Questionnaire</h3>
@@ -756,10 +724,12 @@ const HealthInfoForm = () => {
                             </div> 
                             </div>
                         </div>
+
+                        {/* Third Block */}
                        
                         <div className={ step === 3 ? "mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6 transition delay-700 duration-300 ease-in" : 'hidden'}>
                             <div className="sm:col-span-3">
-                                <h3 className="text-lg leading-6 font-medium text-gray-900">Segments</h3>
+                                <h3 className="text-lg leading-6 font-medium text-gray-900">Fitness Segment</h3>
                                 <p className="mt-1 max-w-2xl text-sm text-gray-500">
                                     Biometrics
                                 </p>
@@ -768,335 +738,84 @@ const HealthInfoForm = () => {
                             <div className="sm:col-span-3"></div>
 
                             <div className="sm:col-span-3">
-                            <label htmlFor="height" className="block text-sm font-medium text-gray-700">
-                                Height
-                            </label>
-                            <div className="mt-1">
-                                <input
-                                type="text"
-                                name="height"
-                                value={data.height}
-                                onChange={e => setData('height', e.target.value)}
-                                id="height"
-                                autoComplete="height"
-                                className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                                />
-                            </div>
-                            </div>
-                            <div className="sm:col-span-3">
-                            <label htmlFor="current-weight" className="block text-sm font-medium text-gray-700">
-                                Current Weight
-                            </label>
-                            <div className="mt-1">
-                                <input
-                                type="text"
-                                name="currentweight"
-                                id="current-weight"
-                                value={data.currentweight}
-                                onChange={e => setData('currentweight', e.target.value)}
-                                className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                                />
-                            </div>
-                            </div>
-                            <div className="sm:col-span-3">
-                            <label htmlFor="goal-weight" className="block text-sm font-medium text-gray-700">
-                                Your Goal Weight
-                            </label>
-                            <div className="mt-1">
-                                <input
-                                type="text"
-                                name="goal-weight"
-                                value={data.goalweight}
-                                onChange={e => setData('goalweight', e.target.value)}
-                                id="goal-weight"
-                                className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                                />
-                            </div>
-                            </div>
-                            <div className="sm:col-span-3">
-                            <label htmlFor="body-type" className="block text-sm font-medium text-gray-700">
-                                Body Type
-                            </label>
-                            <div className="mt-1">
-                                <input
-                                type="text"
-                                name="bodytype"
-                                id="body-type"
-                                value={data.bodytype}
-                                onChange={e => setData('bodytype', e.target.value)}
-                                className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                                />
-                            </div>
-                            </div>
-                            <div className="sm:col-span-3">
-                            <label htmlFor="typical-day" className="block text-sm font-medium text-gray-700">
-                                Typical Day
-                            </label>
-                            <div className="mt-1">
-                                <input
-                                type="text"
-                                name="typicalday"
-                                id="typical-day"
-                                value={data.typicalday}
-                                onChange={e => setData('typicalday', e.target.value)}
-                                className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                                />
-                            </div>
-                            </div>
-                            <div className="sm:col-span-3">
-                            <label htmlFor="energy" className="block text-sm font-medium text-gray-700">
-                                Energy Levels
-                            </label>
-                            <div className="mt-1">
-                                <input
-                                type="text"
-                                name="energy"
-                                id="energy"
-                                value={data.energylevels}
-                                onChange={e => setData('energylevels', e.target.value)}
-                                className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                                />
-                            </div>
-                            </div>
-                            <div className="sm:col-span-3">
-                            <label htmlFor="physically-active" className="block text-sm font-medium text-gray-700">
-                                How physically active are you
-                            </label>
-                            <div className="mt-1">
-                                <input
-                                type="text"
-                                name="physically-active"
-                                id="physically-active"
-                                value={data.physicallyactive}
-                                onChange={e => setData('physicallyactive', e.target.value)}
-                                className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                                />
-                            </div>
-                            </div>
-                            <div className="sm:col-span-3">
-                            <label htmlFor="ideal-weight" className="block text-sm font-medium text-gray-700">
-                                Last time on ideal weight
-                            </label>
-                            <div className="mt-1">
-                                <input
-                                type="text"
-                                name="idealweight"
-                                id="ideal-weight"
-                                value={data.idealweight}
-                                onChange={e => setData('idealweight', e.target.value)}
-                                className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                                />
-                            </div>
-                            </div>
-                            
-                            <div className="sm:col-span-3">
-                            <label htmlFor="most-attention" className="block text-sm font-medium text-gray-700">
-                                Which areas need the most attention
-                            </label>
-                            <div className="mt-1">
-                                <input
-                                type="text"
-                                name="mostattention"
-                                id="most-attention"
-                                value={data.areamostattention}
-                                onChange={e => setData('areamostattention', e.target.value)}
-                                className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                                />
-                            </div>
-                            </div>
-
-                            <div className="sm:col-span-3"></div>
-
-
-                                <div className="sm:col-span-3">
-                                    <p className="mt-1 max-w-2xl text-sm text-gray-500">
-                                        Which activities do you prefer?
-                                    </p>
-                                    <fieldset className="space-y-5">
-                                    
-                                    <div className="relative flex items-start">
-                                        <div className="flex items-center h-5">
-                                        <input
-                                            id="cardio"
-                                            aria-describedby="Cardio-description"
-                                            name="cardio"
-                                            type="checkbox"
-                                            value='Cardio'
-                                            onChange={e => setData('cardio', e.target.value)}
-                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
-                                        />
-                                        </div>
-                                        <div className="ml-3 text-sm">
-                                        <label htmlFor="cardio" className="font-medium text-gray-700">
-                                            Cardio
-                                        </label>
-                                        <span id="cardio-description" className="text-gray-500">
-                                            <span className="sr-only">Cardio</span>
-                                        </span>
-                                        </div>
-                                    </div>
-                                    <div className="relative flex items-start">
-                                        <div className="flex items-center h-5">
-                                        <input
-                                            id="zumba"
-                                            aria-describedby="zumba-description"
-                                            name="zumba"
-                                            value="Zumba"
-                                            onChange={e => setData('zumba', e.target.value)}
-                                            type="checkbox"
-                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
-                                        />
-                                        </div>
-                                        <div className="ml-3 text-sm">
-                                        <label htmlFor="zumba" className="font-medium text-gray-700">
-                                            Zumba
-                                        </label>
-                                        <span id="zumba-description" className="text-gray-500">
-                                            <span className="sr-only">Zumba</span>
-                                        </span>
-                                        </div>
-                                    </div>
-                                    <div className="relative flex items-start">
-                                        <div className="flex items-center h-5">
-                                        <input
-                                            id="aerobics"
-                                            aria-describedby="aerobics-description"
-                                            name="aerobics"
-                                            value="Aerobics"
-                                            onChange={e => setData('aerobics', e.target.value)}
-                                            type="checkbox"
-                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
-                                        />
-                                        </div>
-                                        <div className="ml-3 text-sm">
-                                        <label htmlFor="aerobics" className="font-medium text-gray-700">
-                                            Aerobics
-                                        </label>
-                                        <span id="aerobics-description" className="text-gray-500">
-                                            <span className="sr-only">Aerobics</span>
-                                        </span>
-                                        </div>
-                                    </div>
-
-                                    <div className="relative flex items-start">
-                                        <div className="flex items-center h-5">
-                                        <input
-                                            id="pilates"
-                                            aria-describedby="pilates-description"
-                                            name="pilates"
-                                            value="Pilates"
-                                            onChange={e => setData('pilates', e.target.value)}
-                                            type="checkbox"
-                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
-                                        />
-                                        </div>
-                                        <div className="ml-3 text-sm">
-                                        <label htmlFor="pilates" className="font-medium text-gray-700">
-                                            Pilates
-                                        </label>
-                                        <span id="pilates-description" className="text-gray-500">
-                                            <span className="sr-only">Pilates</span>
-                                        </span>
-                                        </div>
-                                    </div>
-
-                                    <div className="relative flex items-start">
-                                        <div className="flex items-center h-5">
-                                        <input
-                                            id="fusion"
-                                            aria-describedby="fusion-description"
-                                            name="fusion"
-                                            value="Fusion"
-                                            onChange={e => setData('fusion', e.target.value)}
-                                            type="checkbox"
-                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
-                                        />
-                                        </div>
-                                        <div className="ml-3 text-sm">
-                                        <label htmlFor="fusion" className="font-medium text-gray-700">
-                                            Fusion
-                                        </label>
-                                        <span id="fusion-description" className="text-gray-500">
-                                            <span className="sr-only">Fusion</span>
-                                        </span>
-                                        </div>
-                                    </div>
-
-                                    <div className="relative flex items-start">
-                                        <div className="flex items-center h-5">
-                                        <input
-                                            id="yoga"
-                                            aria-describedby="yoga-description"
-                                            name="yoga"
-                                            value="Yoga"
-                                            onChange={e => setData('yoga', e.target.value)}
-                                            type="checkbox"
-                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
-                                        />
-                                        </div>
-                                        <div className="ml-3 text-sm">
-                                        <label htmlFor="yoga" className="font-medium text-gray-700">
-                                            Yoga
-                                        </label>
-                                        <span id="yoga-description" className="text-gray-500">
-                                            <span className="sr-only">Yoga</span>
-                                        </span>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                                </div>
-
-                                <div className="sm:col-span-3">
-                                    <p className="mt-1 max-w-2xl text-sm text-gray-500">
-                                        Eating habits
-                                    </p>
-                                    <fieldset className="space-y-5">
-                                    
-                                    <div className="relative flex items-start">
-                                        <div className="flex items-center h-5">
-                                        <input
-                                            id="fast-food"
-                                            aria-describedby="fast-food-description"
-                                            name="fastfood"
-                                            value="Fast Food"
-                                            onChange={e => setData('fastfood', e.target.value)}
-                                            type="checkbox"
-                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
-                                        />
-                                        </div>
-                                        <div className="ml-3 text-sm">
-                                        <label htmlFor="fast-food" className="font-medium text-gray-700">
-                                            Fast Food
-                                        </label>
-                                        <span id="fast-food-description" className="text-gray-500">
-                                            <span className="sr-only">Fast Food</span>
-                                        </span>
-                                        </div>
-                                    </div>
-                                    <div className="relative flex items-start">
-                                        <div className="flex items-center h-5">
-                                        <input
-                                            id="drink-soda"
-                                            aria-describedby="drink-soda-description"
-                                            name="drinksoda"
-                                            value="Drink Soda"
-                                            onChange={e => setData('drinksoda', e.target.value)}
-                                            type="checkbox"
-                                            className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
-                                        />
-                                        </div>
-                                        <div className="ml-3 text-sm">
-                                        <label htmlFor="drink-soda" className="font-medium text-gray-700">
-                                            Drink Soda
-                                        </label>
-                                        <span id="drink-soda-description" className="text-gray-500">
-                                            <span className="sr-only">Drink Soda</span>
-                                        </span>
-                                        </div>
-                                    </div>
-                                </fieldset>
+                            <label htmlFor="area-of-attention" className="block text-sm font-medium text-gray-700">
+                                Which areas need the most attention:
+                                </label>
+                                <div className="mt-1 ">
+                                    <select
+                                    id="areaofattention"
+                                    name="areaofattention"
+                                    value={data.areaofattention}
+                                    onChange={e => setData('areaofattention', e.target.value)}
+                                    className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                    >
+                                        <option>Back</option>
+                                        <option>Arms</option>
+                                        <option>Butt</option>
+                                        <option>Chest</option>
+                                        <option>Belly Legs</option>
+                                    </select>
                                 </div>
                             </div>
+                            <div className="sm:col-span-3">
+                            <label htmlFor="main-goal" className="block text-sm font-medium text-gray-700">
+                                What’s your main goal
+                            </label>
+                                <div className="mt-1 ">
+                                    <select
+                                    id="maingoal"
+                                    name="maingoal"
+                                    value={data.maingoal}
+                                    onChange={e => setData('maingoal', e.target.value)}
+                                    className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                    >
+                                        <option>Lose Weight</option>
+                                        <option>Gain Weight</option>
+                                        <option>Keep fit</option>
+                                        <option>Postpartum Recovery</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div className="sm:col-span-3">
+                            <label htmlFor="personal-trainer" className="block text-sm font-medium text-gray-700">
+                                Do you need a personal trainer?
+                            </label>
+                                <div className="mt-1 ">
+                                    <select
+                                    id="personaltrainer"
+                                    name="personaltrainer"
+                                    value={data.personaltrainer}
+                                    onChange={e => setData('personaltrainer', e.target.value)}
+                                    className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                    >
+                                        <option>Yes</option>
+                                        <option>No</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div className="sm:col-span-3">
+                            <label htmlFor="motivation" className="block text-sm font-medium text-gray-700">
+                                What motivates you to exercise
+                            </label>
+                                <div className="mt-1 ">
+                                    <select
+                                    id="motivation"
+                                    name="motivation"
+                                    value={data.motivation}
+                                    onChange={e => setData('motivation', e.target.value)}
+                                    className="shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                    >
+                                        <option>lmproving Health</option>
+                                        <option>Relive stress</option>
+                                        <option>Gain confidence</option>
+                                        <option>Get firm and toned</option>
+                                        <option>Boost Energy</option>
+                                        <option>Gain Healthy Habits</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
                             
                 
                 </div>

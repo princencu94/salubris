@@ -3,13 +3,6 @@ import MainHeader from '@/Components/Mainheader';
 import Footer from '@/Components/Footer';
 import PageHeader from '@/Components/PageHeader';
 
-import {
-    InboxIcon,
-    SparklesIcon,
-    
-  } from '@heroicons/react/24/outline';
-
-
 const VirtualGym = () => {
     return (
         <>

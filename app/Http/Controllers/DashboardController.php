@@ -13,6 +13,7 @@ use App\Models\Subscription;
 use App\Models\User;
 use App\Models\Livestream;
 use App\Models\Blog;
+use Illuminate\Support\Facades\DB;
 
 
 class DashboardController extends Controller
@@ -21,9 +22,12 @@ class DashboardController extends Controller
 
         $id = Auth::user()->id;
         $profile = UserHealthInfo::where('user_id', $id)->first();
-        $subscription = Subscription::where('user_id', $id)->first();
-        $trialendingtime = strtotime($subscription->trial_period_end) - strtotime($subscription->trial_period_start);
 
+        if(Auth::user()->hasRole('user')) {
+            $subscription = Subscription::where('user_id', $id)->first();
+            $trialendingtime = strtotime($subscription->trial_period_end) - strtotime($subscription->trial_period_start);
+        }
+        
         // Admin Dashboard Stats
         $livestreams = Livestream::all()->count();
         $users = User::whereRoleIs('user')->count();
@@ -31,10 +35,17 @@ class DashboardController extends Controller
         $trainers = User::whereRoleIs('trainer')->count();
 
 
+
+        if(Auth::user()->hasRole('trainer')) {
+            $trainer_profile = DB::table('profiles')->where('user_id', Auth::user()->id)->first();
+            $trainer_livestreams = Livestream::where('user_id', Auth::user()->id)->get();
+            $trainer_schedule = DB::table('schedules')->where('trainer', Auth::user()->id)->get();
+        }
+
         if(Auth::user()->hasRole('user')) {
             return Inertia::render('Userdashboard', ['profileinfo' => $profile, 'trialending' => floor($trialendingtime/(24*60*60))]);
         } elseif (Auth::user()->hasRole('trainer')) {
-            return Inertia::render('Trainerdashboard');
+            return Inertia::render('Trainerdashboard', ['trainer_profile' => $trainer_profile, 'trainer_livestreams' => $trainer_livestreams, 'trainer_schedules' => $trainer_schedule ]);
         } elseif (Auth::user()->hasRole('admin')) {
             return Inertia::render('Dashboard', ['users' => $users, 'livestreams' => $livestreams, 'blogs' => $blogs, 'trainers' => $trainers]);
         }

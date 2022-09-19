@@ -18,6 +18,7 @@ class CreateLivestreamsTable extends Migration
             $table->foreignId('user_id')->index();
             $table->string('title');
             $table->string('link');
+            $table->string('category');
             $table->date('start_date');
             $table->string('time');
             $table->text('about');
