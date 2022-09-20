@@ -13574,7 +13574,7 @@ function Rewards(props) {
                 className: "mt-6",
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
                   className: "mt-4 text-lg text-gray-500",
-                  children: "Get rewarded for living a healthy lifestyle. Earn points redeemable as discounts at our various valued partners by participating in Sal\xFAbris activities, events and accomplish set wellness targets."
+                  children: "Get rewarded for living a healthy lifestyle. Earn points redeemable as discounts at our various valued partners by participating in Sal\xFAbris activities, events and accomplish set wellness targets. Discounts include but not limited to:"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("ul", {
                   role: "list",
                   className: "text-gray-500",

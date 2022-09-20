@@ -97,12 +97,12 @@ export default function Dashboard(props) {
                                     
                                     <div className="-mt-3 ">
                                       
-                                      <Link
+                                      <a
                                         href={`join/${livestream.id}`}
                                         className="inline-flex bg-gradient-to-r from-orange-300 to-orange-600 bg-origin-border px-4 py-1 border border-transparent text-sm font-medium rounded-lg shadow-sm text-white hover:from-orange-100 hover:to-orange-700"
                                       >
                                         Join
-                                      </Link>
+                                      </a>
                                     </div>
                                     </li>
                                 ))}

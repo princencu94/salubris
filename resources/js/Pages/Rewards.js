@@ -44,8 +44,8 @@ export default function Rewards(props) {
                             <div>
                             <div className="mt-6">
                             <p className="mt-4 text-lg text-gray-500">
-                            Get rewarded for living a healthy lifestyle. Earn points redeemable as discounts at our various valued partners by participating in Salúbris activities, events and accomplish set wellness targets. 
-
+                              Get rewarded for living a healthy lifestyle. Earn points redeemable as discounts at our various valued partners by participating in Salúbris activities, events and accomplish set wellness targets. 
+                              Discounts include but not limited to:
                             </p>
 
                                 <ul role="list" className='text-gray-500'>
