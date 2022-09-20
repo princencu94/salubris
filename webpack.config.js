@@ -5,5 +5,8 @@ module.exports = {
         alias: {
             '@': path.resolve('resources/js'),
         },
+        headers: {
+            'X-Frame-Options': 'sameorigin'
+        },
     },
 };

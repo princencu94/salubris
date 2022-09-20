@@ -5,6 +5,7 @@ import FlashMassage from '@/Components/FlashMessage';
 import TrialBanner from '@/Components/TrialBanner';
 
 
+
 export default function Dashboard(props) {
     const { flash, auth } = usePage().props
     return (
@@ -81,25 +82,32 @@ export default function Dashboard(props) {
                 <section aria-labelledby="quick-links-title">
                     <div className='overflow-hidden rounded-lg bg-white shadow'>
                         <div className='px-4 py-4'>
-                        <h2 className="font-semibold text-lg text-gray-900">Schedule</h2>
-                        <ol className="mt-4  -ml-8 divide-y divide-gray-200 text-sm leading-6 text-gray-500">
-                            {/* {
-                                trainer_schedules.length !== 0 ?
-                                trainer_schedules.map((trainer_schedule) => (
-                                    <li className="py-1 sm:flex">
-                                        <time dateTime="2022-01-19" className="w-28 flex-none">
-                                        {trainer_schedule.date}
-                                        </time>
-                                        <p className="mt-0 flex-auto font-semibold text-gray-900 sm:mt-0">{trainer_schedule.event_name}</p>
-                                        <p className="flex-none sm:ml-6">
-                                            <time dateTime={trainer_schedule.start_time}>{trainer_schedule.start_time}</time> - <time dateTime="2022-01-13T16:30">4:30 PM</time>
-                                        </p>
+                        <h2 className="font-semibold text-lg text-gray-900">Currently Live</h2>
+                        
+                            <ul role="list" className="-ml-0 mt-3 grid gap-x-5 grid-flow-col auto-cols-max w-full overflow-x-auto">
+                                {props.user_livestreams.map((livestream) => (
+                                    <li key={livestream.id} className="relative">
+                                    <div className="group w-60 h-40 block overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-orange-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+                                        <img src='images/livestream.jpg' alt="" className="pointer-events-none object-cover group-hover:opacity-75" />
+                                        <button type="button" className="absolute inset-0 focus:outline-none">
+                                        <span className="sr-only">View details for {livestream.title}</span>
+                                        </button>
+                                    </div>
+                                    <p className="pointer-events-none mt-2 block truncate text-base font-medium text-gray-900">{livestream.title}</p>
+                                    
+                                    <div className="-mt-3 ">
+                                      
+                                      <Link
+                                        href={`join/${livestream.id}`}
+                                        className="inline-flex bg-gradient-to-r from-orange-300 to-orange-600 bg-origin-border px-4 py-1 border border-transparent text-sm font-medium rounded-lg shadow-sm text-white hover:from-orange-100 hover:to-orange-700"
+                                      >
+                                        Join
+                                      </Link>
+                                    </div>
                                     </li>
-                                ))
-                                :
-                                <p className='text-left text-xl font-semibold text-gray-500'>No Events Scheduled Yet For You!</p>
-                            } */}
-                        </ol>
+                                ))}
+                            </ul>
+                        
                         </div>
                         </div>
                 </section>

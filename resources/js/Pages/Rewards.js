@@ -9,6 +9,9 @@ const features = [
       name: 'Wellness spa',
     },
     {
+      name: 'Gym membership',
+    },
+    {
       name: 'Road recovery',
     },
     {
@@ -18,22 +21,10 @@ const features = [
       name: 'Car rental',
     },
     {
-      name: 'Courier',
+      name: 'Courier services',
     },
     {
-      name: 'Dry cleaner',
-    },
-    {
-      name: 'Holiday resorts',
-    },
-    {
-      name: 'Swimming academy',
-    },
-    {
-      name: 'Hardware',
-    },
-    {
-      name: 'Wholesales',
+      name: 'Healthy eats',
     },
   ]
 
@@ -53,10 +44,12 @@ export default function Rewards(props) {
                             <div>
                             <div className="mt-6">
                             <p className="mt-4 text-lg text-gray-500">
-                              Get rewarded for living a healthy lifestyle. Earn points by participating in Salubris activities and events. Accomplish set wellness targets and challenges and earn more points redeemable at various Salubris Valued Partners. Get discounts, vouchers, hampers, instant prizes and more!
+                            Get rewarded for living a healthy lifestyle. Earn points redeemable as discounts at our various valued partners by participating in Salúbris activities, events and accomplish set wellness targets. 
+
                             </p>
 
                                 <ul role="list" className='text-gray-500'>
+
                                 {features.map((feature) => (
                                     <li key={feature.name}>{feature.name}</li>
                                   ))}

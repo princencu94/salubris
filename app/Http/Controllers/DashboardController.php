@@ -21,11 +21,13 @@ class DashboardController extends Controller
     public function index() {
 
         $id = Auth::user()->id;
-        $profile = UserHealthInfo::where('user_id', $id)->first();
+        
 
         if(Auth::user()->hasRole('user')) {
             $subscription = Subscription::where('user_id', $id)->first();
             $trialendingtime = strtotime($subscription->trial_period_end) - strtotime($subscription->trial_period_start);
+            $profile = UserHealthInfo::where('user_id', $id)->first();
+            $user_livestreams = Livestream::all();
         }
         
         // Admin Dashboard Stats
@@ -42,8 +44,9 @@ class DashboardController extends Controller
             $trainer_schedule = DB::table('schedules')->where('trainer', Auth::user()->id)->get();
         }
 
+       
         if(Auth::user()->hasRole('user')) {
-            return Inertia::render('Userdashboard', ['profileinfo' => $profile, 'trialending' => floor($trialendingtime/(24*60*60))]);
+            return Inertia::render('Userdashboard', ['profileinfo' => $profile, 'trialending' => floor($trialendingtime/(24*60*60)), 'user_livestreams' => $user_livestreams]);
         } elseif (Auth::user()->hasRole('trainer')) {
             return Inertia::render('Trainerdashboard', ['trainer_profile' => $trainer_profile, 'trainer_livestreams' => $trainer_livestreams, 'trainer_schedules' => $trainer_schedule ]);
         } elseif (Auth::user()->hasRole('admin')) {

@@ -10,6 +10,7 @@ use Illuminate\Foundation\Application;
 use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\BillingController;
 use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\JoinLivestreamController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -150,6 +151,10 @@ Route::delete('/delete-schedule/{id}', [ScheduleController::class, 'destroy'])->
 // Billing Portal Routes
 Route::get('/billing', [BillingController::class, 'index'])->middleware(['auth'])->name('billing');
 Route::get('/billing-plans', [BillingController::class, 'plans'])->middleware(['auth'])->name('billing');
+
+
+// Member Join
+Route::get('/join/{id}', [JoinLivestreamController::class, 'show'])->middleware(['auth'])->name('join');
 
 
 require __DIR__.'/auth.php';
