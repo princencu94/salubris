@@ -32,7 +32,7 @@ export default function Rewards(props) {
     return (
         <>
         <MainHeader/>
-            <PageHeader title="Rewards" image="images/220244_16.jpg"/>
+            <PageHeader title="Rewards" image="images/rewards-banner.jpg"/>
 
             {/* Page Main content start */}
 
@@ -44,7 +44,8 @@ export default function Rewards(props) {
                             <div>
                             <div className="mt-6">
                             <p className="mt-4 text-lg text-gray-500">
-                              Get rewarded for living a healthy lifestyle. Earn points redeemable as discounts at our various valued partners by participating in Salúbris activities, events and accomplish set wellness targets. 
+                              Get rewarded for living a healthy lifestyle. Earn points redeemable as discounts at our various valued
+                              partners by participating in Salúbris activities, events and accomplish set wellness targets.
                               Discounts include but not limited to:
                             </p>
 
@@ -65,7 +66,7 @@ export default function Rewards(props) {
                             <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                             <img
                                 className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                                src="images/220244_11.jpg"
+                                src="images/rewards-inner.jpg"
                                 alt="Inbox user interface"
                             />
                             </div>

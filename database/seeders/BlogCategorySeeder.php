@@ -35,7 +35,7 @@ class BlogCategorySeeder extends Seeder
         DB::table('categories')->insert([
             'name' => 'Fitness',
             'description' => 'Fitness that fits you',
-            'image_path' => 'random5.jpg',
+            'image_path' => 'fitness-blog.jpg',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
@@ -43,7 +43,7 @@ class BlogCategorySeeder extends Seeder
         DB::table('categories')->insert([
             'name' => 'Sexual Health',
             'description' => 'Sexual health for every body',
-            'image_path' => 'random1.jpg',
+            'image_path' => 'sexual-health.jpg',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
@@ -51,7 +51,7 @@ class BlogCategorySeeder extends Seeder
         DB::table('categories')->insert([
             'name' => 'Sleep',
             'description' => 'Your biggest ally in your pursuit of getting healthier sleep',
-            'image_path' => 'random3.jpg',
+            'image_path' => 'sleep.jpg',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
@@ -59,7 +59,7 @@ class BlogCategorySeeder extends Seeder
         DB::table('categories')->insert([
             'name' => 'Womens Wellness',
             'description' => 'From your hair to down there, we have got your health covered',
-            'image_path' => 'random4.jpg',
+            'image_path' => 'women-wellness.jpg',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
@@ -67,7 +67,7 @@ class BlogCategorySeeder extends Seeder
         DB::table('categories')->insert([
             'name' => 'Parenthood',
             'description' => 'Take care of you so you can take care of them',
-            'image_path' => 'random5.jpg',
+            'image_path' => 'parent-hood.jpg',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
@@ -75,7 +75,7 @@ class BlogCategorySeeder extends Seeder
         DB::table('categories')->insert([
             'name' => 'Product Reviews',
             'description' => 'Simplify your search for health products with expert reviews and brand comparisons',
-            'image_path' => 'random6.jpg',
+            'image_path' => 'product-review.jpg',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);

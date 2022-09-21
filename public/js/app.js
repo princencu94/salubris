@@ -11651,150 +11651,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ Blogs)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Components/Mainheader */ "./resources/js/Components/Mainheader.js");
-/* harmony import */ var _Components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/Footer */ "./resources/js/Components/Footer.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Components_Mainheader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Components/Mainheader */ "./resources/js/Components/Mainheader.js");
+/* harmony import */ var _Components_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Components/Footer */ "./resources/js/Components/Footer.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
 
 
 
-
-var posts = [{
-  title: 'Nutrition',
-  href: '#',
-  category: {
-    name: 'Go to Topic',
-    href: '#'
-  },
-  description: 'Healthy eating in real life',
-  date: 'Mar 16, 2020',
-  datetime: '2020-03-16',
-  imageUrl: 'images/random7.jpg'
-}, {
-  title: 'Mental Well-Being',
-  href: '#',
-  category: {
-    name: 'Go to Topic',
-    href: '#'
-  },
-  description: 'Resources to care for your mental and emotional well-being',
-  date: 'Mar 10, 2020',
-  datetime: '2020-03-10',
-  imageUrl: 'images/random6.jpg'
-}, {
-  title: 'Fitness',
-  href: '#',
-  category: {
-    name: 'Go to Topic',
-    href: '#'
-  },
-  description: 'Fitness that fits you',
-  date: 'Feb 12, 2020',
-  datetime: '2020-02-12',
-  imageUrl: 'images/220244_.jpg'
-}, {
-  title: 'Sexual Health',
-  href: '#',
-  category: {
-    name: 'Go to Topic',
-    href: '#'
-  },
-  description: 'Sexual health for every body',
-  date: 'Feb 12, 2020',
-  datetime: '2020-02-12',
-  imageUrl: 'images/random1.jpg'
-}, {
-  title: 'Sleep',
-  href: '#',
-  category: {
-    name: 'Go to Topic',
-    href: '#'
-  },
-  description: 'Your biggest ally in your pursuit of getting healthier sleep',
-  date: 'Feb 12, 2020',
-  datetime: '2020-02-12',
-  imageUrl: 'images/random3.jpg'
-}, {
-  title: 'Womens Wellness',
-  href: '#',
-  category: {
-    name: 'Go to Topic',
-    href: '#'
-  },
-  description: 'From your hair to down there, we have got your health covered',
-  date: 'Feb 12, 2020',
-  datetime: '2020-02-12',
-  imageUrl: 'images/random4.jpg'
-}, {
-  title: 'Parenthood',
-  href: '#',
-  category: {
-    name: 'Go to Topic',
-    href: '#'
-  },
-  description: 'Take care of you so you can take care of them',
-  date: 'Feb 12, 2020',
-  datetime: '2020-02-12',
-  imageUrl: 'images/random5.jpg'
-}, {
-  title: 'Product Reviews',
-  href: '#',
-  category: {
-    name: 'Go to Topic',
-    href: '#'
-  },
-  description: 'Simplify your search for health products with expert reviews and brand comparisons',
-  date: 'Feb 12, 2020',
-  datetime: '2020-02-12',
-  imageUrl: 'images/random6.jpg'
-}];
 function Blogs(props) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_Mainheader__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Components_Mainheader__WEBPACK_IMPORTED_MODULE_1__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "relative  pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
         className: "relative max-w-6xl mx-auto",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
           className: "text-center",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h2", {
             className: "text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl",
             children: "Wellness Topics"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
           className: "mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none",
           children: props.categories.map(function (categorie) {
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
               className: "flex flex-col rounded-lg shadow-lg overflow-hidden",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
                 className: "flex-shrink-0",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
                   className: "h-48 w-full object-cover",
                   src: "images/".concat(categorie.image_path),
                   alt: ""
                 })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
                 className: "flex-1 bg-white p-6 flex flex-col justify-between",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
                   className: "flex-1",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("a", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("a", {
                     href: categorie.id,
                     className: "block mt-2",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
                       className: "text-xl font-semibold text-gray-900",
                       children: categorie.name
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
                       className: "mt-3 text-base text-gray-500",
                       children: categorie.description
                     })]
                   })
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
                   className: "mt-6 flex items-center",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
                     className: "text-sm font-medium green-text",
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
                       href: categorie.id,
                       className: "hover:underline",
                       children: "Go to Topic"
@@ -11806,7 +11715,7 @@ function Blogs(props) {
           })
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
   });
 }
 
@@ -13557,7 +13466,7 @@ function Rewards(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_Mainheader__WEBPACK_IMPORTED_MODULE_1__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_PageHeader__WEBPACK_IMPORTED_MODULE_3__["default"], {
       title: "Rewards",
-      image: "images/220244_16.jpg"
+      image: "images/rewards-banner.jpg"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
       className: "relative pt-16 pb-16 overflow-hidden",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
@@ -13592,7 +13501,7 @@ function Rewards(props) {
               className: "pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
                 className: "w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none",
-                src: "images/220244_11.jpg",
+                src: "images/rewards-inner.jpg",
                 alt: "Inbox user interface"
               })
             })
@@ -14216,7 +14125,7 @@ function Dashboard(props) {
                               children: livestream.title
                             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                               className: "-mt-3 ",
-                              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Link, {
+                              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
                                 href: "join/".concat(livestream.id),
                                 className: "inline-flex bg-gradient-to-r from-orange-300 to-orange-600 bg-origin-border px-4 py-1 border border-transparent text-sm font-medium rounded-lg shadow-sm text-white hover:from-orange-100 hover:to-orange-700",
                                 children: "Join"
@@ -14329,7 +14238,7 @@ var VirtualGym = function VirtualGym() {
                   children: "Live stream Group & Individual classes"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
                   className: "mt-4 text-lg text-gray-500",
-                  children: "Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra."
+                  children: "Fitness Classes are a great way to get started, make progress on your goals, or change up your routine. Our certified instructors make sure you get motivated, learn proper form and Make Fitness Fun."
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                   className: "mt-6",
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
@@ -14346,7 +14255,7 @@ var VirtualGym = function VirtualGym() {
               className: "pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
                 className: "w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none",
-                src: "images/220244_25.jpg",
+                src: "images/livestream-inner.jpg",
                 alt: "Inbox user interface"
               })
             })
@@ -14366,7 +14275,7 @@ var VirtualGym = function VirtualGym() {
                   children: "Bootcamps, challenges"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
                   className: "mt-4 text-lg text-gray-500",
-                  children: "Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra."
+                  children: "Result oriented targets, doing a variety of tough, total body moves designed to challenge every aspect of your fitness: strength, endurance, balance, and agility."
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                   className: "mt-6",
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
@@ -14383,7 +14292,7 @@ var VirtualGym = function VirtualGym() {
               className: "pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
                 className: "w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none",
-                src: "images/220244_21.jpg",
+                src: "images/bootcamp-inner.jpg",
                 alt: "Customer profile user interface"
               })
             })
@@ -14400,9 +14309,6 @@ var VirtualGym = function VirtualGym() {
                   children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
                     className: "text-3xl font-extrabold tracking-tight text-gray-900",
                     children: "Fitness store"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
-                    className: "mt-4 text-lg text-gray-500",
-                    children: "Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra."
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                     className: "mt-6",
                     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
@@ -14463,19 +14369,19 @@ __webpack_require__.r(__webpack_exports__);
 var gymnacity = [{
   name: 'Live stream fitness class',
   imageUrl: 'images/220244_4.jpg',
-  bio: 'Morning and Evening sessions at the comfort of your home or office. Sessions include Step Class, Core Conditioning.'
+  bio: 'AM and PM workout classess wherever you are, distance is not a barrier to fitness.'
 }, {
   name: 'Personal Training',
   imageUrl: 'images/220244_5.jpg',
-  bio: 'Private classes online and/ or home visits by professional trainers. Personalised training programs'
+  bio: 'One on one fitness coaching and support based on your goals and health needs with a Certified Trainer.'
 }, {
   name: 'Challenges & Bootcamp ',
   imageUrl: 'images/220244_6.jpg',
-  bio: 'Result oriented competitions - personal, group and corporate challenges'
+  bio: 'Result oriented targets, doing a variety of tough, total body moves designed to challenge every aspect of your fitness: strength, endurance, balance, and agility.'
 }, {
   name: 'Nutrition Expert',
   imageUrl: 'images/Nutrition.jpg',
-  bio: 'Access to various bootcamps - Strength, Weight loss, Belly, Butt, Thighs bootcamp, build up Bootcamp'
+  bio: 'Get specialists advise on what to eat in order to lead a healthy lifestyle or achieve a specific health-related goal.'
 }];
 var managedcare = [{
   name: 'Maternal Care',
@@ -14509,7 +14415,7 @@ function Welcome(props) {
               children: "Salubris Gymnacity"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
               className: "text-xl text-gray-500 text-center max-w-3xl mx-auto",
-              children: "Join 10+ million members on the top digital fitness platform and stay toned, lose weight, get strong, reduce stress, and reach your goals."
+              children: "Making Fitness Fun"
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("ul", {
             role: "list",
@@ -14560,7 +14466,7 @@ function Welcome(props) {
               children: "Salubris Revolution"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
               className: "text-xl text-black text-center max-w-3xl mx-auto",
-              children: "Join 10+ million members on the top digital fitness platform and stay toned, lose weight, get strong, reduce stress, and reach your goals."
+              children: "Your 360\xB0 Wellness Partner"
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("ul", {
             role: "list",
@@ -14620,7 +14526,7 @@ function Welcome(props) {
                 children: "Rewards"
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
                 className: "mt-4 text-lg text-gray-500",
-                children: "Get rewarded for living a healthy lifestyle. Earn points by participating in Salubris activities and events. Accomplish set wellness targets and challenges and earn more points redeemable at various Salubris Valued Partners. Get discounts, vouchers, hampers, instant prizes and more!"
+                children: "Get rewarded for living a healthy lifestyle. Earn points redeemable as discounts at our various valued partners which include but not limited to: Wellness spa, Gym membership, Road recovery, Flights, Car rental, Courier services and Healthy eats."
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "mt-6",
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
@@ -14637,7 +14543,7 @@ function Welcome(props) {
             className: "pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
               className: "w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none",
-              src: "images/220244_11.jpg",
+              src: "images/rewards-banner.jpg",
               alt: "A group of showing their shoes"
             })
           })
@@ -14678,7 +14584,7 @@ function Welcome(props) {
                 children: "Partner with us"
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
                 className: "text-lg text-black",
-                children: "Whether you\u2019re just starting your fitness journey, exploring something new, or ready for a Hard AF challenge, get motivated with curated training programs that take you for a ride and amp up amazing results."
+                children: "Wellness providers, including but not limited to nutritionist/dietitian, wellness coach, fitness trainer, therapist, beauty spa lets come together and make this world a healthy place."
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
                 className: "block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-black hover:bg-gray-50 sm:inline-block sm:w-auto",
                 href: "#",

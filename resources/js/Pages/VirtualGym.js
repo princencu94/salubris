@@ -21,9 +21,9 @@ const VirtualGym = () => {
                         Live stream Group & Individual classes
                     </h2>
                     <p className="mt-4 text-lg text-gray-500">
-                      Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia
-                      porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at.
-                      Lectus viverra dui tellus ornare pharetra.
+                      Fitness Classes are a great way to get started, make progress on your goals, or change up
+                      your routine. Our certified instructors make sure you get motivated, learn proper form and
+                      Make Fitness Fun.
                     </p>
                     <div className="mt-6">
                       <a
@@ -40,7 +40,7 @@ const VirtualGym = () => {
                 <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                   <img
                     className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                    src="images/220244_25.jpg"
+                    src="images/livestream-inner.jpg"
                     alt="Inbox user interface"
                   />
                 </div>
@@ -57,9 +57,8 @@ const VirtualGym = () => {
                         Bootcamps, challenges
                     </h2>
                     <p className="mt-4 text-lg text-gray-500">
-                      Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia
-                      porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at.
-                      Lectus viverra dui tellus ornare pharetra.
+                        Result oriented targets, doing a variety of tough, total body moves designed to challenge
+                        every aspect of your fitness: strength, endurance, balance, and agility.
                     </p>
                     <div className="mt-6">
                       <a
@@ -76,7 +75,7 @@ const VirtualGym = () => {
                 <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                   <img
                     className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                    src="images/220244_21.jpg"
+                    src="images/bootcamp-inner.jpg"
                     alt="Customer profile user interface"
                   />
                 </div>
@@ -90,11 +89,6 @@ const VirtualGym = () => {
                     <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
                         Fitness store
                     </h2>
-                    <p className="mt-4 text-lg text-gray-500">
-                      Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia
-                      porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at.
-                      Lectus viverra dui tellus ornare pharetra.
-                    </p>
                     <div className="mt-6">
                       <a
                         href="https://store.salubriswellness.com/"

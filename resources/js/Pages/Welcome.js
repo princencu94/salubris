@@ -9,25 +9,25 @@ const gymnacity = [
         name: 'Live stream fitness class',
         imageUrl:
           'images/220244_4.jpg',
-        bio:'Morning and Evening sessions at the comfort of your home or office. Sessions include Step Class, Core Conditioning.'
+        bio:'AM and PM workout classess wherever you are, distance is not a barrier to fitness.'
     },
     {
         name: 'Personal Training',
         imageUrl:
           'images/220244_5.jpg',
-        bio:'Private classes online and/ or home visits by professional trainers. Personalised training programs'
+        bio:'One on one fitness coaching and support based on your goals and health needs with a Certified Trainer.'
     },
     {
         name: 'Challenges & Bootcamp ',
         imageUrl:
           'images/220244_6.jpg',
-        bio: 'Result oriented competitions - personal, group and corporate challenges'
+        bio: 'Result oriented targets, doing a variety of tough, total body moves designed to challenge every aspect of your fitness: strength, endurance, balance, and agility.'
     },
     {
         name: 'Nutrition Expert',
         imageUrl:
           'images/Nutrition.jpg',
-        bio:'Access to various bootcamps - Strength, Weight loss, Belly, Butt, Thighs bootcamp, build up Bootcamp'
+        bio:'Get specialists advise on what to eat in order to lead a healthy lifestyle or achieve a specific health-related goal.'
     },
   ]
 
@@ -71,7 +71,7 @@ export default function Welcome(props) {
                 <div className="space-y-5 sm:space-y-4 max-w-3xl mx-auto md:max-w-xl lg:max-w-3xl xl:max-w-none">
                     <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-center">Salubris Gymnacity</h2>
                     <p className="text-xl text-gray-500 text-center max-w-3xl mx-auto">
-                    Join 10+ million members on the top digital fitness platform and stay toned, lose weight, get strong, reduce stress, and reach your goals.
+                        Making Fitness Fun
                     </p>
                 </div>
                 <ul
@@ -113,7 +113,7 @@ export default function Welcome(props) {
                 <div className="space-y-5 sm:space-y-4 max-w-3xl mx-auto md:max-w-xl lg:max-w-3xl xl:max-w-none">
                     <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-center">Salubris Revolution</h2>
                     <p className="text-xl text-black text-center max-w-3xl mx-auto">
-                    Join 10+ million members on the top digital fitness platform and stay toned, lose weight, get strong, reduce stress, and reach your goals.
+                        Your 360° Wellness Partner
                     </p>
                 </div>
                 <ul
@@ -163,7 +163,9 @@ export default function Welcome(props) {
                         Rewards
                     </h2>
                     <p className="mt-4 text-lg text-gray-500">
-                        Get rewarded for living a healthy lifestyle. Earn points by participating in Salubris activities and events. Accomplish set wellness targets and challenges and earn more points redeemable at various Salubris Valued Partners. Get discounts, vouchers, hampers, instant prizes and more!
+                        Get rewarded for living a healthy lifestyle. Earn points redeemable as discounts at our various valued
+                        partners which include but not limited to: Wellness spa, Gym membership, Road recovery, Flights,
+                        Car rental, Courier services and Healthy eats.
                     </p>
                     <div className="mt-6">
                     <a
@@ -180,7 +182,7 @@ export default function Welcome(props) {
                 <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                 <img
                     className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                    src="images/220244_11.jpg"
+                    src="images/rewards-banner.jpg"
                     alt="A group of showing their shoes"
                 />
                 </div>
@@ -214,7 +216,8 @@ export default function Welcome(props) {
                             Partner with us
                         </h2>
                         <p className="text-lg text-black">
-                            Whether you’re just starting your fitness journey, exploring something new, or ready for a Hard AF challenge, get motivated with curated training programs that take you for a ride and amp up amazing results.
+                            Wellness providers, including but not limited to nutritionist/dietitian, wellness coach, fitness trainer,
+                            therapist, beauty spa lets come together and make this world a healthy place.
                         </p>
                         <a
                             className="block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-black hover:bg-gray-50 sm:inline-block sm:w-auto"
