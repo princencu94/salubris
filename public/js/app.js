@@ -11362,7 +11362,7 @@ function Register() {
               })
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h2", {
               className: "mt-6 text-3xl font-extrabold text-gray-900",
-              children: "Sign in to your account"
+              children: "Register your account"
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
             className: "mt-8",
@@ -11445,7 +11445,7 @@ function Register() {
         className: "hidden lg:block relative w-0 flex-1",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("img", {
           className: "absolute inset-0 h-full w-full object-cover",
-          src: "images/random2.jpg",
+          src: "images/livestream.jpg",
           alt: ""
         })
       })]
@@ -12190,28 +12190,13 @@ function ManagedHealthCare(props) {
                   })]
                 })]
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-                className: "prose prose-lg prose-indigo mt-6 text-gray-500 lg:mt-0",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("dl", {
-                  className: "mt-10 space-y-10",
-                  children: transferFeatures.map(function (item) {
-                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-                      className: "relative",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("dt", {
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-                          className: "absolute flex h-12 w-12 items-center justify-center rounded-md green-bg text-white",
-                          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(item.icon, {
-                            className: "h-6 w-6",
-                            "aria-hidden": "true"
-                          })
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
-                          className: "ml-16 text-lg font-medium leading-6 text-gray-900",
-                          children: item.name
-                        })]
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("dd", {
-                        className: "mt-2 ml-16 text-base text-gray-500",
-                        children: item.description
-                      })]
-                    }, item.id);
+                className: "mt-12 sm:mt-16 lg:mt-0",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                  className: "pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full",
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+                    className: "w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none",
+                    src: "images/220244_18.jpg",
+                    alt: "Managed Health Care"
                   })
                 })
               })]
@@ -12590,7 +12575,7 @@ var HealthInfo = function HealthInfo(props) {
           className: "mb-8",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Link, {
             href: "/edithealthinfo/".concat(user_id),
-            className: "text-indigo-600 hover:text-indigo-900",
+            className: "green-bg py-2 px-4 border  rounded-md shadow-sm text-sm font-medium text-black hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500",
             children: "Edit"
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
@@ -12621,10 +12606,10 @@ var HealthInfo = function HealthInfo(props) {
                 className: "sm:col-span-1",
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("dt", {
                   className: "text-sm font-medium text-gray-500",
-                  children: "Gender"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("dd", {
+                  children: "Full Name"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("dd", {
                   className: "mt-1 text-sm text-gray-900",
-                  children: gender
+                  children: [first_name, " ", surname]
                 })]
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
                 className: "sm:col-span-1",
@@ -12639,28 +12624,10 @@ var HealthInfo = function HealthInfo(props) {
                 className: "sm:col-span-1",
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("dt", {
                   className: "text-sm font-medium text-gray-500",
-                  children: "Surname"
+                  children: "Email"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("dd", {
                   className: "mt-1 text-sm text-gray-900",
-                  children: surname
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-                className: "sm:col-span-1",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("dt", {
-                  className: "text-sm font-medium text-gray-500",
-                  children: "Full Name"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("dd", {
-                  className: "mt-1 text-sm text-gray-900",
-                  children: first_name
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-                className: "sm:col-span-1",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("dt", {
-                  className: "text-sm font-medium text-gray-500",
-                  children: "Address"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("dd", {
-                  className: "mt-1 text-sm text-gray-900",
-                  children: address
+                  children: email
                 })]
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
                 className: "sm:col-span-1",
@@ -12675,16 +12642,7 @@ var HealthInfo = function HealthInfo(props) {
                 className: "sm:col-span-1",
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("dt", {
                   className: "text-sm font-medium text-gray-500",
-                  children: "Email"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("dd", {
-                  className: "mt-1 text-sm text-gray-900",
-                  children: email
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-                className: "sm:col-span-1",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("dt", {
-                  className: "text-sm font-medium text-gray-500",
-                  children: "Emergency"
+                  children: "Emergency Contact"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("dd", {
                   className: "mt-1 text-sm text-gray-900",
                   children: emergency_contact
@@ -12697,6 +12655,24 @@ var HealthInfo = function HealthInfo(props) {
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("dd", {
                   className: "mt-1 text-sm text-gray-900",
                   children: phone
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                className: "sm:col-span-1",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("dt", {
+                  className: "text-sm font-medium text-gray-500",
+                  children: "Email"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("dd", {
+                  className: "mt-1 text-sm text-gray-900",
+                  children: email
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                className: "sm:col-span-1",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("dt", {
+                  className: "text-sm font-medium text-gray-500",
+                  children: "Gender"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("dd", {
+                  className: "mt-1 text-sm text-gray-900",
+                  children: gender
                 })]
               })]
             })
@@ -14125,9 +14101,11 @@ function Dashboard(props) {
                               children: livestream.title
                             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
                               className: "-mt-3 ",
-                              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
+                              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Link, {
                                 href: "join/".concat(livestream.id),
                                 className: "inline-flex bg-gradient-to-r from-orange-300 to-orange-600 bg-origin-border px-4 py-1 border border-transparent text-sm font-medium rounded-lg shadow-sm text-white hover:from-orange-100 hover:to-orange-700",
+                                as: "button",
+                                type: "button",
                                 children: "Join"
                               })
                             })]
@@ -14369,19 +14347,23 @@ __webpack_require__.r(__webpack_exports__);
 var gymnacity = [{
   name: 'Live stream fitness class',
   imageUrl: 'images/220244_4.jpg',
-  bio: 'AM and PM workout classess wherever you are, distance is not a barrier to fitness.'
+  bio: 'AM and PM workout classess wherever you are, distance is not a barrier to fitness.',
+  href: "virtual-gym"
 }, {
   name: 'Personal Training',
   imageUrl: 'images/220244_5.jpg',
-  bio: 'One on one fitness coaching and support based on your goals and health needs with a Certified Trainer.'
+  bio: 'One on one fitness coaching and support based on your goals and health needs with a Certified Trainer.',
+  href: "virtual-gym"
 }, {
   name: 'Challenges & Bootcamp ',
   imageUrl: 'images/220244_6.jpg',
-  bio: 'Result oriented targets, doing a variety of tough, total body moves designed to challenge every aspect of your fitness: strength, endurance, balance, and agility.'
+  bio: 'Result oriented targets, doing a variety of tough, total body moves designed to challenge every aspect of your fitness: strength, endurance, balance, and agility.',
+  href: "virtual-gym"
 }, {
   name: 'Nutrition Expert',
   imageUrl: 'images/Nutrition.jpg',
-  bio: 'Get specialists advise on what to eat in order to lead a healthy lifestyle or achieve a specific health-related goal.'
+  bio: 'Get specialists advise on what to eat in order to lead a healthy lifestyle or achieve a specific health-related goal.',
+  href: "virtual-gym"
 }];
 var managedcare = [{
   name: 'Maternal Care',
@@ -14422,31 +14404,34 @@ function Welcome(props) {
             className: "space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-4 lg:mr-8",
             children: gymnacity.map(function (person) {
               return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-                  className: "space-y-4",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-                    className: "aspect-w-3 aspect-h-2",
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
-                      className: "object-cover shadow-lg rounded-lg",
-                      src: person.imageUrl,
-                      alt: ""
-                    })
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-                    className: "space-y-2",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+                  href: person.href,
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    className: "space-y-4",
                     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-                      className: "text-base leading-6 space-y-1",
-                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h3", {
-                        className: "text-lg font-medium",
-                        children: person.name
+                      className: "aspect-w-3 aspect-h-2",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+                        className: "object-cover shadow-lg rounded-lg",
+                        src: person.imageUrl,
+                        alt: ""
                       })
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-                      className: "text-sm",
-                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
-                        className: "text-gray-500",
-                        children: person.bio
-                      })
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      className: "space-y-2",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                        className: "text-base leading-6 space-y-1",
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h3", {
+                          className: "text-lg font-medium hover:text-orange-500",
+                          children: person.name
+                        })
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                        className: "text-sm",
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                          className: "text-gray-500",
+                          children: person.bio
+                        })
+                      })]
                     })]
-                  })]
+                  })
                 })
               }, person.name);
             })
@@ -14953,7 +14938,7 @@ var appName = ((_window$document$getE = window.document.getElementsByTagName('ti
   }
 });
 _inertiajs_progress__WEBPACK_IMPORTED_MODULE_3__.InertiaProgress.init({
-  color: '#4B5563'
+  color: '#EA580C'
 });
 
 /***/ }),

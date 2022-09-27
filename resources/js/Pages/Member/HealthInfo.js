@@ -19,7 +19,7 @@ const HealthInfo = (props) => {
             <div className="py-12">
                 <div className='ml-14 mr-14'>
                     <div className='mb-8'>
-                    <Link href={`/edithealthinfo/${user_id}`} className="text-indigo-600 hover:text-indigo-900">
+                    <Link href={`/edithealthinfo/${user_id}`} className="green-bg py-2 px-4 border  rounded-md shadow-sm text-sm font-medium text-black hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
                           Edit
                     </Link>
                     </div>
@@ -35,41 +35,38 @@ const HealthInfo = (props) => {
                             <dd className="mt-1 text-sm text-gray-900">{title}</dd>
                         </div>
                         <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Gender</dt>
-                            <dd className="mt-1 text-sm text-gray-900">{gender}</dd>
+                            <dt className="text-sm font-medium text-gray-500">Full Name</dt>
+                            <dd className="mt-1 text-sm text-gray-900">{first_name} {surname}</dd>
                         </div>
                         <div className="sm:col-span-1">
                             <dt className="text-sm font-medium text-gray-500">Date of birth</dt>
                             <dd className="mt-1 text-sm text-gray-900">{date_of_birth}</dd>
                         </div>
                         <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Surname</dt>
-                            <dd className="mt-1 text-sm text-gray-900">{surname}</dd>
-                        </div>
-                        <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Full Name</dt>
-                            <dd className="mt-1 text-sm text-gray-900">{first_name}</dd>
-                        </div>
-                        <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Address</dt>
-                            <dd className="mt-1 text-sm text-gray-900">{address}</dd>
+                            <dt className="text-sm font-medium text-gray-500">Email</dt>
+                            <dd className="mt-1 text-sm text-gray-900">{email}</dd>
                         </div>
                         <div className="sm:col-span-1">
                             <dt className="text-sm font-medium text-gray-500">Mobile</dt>
                             <dd className="mt-1 text-sm text-gray-900">{mobile}</dd>
                         </div>
                         <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Email</dt>
-                            <dd className="mt-1 text-sm text-gray-900">{email}</dd>
-                        </div>
-                        <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Emergency</dt>
+                            <dt className="text-sm font-medium text-gray-500">Emergency Contact</dt>
                             <dd className="mt-1 text-sm text-gray-900">{emergency_contact}</dd>
                         </div>
                         <div className="sm:col-span-1">
                             <dt className="text-sm font-medium text-gray-500">Phone</dt>
                             <dd className="mt-1 text-sm text-gray-900">{phone}</dd>
                         </div>
+                        <div className="sm:col-span-1">
+                            <dt className="text-sm font-medium text-gray-500">Email</dt>
+                            <dd className="mt-1 text-sm text-gray-900">{email}</dd>
+                        </div>
+                        <div className="sm:col-span-1">
+                            <dt className="text-sm font-medium text-gray-500">Gender</dt>
+                            <dd className="mt-1 text-sm text-gray-900">{gender}</dd>
+                        </div>
+                        
                         </dl>
                     </div>
                     <div className="px-4 py-5 sm:px-6">

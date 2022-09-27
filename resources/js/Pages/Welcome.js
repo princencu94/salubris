@@ -9,25 +9,30 @@ const gymnacity = [
         name: 'Live stream fitness class',
         imageUrl:
           'images/220244_4.jpg',
-        bio:'AM and PM workout classess wherever you are, distance is not a barrier to fitness.'
+        bio:'AM and PM workout classess wherever you are, distance is not a barrier to fitness.',
+        href:"virtual-gym",
+    
     },
     {
         name: 'Personal Training',
         imageUrl:
           'images/220244_5.jpg',
-        bio:'One on one fitness coaching and support based on your goals and health needs with a Certified Trainer.'
+        bio:'One on one fitness coaching and support based on your goals and health needs with a Certified Trainer.',
+        href:"virtual-gym",
     },
     {
         name: 'Challenges & Bootcamp ',
         imageUrl:
           'images/220244_6.jpg',
-        bio: 'Result oriented targets, doing a variety of tough, total body moves designed to challenge every aspect of your fitness: strength, endurance, balance, and agility.'
+        bio: 'Result oriented targets, doing a variety of tough, total body moves designed to challenge every aspect of your fitness: strength, endurance, balance, and agility.',
+        href:"virtual-gym",
     },
     {
         name: 'Nutrition Expert',
         imageUrl:
           'images/Nutrition.jpg',
-        bio:'Get specialists advise on what to eat in order to lead a healthy lifestyle or achieve a specific health-related goal.'
+        bio:'Get specialists advise on what to eat in order to lead a healthy lifestyle or achieve a specific health-related goal.',
+        href:"virtual-gym",
     },
   ]
 
@@ -59,6 +64,7 @@ const gymnacity = [
   ]
 
 export default function Welcome(props) {
+
     return (
         <>
         <MainHeader/>
@@ -80,6 +86,7 @@ export default function Welcome(props) {
                 >
                     {gymnacity.map((person) => (
                     <li key={person.name}>
+                        <a href={person.href}>
                         <div className="space-y-4">
                         <div className="aspect-w-3 aspect-h-2">
                             <img className="object-cover shadow-lg rounded-lg" src={person.imageUrl} alt="" />
@@ -87,13 +94,14 @@ export default function Welcome(props) {
 
                         <div className="space-y-2">
                             <div className="text-base leading-6 space-y-1">
-                                <h3 className="text-lg font-medium">{person.name}</h3>
+                                <h3 className="text-lg font-medium hover:text-orange-500">{person.name}</h3>
                             </div>
                             <div className="text-sm">
                                 <p className="text-gray-500">{person.bio}</p>
                             </div>
                         </div>
                         </div>
+                        </a>
                     </li>
                     ))}
                 </ul>

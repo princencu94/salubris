@@ -122,20 +122,14 @@ export default function ManagedHealthCare(props) {
                             </ol>
         
                         </div>
-                        <div className="prose prose-lg prose-indigo mt-6 text-gray-500 lg:mt-0">
-                            <dl className="mt-10 space-y-10">
-                                {transferFeatures.map((item) => (
-                                    <div key={item.id} className="relative">
-                                    <dt>
-                                        <div className="absolute flex h-12 w-12 items-center justify-center rounded-md green-bg text-white">
-                                        <item.icon className="h-6 w-6" aria-hidden="true" />
-                                        </div>
-                                        <p className="ml-16 text-lg font-medium leading-6 text-gray-900">{item.name}</p>
-                                    </dt>
-                                    <dd className="mt-2 ml-16 text-base text-gray-500">{item.description}</dd>
-                                    </div>
-                                ))}
-                            </dl>
+                        <div className="mt-12 sm:mt-16 lg:mt-0">
+                            <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+                            <img
+                                className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                                src="images/220244_18.jpg"
+                                alt="Managed Health Care"
+                            />
+                            </div>
                         </div>
                         </div>
                         {/* <div className="mt-8 inline-flex rounded-md shadow">

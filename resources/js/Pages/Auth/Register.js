@@ -44,7 +44,7 @@ export default function Register() {
                 <Link href="/">
                     <ApplicationLogo className="w-20 h-20 fill-current text-gray-500" />
                 </Link>
-              <h2 className="mt-6 text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
+              <h2 className="mt-6 text-3xl font-extrabold text-gray-900">Register your account</h2>
             </div>
 
             <div className="mt-8">
@@ -123,7 +123,7 @@ export default function Register() {
         <div className="hidden lg:block relative w-0 flex-1">
           <img
             className="absolute inset-0 h-full w-full object-cover"
-            src="images/random2.jpg"
+            src="images/livestream.jpg"
             alt=""
           />
         </div>
