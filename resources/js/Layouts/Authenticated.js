@@ -12,7 +12,7 @@ const user = {
     name: 'Tom Cook',
     email: 'tom@example.com',
     imageUrl:
-      'images/profile.png',
+      '/images/profile.png',
   }
   const admin_navigation = [
   
@@ -23,12 +23,13 @@ const user = {
     { name: 'Blogs', href: '/adminblogs', current: false },
     { name: 'Users', href: '/users', current: false },
     { name: 'Schedule', href: '/schedule', current: false },
+    { name: 'Registerd Users', href: '/registered-users', current: false },
   ]
 
   const user_navigation = [
   
   
-    { name: 'Dashboard', href: "/dashboard", current: true },
+    { name: 'Dashboard', href: "/dashboard", current: false },
     { name: 'Health Info', href: '/health-info', current: false },
     { name: 'Recommendations', href: '#', current: false },
   ]

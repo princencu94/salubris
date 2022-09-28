@@ -1,6 +1,8 @@
 import React from 'react';
 import Authenticated from '@/Layouts/Authenticated';
-import { Head } from '@inertiajs/inertia-react';
+import { Head, Link } from '@inertiajs/inertia-react';
+
+
 const ShowUsers = (props) => {
 
     return (
@@ -54,7 +56,7 @@ const ShowUsers = (props) => {
                                     <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{user.email}</td>
                                     <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{user.created_at}</td>
                                     <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                                        
+                                        <Link href={`adminhealthprofile/${user.id}`}>Health Profile</Link>
                                     </td>
                                     </tr>
                                 ))}

@@ -246,7 +246,7 @@ export default function Example() {
                     </a>
                   </div>
                   <div className="flow-root">
-                    <a href={route('register')} className="-m-2 p-2 block font-medium text-gray-900">
+                    <a href={route('check-member')} className="-m-2 p-2 block font-medium text-gray-900">
                       Create account
                     </a>
                   </div>
@@ -362,7 +362,7 @@ export default function Example() {
                     Sign in
                   </a>
                   <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-                  <a href={route('register')} className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                  <a href={route('check-member')} className="text-sm font-medium text-gray-700 hover:text-gray-800">
                     Create account
                   </a>
                 </div>

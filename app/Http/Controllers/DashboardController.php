@@ -28,6 +28,7 @@ class DashboardController extends Controller
             $trialendingtime = strtotime($subscription->trial_period_end) - strtotime($subscription->trial_period_start);
             $profile = UserHealthInfo::where('user_id', $id)->first();
             $user_livestreams = Livestream::all();
+            $activities = DB::table('recent_activity')->where('user_id', $id)->get();
         }
         
         // Admin Dashboard Stats
@@ -46,7 +47,7 @@ class DashboardController extends Controller
 
        
         if(Auth::user()->hasRole('user')) {
-            return Inertia::render('Userdashboard', ['profileinfo' => $profile, 'trialending' => floor($trialendingtime/(24*60*60)), 'user_livestreams' => $user_livestreams]);
+            return Inertia::render('Userdashboard', ['profileinfo' => $profile, 'trialending' => floor($trialendingtime/(24*60*60)), 'user_livestreams' => $user_livestreams, 'activities' => $activities]);
         } elseif (Auth::user()->hasRole('trainer')) {
             return Inertia::render('Trainerdashboard', ['trainer_profile' => $trainer_profile, 'trainer_livestreams' => $trainer_livestreams, 'trainer_schedules' => $trainer_schedule ]);
         } elseif (Auth::user()->hasRole('admin')) {

@@ -1,36 +1,11 @@
 import React from 'react';
 import Authenticated from '@/Layouts/Authenticated';
 import { Head } from '@inertiajs/inertia-react';
-import { Fragment, useState } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
-import ReactPlayer from 'react-player'
+import { Fragment, useState } from 'react';
+import { Dialog, Transition } from '@headlessui/react';
+import ReactPlayer from 'react-player';
+import { useForm } from '@inertiajs/inertia-react';
 
-const JoinBanner = (props) => {
-    const { title, about } = props.livestream;
-    return (
-    <div className="relative bg-indigo-800 -ml-8 -mr-8 -mt-6">
-      <div className="absolute inset-0">
-        <img
-          className="h-full w-full object-cover"
-          src='images/profile.png'
-          alt=""
-        />
-        <div className="absolute inset-0 bg-orange-800 mix-blend-multiply" aria-hidden="true" />
-      </div>
-      <div className="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold tracking-tight text-center text-white sm:text-5xl lg:text-6xl">{title}</h1>
-        <p className="mt-6 max-w-3xl mx-auto text-xl text-center text-indigo-100">
-            {about}
-        </p>
-        <div className='flex flex-row justify-center'>
-            <button className=" bg-gradient-to-r from-orange-300 to-orange-600 bg-origin-border px-12 py-2 mt-2 border border-transparent text-sm font-medium rounded-lg shadow-sm text-white hover:from-orange-100 hover:to-orange-700">
-                    Start
-            </button>
-        </div>
-      </div>
-    </div>
-    )
-}
 
 const JoinInfo = (props) => {
 
@@ -41,14 +16,19 @@ const JoinInfo = (props) => {
         <div className="overflow-hidden bg-white">
       <div className="border-t border-gray-200 px-4 py-5 sm:p-0">
         <dl className="sm:divide-y sm:divide-gray-200">
+        <div className="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
+            <dt className="text-sm font-medium text-gray-500 ">Trainer</dt>
+            <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0 ">Name</dd>
+          </div>
+          <div className="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
+            <dt className="text-sm font-medium   text-gray-500">Trainer Type</dt>
+            <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">{type}</dd>
+          </div>
           <div className="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
             <dt className="text-sm font-medium   text-gray-500">Trainer Bio</dt>
             <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">{bio}</dd>
           </div>
-          <div className="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
-            <dt className="text-sm font-medium text-gray-500 ">Trainer Specialty</dt>
-            <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0 ">{type}</dd>
-          </div>
+          
         </dl>
       </div>
     </div>
@@ -58,15 +38,22 @@ const JoinInfo = (props) => {
 
 
 const JoinLivestream = (props) => {
-    const { title, about, link } = props.livestream;
+    const { title, about, link, id } = props.livestream;
     const [open, setOpen] = useState(false);
     
+    const { data, setData, post, processing, errors } = useForm({
+        title: title,
+        about: about,
+        id: id,
+      })
 
-    const openVideo = () => {
+    const openVideo = (e) => {
+        e.preventDefault();
+        post(`/addrecent`);
         setOpen(true);
     }
 
-    console.log(link);
+    console.log(link)
     return (
         
         <Authenticated
@@ -81,10 +68,10 @@ const JoinLivestream = (props) => {
                 <div className="absolute inset-0">
                     <img
                     className="h-full w-full object-cover"
-                    src='images/profile.png'
+                    src={`/images/${props.trainer_profile.cover_photo}`}
                     alt=""
                     />
-                    <div className="absolute inset-0 bg-orange-800 mix-blend-multiply" aria-hidden="true" />
+                    <div className="absolute inset-0 bg-orange-400 mix-blend-multiply" aria-hidden="true" />
                 </div>
                 <div className="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
                     <h1 className="text-4xl font-bold tracking-tight text-center text-white sm:text-5xl lg:text-6xl">{title}</h1>
@@ -92,9 +79,15 @@ const JoinLivestream = (props) => {
                         {about}
                     </p>
                     <div className='flex flex-row justify-center'>
-                        <button onClick={openVideo} className="bg-gradient-to-r from-orange-300 to-orange-600 bg-origin-border px-12 py-2 mt-2 border border-transparent text-sm font-medium rounded-lg shadow-sm text-white hover:from-orange-100 hover:to-orange-700">
-                                Start
-                        </button>
+                        <form onSubmit={openVideo}>
+                            <input type="hidden" name="title" onChange={e => setData('title', e.target.value)} value={data.title} />
+                            <input type="hidden" name="about" onChange={e => setData('about', e.target.value)} value={data.about} />
+                            <input type="hidden" name="id" onChange={e => setData('id', e.target.value)} value={data.id} />
+                            <button type="Submit" className="bg-gradient-to-r from-orange-300 to-orange-600 bg-origin-border px-12 py-2 mt-2 border border-transparent text-sm font-medium rounded-lg shadow-sm text-white hover:from-orange-100 hover:to-orange-700">
+                                    Start
+                            </button>
+                        </form>
+                        
                     </div>
                 </div>
             </div>

@@ -4,7 +4,24 @@ import { Head, usePage, Link } from '@inertiajs/inertia-react';
 import FlashMassage from '@/Components/FlashMessage';
 import TrialBanner from '@/Components/TrialBanner';
 
+import * as dayjs from 'dayjs';
+import * as relativeTime from 'dayjs/plugin/relativeTime';
+dayjs.extend(relativeTime);
 
+const messages = [
+
+
+  {
+    id: 1,
+    subject: 'Velit placeat sit ducimus non sed',
+    sender: 'Gloria Roberston',
+    time: '1d ago',
+    datetime: '2021-01-27T16:35',
+    preview:
+      'Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.',
+  },
+  // More messages...
+]
 
 export default function Dashboard(props) {
     const { flash, auth } = usePage().props
@@ -84,7 +101,7 @@ export default function Dashboard(props) {
                         <div className='px-4 py-4'>
                         <h2 className="font-semibold text-lg text-gray-900">Currently Live</h2>
                         
-                            <ul role="list" className="-ml-0 mt-3 grid gap-x-5 grid-flow-col auto-cols-max w-full overflow-x-auto">
+                            <ul role="list" className="pl-0 mt-3 grid gap-x-5 grid-flow-col auto-cols-max w-full overflow-x-auto">
                                 {props.user_livestreams.map((livestream) => (
                                     <li key={livestream.id} className="relative">
                                     <div className="group w-60 h-40 block overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-orange-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
@@ -118,24 +135,29 @@ export default function Dashboard(props) {
                     <div className='overflow-hidden rounded-lg bg-white shadow'>
                         <div className='px-4 py-4'>
                         <h2 className="font-semibold text-lg text-gray-900">Recent Activity</h2>
-                        <ol className="mt-4  -ml-8 divide-y divide-gray-200 text-sm leading-6 text-gray-500">
-                            {/* {
-                                trainer_schedules.length !== 0 ?
-                                trainer_schedules.map((trainer_schedule) => (
-                                    <li className="py-1 sm:flex">
-                                        <time dateTime="2022-01-19" className="w-28 flex-none">
-                                        {trainer_schedule.date}
-                                        </time>
-                                        <p className="mt-0 flex-auto font-semibold text-gray-900 sm:mt-0">{trainer_schedule.event_name}</p>
-                                        <p className="flex-none sm:ml-6">
-                                            <time dateTime={trainer_schedule.start_time}>{trainer_schedule.start_time}</time> - <time dateTime="2022-01-13T16:30">4:30 PM</time>
-                                        </p>
-                                    </li>
-                                ))
-                                :
-                                <p className='text-left text-xl font-semibold text-gray-500'>No Events Scheduled Yet For You!</p>
-                            } */}
-                        </ol>
+                        <ul role="list" className="divide-y divide-gray-200 pl-0">
+                          {props.activities.map((activity) => (
+                            <li
+                              key={activity.id}
+                              className="relative bg-white py-1 px-0 focus-within:ring-2 focus-within:ring-inset focus-within:ring-orange-600 hover:bg-gray-50"
+                            >
+                              <div className="flex justify-between space-x-3">
+                                <div className="min-w-0 flex-1">
+                                  
+                                    <span className="absolute inset-0" aria-hidden="true" />
+                                    <p className="truncate text-sm font-medium text-gray-900">{activity.title}</p>
+                                  
+                                </div>
+                                <time dateTime={activity.created_at} className="flex-shrink-0 whitespace-nowrap text-sm text-orange-500">
+                                  {dayjs().to(dayjs(activity.created_at))}
+                                </time>
+                              </div>
+                              <div className="-mt-2">
+                                <p className="text-sm text-gray-600 line-clamp-2">{activity.description}</p>
+                              </div>
+                            </li>
+                          ))}
+                        </ul>
                         </div>
                     </div>
                 </section>

@@ -11,6 +11,7 @@ use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\BillingController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\JoinLivestreamController;
+use App\Http\Controllers\RecentActivityController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -36,6 +37,10 @@ Route::get('/', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
+
+Route::get('/check-member', function () {
+    return Inertia::render('CheckMember');
+})->name('check-member');
 
 Route::get('/salubris-revolution', function () {
     return Inertia::render('SalubrisRevolution');
@@ -155,6 +160,14 @@ Route::get('/billing-plans', [BillingController::class, 'plans'])->middleware(['
 
 // Member Join
 Route::get('/join/{id}', [JoinLivestreamController::class, 'show'])->middleware(['auth'])->name('join');
+// Add to recent Activity
+Route::post('/addrecent', [RecentActivityController::class, 'store'])->middleware(['auth'])->name('addrecent');
+// Add Registered Salubris Users
+Route::get('/registered-users', [UserController::class, 'salubrismembers'])->middleware(['auth'])->name('registered-users');
+Route::post('/addsalubrisuser', [UserController::class, 'store'])->middleware(['auth'])->name('addsalubrisuser');
+Route::get('/adminhealthprofile/{id}', [UserController::class, 'show'])->middleware(['auth'])->name('adminhealthprofile');
 
+// Check Member Route
+Route::post('/checkmember', [UserController::class, 'finduser'])->name('checkmember');
 
 require __DIR__.'/auth.php';
