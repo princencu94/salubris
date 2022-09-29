@@ -56,7 +56,7 @@ const ShowUsers = (props) => {
                                     <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{user.email}</td>
                                     <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{user.created_at}</td>
                                     <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                                        <Link href={`adminhealthprofile/${user.id}`}>Health Profile</Link>
+                                        <Link href={`adminhealthprofile/${user.id}`}>Profile</Link>
                                     </td>
                                     </tr>
                                 ))}

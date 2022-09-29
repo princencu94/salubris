@@ -27,7 +27,7 @@ const VirtualGym = () => {
                     </p>
                     <div className="mt-6">
                       <a
-                        href="login"
+                        href="check-member"
                         className="inline-flex bg-gradient-to-r from-orange-300 to-orange-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-orange-100 hover:to-orange-700"
                       >
                         Join us
@@ -62,7 +62,7 @@ const VirtualGym = () => {
                     </p>
                     <div className="mt-6">
                       <a
-                        href="login"
+                        href="check-member"
                         className="inline-flex bg-gradient-to-r from-orange-300 to-orange-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-orange-100 hover:to-orange-700"
                       >
                         Join us
@@ -87,8 +87,11 @@ const VirtualGym = () => {
                 <div>
                   <div className="mt-6">
                     <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                        Fitness store
+                        Fitness Store
                     </h2>
+                    <p className="mt-4 text-lg text-gray-500">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    </p>
                     <div className="mt-6">
                       <a
                         href="https://store.salubriswellness.com/"
@@ -104,14 +107,46 @@ const VirtualGym = () => {
                 <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                   <img
                     className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                    src="images/fitness.jpg"
-                    alt="Inbox user interface"
+                    src="images/fitness-store.jpg"
+                    alt="Fitness Weights"
                   />
                 </div>
               </div>
             </div>
           </div>
           </div>
+          <div className="lg:mx-auto lg:max-w-7xl lg:px-0 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24 mt-24">
+              <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
+                <div>
+                  
+                  <div className="mt-6">
+                    <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+                        Nutrition
+                    </h2>
+                    <p className="mt-4 text-lg text-gray-500">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    </p>
+                    <div className="mt-6">
+                      <a
+                        href="check-member"
+                        className="inline-flex bg-gradient-to-r from-orange-300 to-orange-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-orange-100 hover:to-orange-700"
+                      >
+                        Join us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
+                <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+                  <img
+                    className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                    src="images/Nutrition.jpg"
+                    alt="Customer profile user interface"
+                  />
+                </div>
+              </div>
+            </div>
         </div>
         <Footer/>
         </>

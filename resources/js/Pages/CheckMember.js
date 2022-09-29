@@ -29,14 +29,18 @@ export default function CheckMember(props) {
             <Head title="Check Member" />
 
             <div>
-                <p >{
-                    props.user !== undefined ? 
+                {
+                    props.user !== undefined ?
+                    <p >{
+                    props.user !== null ? 
                     <Link className='text-green-600' href="/register">Subscription Found! Click Continue</Link>
                     : 
-                    //<span className='text-red-600'>'No Subscription has been found contact Admin'</span>
-                    null
+                    <span className='text-red-600'>'No Subscription has been found contact Admin'</span>
                     }
-                </p>
+                    </p>
+                    :
+                    null
+                }
             </div>
 
             <form onSubmit={submit}>

@@ -9,7 +9,7 @@ export default function CorporateEmployeeWellnessProgram(props) {
     return (
         <>
         <MainHeader/>
-            <PageHeader title="Corporate wellness program" image="images/corporate-banner.jpg"/>
+            <PageHeader title="Corporate wellness program" image="images/220244_20.jpg"/>
 
             {/* Page Main content start */}
             <div className="relative bg-white py-16 sm:py-24">
