@@ -9020,13 +9020,16 @@ var navigation = {
   }],
   pages: [{
     name: 'Rewards',
-    href: 'rewards'
+    href: 'rewards',
+    target: ''
   }, {
     name: 'Fitness store',
-    href: 'https://store.salubriswellness.com/'
+    href: 'https://store.salubriswellness.com/',
+    target: '_blank'
   }, {
     name: 'Blogs',
-    href: 'blogs'
+    href: 'blogs',
+    target: ''
   }]
 };
 
@@ -9175,6 +9178,7 @@ function Example() {
                     className: "flow-root",
                     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
                       href: page.href,
+                      target: page.target,
                       className: "-m-2 p-2 block font-medium text-gray-900",
                       children: page.name
                     })
@@ -9254,10 +9258,10 @@ function Example() {
                           })
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_headlessui_react__WEBPACK_IMPORTED_MODULE_3__.Transition, {
                           as: react__WEBPACK_IMPORTED_MODULE_0__.Fragment,
-                          enter: "transition ease-out duration-200",
+                          enter: "transition ease-out duration-700 delay-300",
                           enterFrom: "opacity-0",
                           enterTo: "opacity-100",
-                          leave: "transition ease-in duration-150",
+                          leave: "transition ease-in duration-300",
                           leaveFrom: "opacity-100",
                           leaveTo: "opacity-0",
                           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_headlessui_react__WEBPACK_IMPORTED_MODULE_8__.Popover.Panel, {
@@ -9305,6 +9309,7 @@ function Example() {
                 }), navigation.pages.map(function (page) {
                   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
                     href: page.href,
+                    target: page.target,
                     className: "flex items-center text-sm font-medium text-gray-700 hover:text-gray-800",
                     children: page.name
                   }, page.name);
@@ -12879,7 +12884,7 @@ function MaternalCare(props) {
       title: "Maternal Care",
       image: "images/meternal-banner.jpg"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "relative pt-16 pb-32 overflow-hidden",
+      className: "relative pt-16 pb-16 overflow-hidden",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
         "aria-hidden": "true",
         className: "absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100"
@@ -12889,8 +12894,8 @@ function MaternalCare(props) {
           className: "lg:mx-auto lg:max-w-7xl lg:px-0 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
             className: "px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                 className: "mt-6",
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
                   className: "text-2xl font-bold tracking-tight text-gray-900",
@@ -12909,7 +12914,14 @@ function MaternalCare(props) {
                     children: "Care package "
                   })]
                 })]
-              })
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                className: "mt-6",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+                  href: "check-member",
+                  className: "inline-flex bg-gradient-to-r from-orange-300 to-orange-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-orange-100 hover:to-orange-700",
+                  children: "Chat with a Midwife"
+                })
+              })]
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
             className: "mt-12 sm:mt-16 lg:mt-0",

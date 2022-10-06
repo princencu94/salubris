@@ -118,9 +118,9 @@ const navigation = {
   ],
   
   pages: [
-    { name: 'Rewards', href: 'rewards' },
-    { name: 'Fitness store', href: 'https://store.salubriswellness.com/' },
-    { name: 'Blogs', href: 'blogs' },
+    { name: 'Rewards', href: 'rewards', target:'' },
+    { name: 'Fitness store', href: 'https://store.salubriswellness.com/', target:'_blank' },
+    { name: 'Blogs', href: 'blogs', target:'' },
   ],
 }
 
@@ -236,7 +236,7 @@ export default function Example() {
                 <div className="border-t border-gray-200 py-6 px-4 space-y-6">
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
-                      <a href={page.href} className="-m-2 p-2 block font-medium text-gray-900">
+                      <a href={page.href} target={page.target} className="-m-2 p-2 block font-medium text-gray-900">
                         {page.name}
                       </a>
                     </div>
@@ -304,10 +304,10 @@ export default function Example() {
 
                           <Transition
                             as={Fragment}
-                            enter="transition ease-out duration-200"
+                            enter="transition ease-out duration-700 delay-300"
                             enterFrom="opacity-0"
                             enterTo="opacity-100"
-                            leave="transition ease-in duration-150"
+                            leave="transition ease-in duration-300"
                             leaveFrom="opacity-100"
                             leaveTo="opacity-0"
                           >
@@ -352,6 +352,7 @@ export default function Example() {
                     <a
                       key={page.name}
                       href={page.href}
+                      target={page.target}
                       className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                     >
                       {page.name}

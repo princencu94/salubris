@@ -11,7 +11,7 @@ export default function MaternalCare(props) {
             <PageHeader title="Maternal Care" image="images/meternal-banner.jpg"/>
 
             {/* Page Main content start */}
-            <div className="relative pt-16 pb-32 overflow-hidden">
+            <div className="relative pt-16 pb-16 overflow-hidden">
                 <div aria-hidden="true" className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100" />
                     <div className="relative">
                         <div className="lg:mx-auto lg:max-w-7xl lg:px-0 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
@@ -28,6 +28,14 @@ export default function MaternalCare(props) {
                                     <li>Salubris mother forum</li>
                                     <li>Care package </li>
                                 </ul> 
+                            </div>
+                            <div className="mt-6">
+                            <a
+                                href="check-member"
+                                className="inline-flex bg-gradient-to-r from-orange-300 to-orange-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-orange-100 hover:to-orange-700"
+                            >
+                                Chat with a Midwife
+                            </a>
                             </div>
                             </div>
                         </div>
