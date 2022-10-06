@@ -173,9 +173,11 @@ export default function Example() {
                 {/* Links */}
                 <Tab.Group as="div" className="mt-2">
                   <div className="border-b border-gray-200">
+                    
                     <Tab.List className="-mb-px flex px-4 space-x-8">
                       {navigation.categories.map((category) => (
                         <Tab
+                          
                           key={category.name}
                           className={({ selected }) =>
                             classNames(
@@ -184,10 +186,12 @@ export default function Example() {
                             )
                           }
                         >
-                          {category.name}
+                         <a href={category.id}>{category.name}</a> 
                         </Tab>
+                        
                       ))}
                     </Tab.List>
+                    
                   </div>
                   <Tab.Panels as={Fragment}>
                     {navigation.categories.map((category) => (
@@ -294,7 +298,7 @@ export default function Example() {
                                 'relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px'
                               )}
                             >
-                              {category.name}
+                              <a href={category.id}>{category.name}</a> 
                             </Popover.Button>
                           </div>
 

@@ -9105,7 +9105,10 @@ function Example() {
                           var selected = _ref.selected;
                           return classNames(selected ? 'text-orange-600 border-orange-600' : 'text-gray-900 border-transparent', 'flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium');
                         },
-                        children: category.name
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+                          href: category.id,
+                          children: category.name
+                        })
                       }, category.name);
                     })
                   })
@@ -9244,7 +9247,10 @@ function Example() {
                           className: "relative flex",
                           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_headlessui_react__WEBPACK_IMPORTED_MODULE_8__.Popover.Button, {
                             className: classNames(open ? 'border-b-orange-600 green-text' : 'border-transparent text-black hover:text-gray-800', 'relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px'),
-                            children: category.name
+                            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+                              href: category.id,
+                              children: category.name
+                            })
                           })
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_headlessui_react__WEBPACK_IMPORTED_MODULE_3__.Transition, {
                           as: react__WEBPACK_IMPORTED_MODULE_0__.Fragment,
@@ -15063,19 +15069,23 @@ var gymnacity = [{
 var managedcare = [{
   name: 'Maternal Care',
   imageUrl: 'images/220244_23.jpg',
-  bio: ''
+  bio: '',
+  href: 'maternal-care'
 }, {
   name: 'Managed Health Care',
   imageUrl: 'images/220244_18.jpg',
-  bio: ''
+  bio: '',
+  href: 'managed-healthcare'
 }, {
   name: 'Mental Health Management ',
   imageUrl: 'images/220244_19.jpg',
-  bio: ''
+  bio: '',
+  href: 'mental-health-management'
 }, {
   name: 'Corporate Wellness Program',
   imageUrl: 'images/220244_20.jpg',
-  bio: ''
+  bio: '',
+  href: 'corporate-wellness-program'
 }];
 function Welcome(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
@@ -15153,31 +15163,34 @@ function Welcome(props) {
             className: "space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-4 lg:mr-8",
             children: managedcare.map(function (person) {
               return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-                  className: "space-y-4",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-                    className: "aspect-w-3 aspect-h-2",
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
-                      className: "object-cover shadow-lg rounded-lg",
-                      src: person.imageUrl,
-                      alt: ""
-                    })
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-                    className: "space-y-2",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+                  href: person.href,
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    className: "space-y-4",
                     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-                      className: "text-base leading-6 space-y-1",
-                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h3", {
-                        className: "text-lg font-medium",
-                        children: person.name
+                      className: "aspect-w-3 aspect-h-2",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+                        className: "object-cover shadow-lg rounded-lg",
+                        src: person.imageUrl,
+                        alt: ""
                       })
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-                      className: "text-lg",
-                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
-                        className: "text-gray-500",
-                        children: person.bio
-                      })
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      className: "space-y-2",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                        className: "text-base leading-6 space-y-1",
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h3", {
+                          className: "text-lg font-medium hover:text-orange-500",
+                          children: person.name
+                        })
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                        className: "text-lg",
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                          className: "text-gray-500",
+                          children: person.bio
+                        })
+                      })]
                     })]
-                  })]
+                  })
                 })
               }, person.name);
             })

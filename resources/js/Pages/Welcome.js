@@ -41,25 +41,29 @@ const gymnacity = [
       name: 'Maternal Care',
       imageUrl:
         'images/220244_23.jpg',
-    bio:''
+        bio:'',
+        href:'maternal-care'
     },
     {
         name: 'Managed Health Care',
         imageUrl:
           'images/220244_18.jpg',
-        bio:''
+        bio:'',
+        href:'managed-healthcare'
     },
     {
         name: 'Mental Health Management ',
         imageUrl:
           'images/220244_19.jpg',
-        bio:''
+        bio:'',
+        href:'mental-health-management'
     },
     {
         name: 'Corporate Wellness Program',
         imageUrl:
           'images/220244_20.jpg',
-        bio:''
+        bio:'',
+        href:'corporate-wellness-program'
     },
   ]
 
@@ -130,6 +134,7 @@ export default function Welcome(props) {
                 >
                     {managedcare.map((person) => (
                     <li key={person.name}>
+                        <a href={person.href}>
                         <div className="space-y-4">
                         <div className="aspect-w-3 aspect-h-2">
                             <img className="object-cover shadow-lg rounded-lg" src={person.imageUrl} alt="" />
@@ -137,13 +142,14 @@ export default function Welcome(props) {
 
                         <div className="space-y-2">
                             <div className="text-base leading-6 space-y-1">
-                                <h3 className="text-lg font-medium">{person.name}</h3>
+                                <h3 className="text-lg font-medium hover:text-orange-500">{person.name}</h3>
                             </div>
                             <div className="text-lg">
                                 <p className="text-gray-500">{person.bio}</p>
                             </div>
                         </div>
                         </div>
+                        </a>
                     </li>
                     ))}
                 </ul>
